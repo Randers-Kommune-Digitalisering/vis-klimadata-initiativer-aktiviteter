@@ -3,7 +3,8 @@
 
 *Når der ligger fungerende og testet kode klar i et GitHub repository kan applikationen oprettes manuelt.*
 
-- Gå til applikationens repository, vælg "commits" og identificer hvilket commit-id der skal udrulles på prototypes og kopier IDet.
+- Gå til applikationens repository, vælg "commits" ![image](https://user-images.githubusercontent.com/80261692/216611622-7b1396d0-3a12-4509-93e4-99dabe35716e.png)
+ og identificer hvilket commit-id der skal udrulles på prototypes og kopier IDet.
 
 https://user-images.githubusercontent.com/80261692/216610032-07fe7504-fac1-4cf5-8c48-93433e71e6ce.mp4
 
