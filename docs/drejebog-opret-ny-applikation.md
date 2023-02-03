@@ -1,9 +1,9 @@
 # :book: Drejebog
-## Oprettelse af en ny applikation i prototypes.randers.dk
+### Oprettelse af en ny applikation i prototypes.randers.dk
 
-### Når der ligget fungerende og testet kode klar i et GitHub repository kan applikationen oprettes manuelt.
+*Når der ligger fungerende og testet kode klar i et GitHub repository kan applikationen oprettes manuelt.*
 
-- Identificer hvilket commit-id i applikationens repository der skal udrulles på prototypes og kopier IDet.
+- Gå til applikationens repository, vælg "commits" og identificer hvilket commit-id der skal udrulles på prototypes og kopier IDet.
 
 https://user-images.githubusercontent.com/80261692/216610032-07fe7504-fac1-4cf5-8c48-93433e71e6ce.mp4
 
