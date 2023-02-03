@@ -12,8 +12,25 @@
 - Opret applikationen i https://github.com/Randers-Kommune-Digitalisering/kithosting-randers-kommune-apps ved at tage en kopi af en eksisterenede applikationsmappe og omdøbe den til applikationsnavnet
 
 - Under denne nye mappe tilpasse values.yml
+- Under `repository:` erstattets repository navnet med den nye applikations navn
+- Under `tag:` indsættes det kopierede commit id imellem anførselstegnene
 ```yaml
- image:
-    repository: ghcr.io/randers-kommune-digitalisering/vis-klimamonitor-int-akt
-    tag: "ecc6ce3d99b426fc5a90fa60c1d10d267ed5483f"
+image:
+    repository: ghcr.io/randers-kommune-digitalisering/*******
+    tag: "*****"
 ```
+
+- Den port applikationen skal forwarde indsættes under deployment og readinessprobe
+
+```yaml
+deployment:
+    containerPort: ****
+```
+
+```yaml
+readinessProbe:
+      httpGet:
+        path: /
+        port: ****
+```
+
