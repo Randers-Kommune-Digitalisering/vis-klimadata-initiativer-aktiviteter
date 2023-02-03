@@ -1,7 +1,6 @@
-# :book: Drejebog
-### Oprettelse af en ny applikation i prototypes.randers.dk
+# :book: Oprettelse af en ny applikation i prototypes.randers.dk
 
-*Når der ligger fungerende og testet kode klar i et GitHub repository kan applikationen oprettes manuelt.*
+*Når der ligger fungerende og testet kode klar i et GitHub repository kan applikationen oprettes manuelt efter følgende fremgangsmåde:*
 
 ### :file_cabinet: Gå til applikationens repository
 
@@ -52,6 +51,21 @@ readinessProbe:
         - values-test.yaml
 ```
 - Den kopierede konfiguration sættes ind og repository / applikations navne tilrettes.
+
+### :pen: Rediger [templates/netpol.yaml](https://github.com/Randers-Kommune-Digitalisering/kithosting-randers-kommune-apps/blob/test/vis-klimamonitor-int-akt/templates/netpol.yaml)
+- Hvis applikationen skal have adgang til en service ude i verden skal der oprettes en netværks politik der åbner den specifikke port til serverens IP
+```yaml
+  egress:
+    - ports:
+        - port: ****
+          protocol: TCP
+      to:
+        - ipBlock:
+            cidr: ****/32
+            # Skriv en sigende kommentar der forklarer hvad adgangen bruges til i applikationen
+```
+- Indsæt portnummer til servicen under `port:`og ip til servicen under `cidr:`
+- Indsæt en kommentar der beskriver adgangen
 
 ### :octopus: Log ind i ArgoCD og deploy applikationen til prototypes
 
