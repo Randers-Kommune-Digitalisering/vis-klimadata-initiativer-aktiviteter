@@ -465,24 +465,5 @@
                 "file": "/usr/src/node-red/node_modules/node-red-contrib-prometheus-exporter/prometheus-exporter/prometheus-metric-config.js"
             }
         }
-    },
-    "node-red-contrib-sql-prepare": {
-        "name": "node-red-contrib-sql-prepare",
-        "version": "0.0.9",
-        "local": true,
-        "user": true,
-        "nodes": {
-            "sql": {
-                "name": "sql",
-                "types": [
-                    "sql-prepare"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-sql-prepare",
-                "file": "/data/node_modules/node-red-contrib-sql-prepare/sql-prepare.js"
-            }
-        }
     }
 }
