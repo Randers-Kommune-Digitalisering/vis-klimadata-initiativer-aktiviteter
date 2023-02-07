@@ -1,4 +1,5 @@
 .npm
+.log
 node_modules
 .config.nodes.json
 .config.nodes.json.backup
