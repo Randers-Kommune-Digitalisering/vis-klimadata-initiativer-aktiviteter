@@ -67,5 +67,5 @@ Krav til anvendelse af miljøvariable:
 
 ### Ressourcer
 
-[Dokumentation og projektbeskrivelse](https://sbsip-web-drift01.randers.dk/sbsys/#/sager/495259)
+: book: [Dokumentation og projektbeskrivelse](https://sbsip-web-drift01.randers.dk/sbsys/#/sager/495259)
 
