@@ -1,6 +1,6 @@
 # 🌍 Monitorering af klimadata
 
-| [**Beskrivelse**](#beskrivelse) | [**Afhængigheder**](#afh%C3%A6ngigheder) | [**Ressourcer**](#Ressourcer)
+| [**Beskrivelse**](#beskrivelse) | [**Afhængigheder**](#afh%C3%A6ngigheder) | [**Ressourcer**](#Ressourcer) |
 
 ```mermaid
 
@@ -41,7 +41,9 @@ DM--->Datalake<-->Præsentationslag
 ```
 ### Beskrivelse
 
-Klima monitoren er 
+Klima monitoren er opbygget af en række løskoblede åbne komponenter
+
+Datafordeleren sørger for at forbinde til datakildernes snitflader og kan afvikle filtre, dataregler, konverteringer m.v. på de in
 
 - Lavfrekvent data hentes....
 - Højfrekvent... 
@@ -62,3 +64,8 @@ Krav til adgangsgivende information og anvendte miljøvarible
 Krav til anvendelse af miljøvariable:
 
 :heavy_dollar_sign: | DB_USER | DB_PASS | DB_HOST | DB_DATABASE |
+
+### Ressourcer
+
+[Dokumentation og projektbeskrivelse](https://sbsip-web-drift01.randers.dk/sbsys/#/sager/495259)
+
