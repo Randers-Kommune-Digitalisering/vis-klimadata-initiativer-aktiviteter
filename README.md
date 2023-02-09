@@ -27,6 +27,7 @@ Krav til netværksadgange til datakilder
 
 :cloud: | https://api.statbank.dk |  
 
-Krav til adgangsgivende information:
+Krav til adgangsgivende information og anvendte miljøvarible
 
-:key: | Ingen |
+:key: |   |
+
