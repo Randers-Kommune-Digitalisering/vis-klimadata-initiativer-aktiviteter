@@ -35,8 +35,8 @@ subgraph Præsentationslag
         end
 end
 
-Datakilder--->datakilde-forbindelse 
-DM--->Datalake<-->Præsentationslag
+Datakilder-->datakilde-forbindelse 
+DM-->Datalake<-->Præsentationslag
     
 ```
 ### Beskrivelse
