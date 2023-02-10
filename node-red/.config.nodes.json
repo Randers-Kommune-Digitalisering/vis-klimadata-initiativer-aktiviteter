@@ -419,8 +419,8 @@
     "node-red-contrib-mysql-config": {
         "name": "node-red-contrib-mysql-config",
         "version": "1.0.4",
-        "local": true,
-        "user": true,
+        "local": false,
+        "user": false,
         "nodes": {
             "mysql-connector": {
                 "name": "mysql-connector",
@@ -429,18 +429,18 @@
                     "MySQL-Connector"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-contrib-mysql-config",
-                "file": "/data/node_modules/node-red-contrib-mysql-config/src/main.js"
+                "file": "/usr/src/node-red/node_modules/node-red-contrib-mysql-config/src/main.js"
             }
         }
     },
     "node-red-contrib-prometheus-exporter": {
         "name": "node-red-contrib-prometheus-exporter",
         "version": "1.0.5",
-        "local": true,
-        "user": true,
+        "local": false,
+        "user": false,
         "nodes": {
             "prometheus-exporter": {
                 "name": "prometheus-exporter",
@@ -448,10 +448,10 @@
                     "prometheus-exporter"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-contrib-prometheus-exporter",
-                "file": "/data/node_modules/node-red-contrib-prometheus-exporter/prometheus-exporter/prometheus-exporter.js"
+                "file": "/usr/src/node-red/node_modules/node-red-contrib-prometheus-exporter/prometheus-exporter/prometheus-exporter.js"
             },
             "prometheus-metric-config": {
                 "name": "prometheus-metric-config",
@@ -459,18 +459,18 @@
                     "prometheus-metric-config"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-contrib-prometheus-exporter",
-                "file": "/data/node_modules/node-red-contrib-prometheus-exporter/prometheus-exporter/prometheus-metric-config.js"
+                "file": "/usr/src/node-red/node_modules/node-red-contrib-prometheus-exporter/prometheus-exporter/prometheus-metric-config.js"
             }
         }
     },
     "node-red-contrib-sql-prepare": {
         "name": "node-red-contrib-sql-prepare",
         "version": "0.0.9",
-        "local": true,
-        "user": true,
+        "local": false,
+        "user": false,
         "nodes": {
             "sql": {
                 "name": "sql",
@@ -478,18 +478,18 @@
                     "sql-prepare"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-contrib-sql-prepare",
-                "file": "/data/node_modules/node-red-contrib-sql-prepare/sql-prepare.js"
+                "file": "/usr/src/node-red/node_modules/node-red-contrib-sql-prepare/sql-prepare.js"
             }
         }
     },
     "node-red-contrib-cron-plus": {
         "name": "node-red-contrib-cron-plus",
         "version": "1.5.7",
-        "local": true,
-        "user": true,
+        "local": false,
+        "user": false,
         "nodes": {
             "cronplus": {
                 "name": "cronplus",
@@ -497,10 +497,10 @@
                     "cronplus"
                 ],
                 "enabled": true,
-                "local": true,
+                "local": false,
                 "user": false,
                 "module": "node-red-contrib-cron-plus",
-                "file": "/data/node_modules/node-red-contrib-cron-plus/cronplus.js"
+                "file": "/usr/src/node-red/node_modules/node-red-contrib-cron-plus/cronplus.js"
             }
         }
     }
