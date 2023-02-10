@@ -1,0 +1,59 @@
+slice_name: '14.1.0: Andel el- og brintbiler (big number)'
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number
+params:
+  adhoc_filters: []
+  applied_time_extras: {}
+  color_picker:
+    a: 1
+    b: 135
+    g: 122
+    r: 0
+  compare_lag: 12
+  compare_suffix: "seneste 12 m\xE5neder"
+  dashboards: []
+  datasource: 6__table
+  granularity_sqla: "M\xE5ned"
+  header_font_size: 0.4
+  metric:
+    aggregate: SUM
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: andel_elbrint
+      description: null
+      expression: ''
+      filterable: true
+      groupby: true
+      id: 90
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: NEWDECIMAL
+      type_generic: null
+      verbose_name: null
+      warning_markdown: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: false
+    isNew: false
+    label: SUM(andel_elbrint)
+    optionName: metric_w9qfczjjwd_w1ynlgwpauo
+    sqlExpression: null
+  rolling_type: None
+  show_trend_line: true
+  slice_id: 10
+  start_y_axis_at_zero: true
+  subheader_font_size: 0.15
+  time_format: smart_date
+  time_grain_sqla: P1D
+  time_range: No filter
+  viz_type: big_number
+  y_axis_format: SMART_NUMBER
+cache_timeout: null
+uuid: 385105e2-4d07-465a-b086-efb26c06262f
+version: 1.0.0
+dataset_uuid: 85f7783f-80da-41ac-94a0-bbb01107163c
