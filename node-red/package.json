@@ -32,8 +32,7 @@
         "node-red": "3.0.2",
         "node-red-contrib-cron-plus": "~1.5.7",
         "node-red-contrib-mysql-config": "1.0.4",
-        "node-red-contrib-prometheus-exporter": "1.0.5",
-        "node-red-contrib-sql-prepare": "~0.0.9"
+        "node-red-contrib-prometheus-exporter": "1.0.5"
     },
     "engines": {
         "node": ">=12"
