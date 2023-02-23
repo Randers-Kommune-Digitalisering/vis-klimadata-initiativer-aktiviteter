@@ -1,21 +1,22 @@
-table_name: 'dst_AREALDK til 1.1: Hektar skov'
-main_dttm_col: "M\xE5ned"
+table_name: '1.1: Hektar skov med 2018 baseline'
+main_dttm_col: "\xC5r"
 description: null
 default_endpoint: null
 offset: 0
 cache_timeout: null
 schema: klima
 sql: "# CTE \nWITH baseline2018 AS (\n SELECT Areal_km2 AS areal2018 FROM dst_AREALDK\n\
-  \    WHERE extract(year from M\xE5ned)=2018\n)\nselect \n  M\xE5ned, \n  Areal_km2\
-  \ as Skov_km2, \n  Areal_km2*100 as Skov_ha, \n  (Areal_km2-(select * from baseline2018))/(select\
-  \ * from baseline2018)*100 as PctStigning2018,\n  (Areal_km2-(select * from baseline2018))*100\
-  \ as \xC6ndring2018_ha\n  from dst_AREALDK \n  order by M\xE5ned"
+  \    WHERE extract(year from M\xE5ned)=2018 and Arealtype=\"Skov\"\n)\nselect \n\
+  \  M\xE5ned, \n  Areal_km2 as Skov_km2, \n  Areal_km2*100 as Skov_ha, \n  (Areal_km2-(select\
+  \ * from baseline2018))/(select * from baseline2018)*100 as PctStigning2018,\n \
+  \ (Areal_km2-(select * from baseline2018))*100 as \xC6ndring2018_ha\n  from dst_AREALDK\n\
+  \  WHERE Arealtype=\"Skov\"\n  order by M\xE5ned"
 params: null
 template_params: null
 filter_select_enabled: false
 fetch_values_predicate: null
 extra: null
-uuid: f27ccc6e-159c-4366-902b-6d12dccaa315
+uuid: 5d854d20-1117-4794-b974-7213baf22c75
 metrics:
 - metric_name: count
   verbose_name: null
@@ -35,7 +36,7 @@ columns:
   advanced_data_type: null
   groupby: true
   filterable: true
-  expression: null
+  expression: ''
   description: null
   python_date_format: null
   extra:
@@ -48,7 +49,7 @@ columns:
   advanced_data_type: null
   groupby: true
   filterable: true
-  expression: null
+  expression: ''
   description: null
   python_date_format: null
   extra:
@@ -61,7 +62,7 @@ columns:
   advanced_data_type: null
   groupby: true
   filterable: true
-  expression: null
+  expression: ''
   description: null
   python_date_format: null
   extra:
@@ -74,7 +75,7 @@ columns:
   advanced_data_type: null
   groupby: true
   filterable: true
-  expression: null
+  expression: ''
   description: null
   python_date_format: null
   extra:
@@ -82,14 +83,15 @@ columns:
 - column_name: "M\xE5ned"
   verbose_name: null
   is_dttm: true
-  is_active: true
+  is_active: null
   type: DATE
   advanced_data_type: null
   groupby: true
   filterable: true
-  expression: null
+  expression: ''
   description: null
   python_date_format: null
-  extra: {}
+  extra:
+    warning_markdown: null
 version: 1.0.0
 database_uuid: cae52b6c-9c6c-4e74-b167-236f9ed6f242

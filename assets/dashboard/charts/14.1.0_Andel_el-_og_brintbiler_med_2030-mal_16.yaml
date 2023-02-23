@@ -1,0 +1,76 @@
+slice_name: "14.1.0: Andel el- og brintbiler med 2030-m\xE5l"
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_area
+params:
+  datasource: 1__table
+  viz_type: echarts_area
+  slice_id: 16
+  granularity_sqla: "M\xE5ned"
+  time_grain_sqla: P1D
+  time_range: No filter
+  metrics:
+  - aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: true
+    isNew: false
+    label: Andel el- og brintbiler
+    optionName: metric_7g2an2jhnk_jte56jy1jf
+    sqlExpression: 'SUM(andel_elbrint) '
+  groupby: []
+  adhoc_filters: []
+  order_desc: true
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers:
+  - name: "2030-m\xE5l"
+    annotationType: FORMULA
+    sourceType: ''
+    color: '#66cbe2'
+    opacity: ''
+    style: dashed
+    width: 2
+    showMarkers: false
+    hideLine: false
+    value: '0.25'
+    overrides:
+      time_range: null
+    show: true
+    showLabel: false
+    titleColumn: ''
+    descriptionColumns: []
+    timeColumn: ''
+    intervalEndColumn: ''
+  forecastEnabled: false
+  forecastPeriods: '10'
+  forecastInterval: 0.8
+  x_axis_title_margin: 15
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  color_scheme: presetColors
+  seriesType: line
+  opacity: 0.2
+  only_total: true
+  markerSize: 6
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  rich_tooltip: true
+  tooltipTimeFormat: smart_date
+  y_axis_format: ~g
+  y_axis_bounds:
+  - null
+  - null
+  extra_form_data: {}
+  dashboards:
+  - 1
+cache_timeout: null
+uuid: b759132c-43d1-48ab-acba-8f3208a693b1
+version: 1.0.0
+dataset_uuid: 85f7783f-80da-41ac-94a0-bbb01107163c

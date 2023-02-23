@@ -1,27 +1,27 @@
-slice_name: 1.1 Udvikling areal skov i hektar
+slice_name: 1.1 Stigning i skovareal
 description: null
 certified_by: null
 certification_details: null
 viz_type: echarts_area
 params:
-  datasource: 3__table
+  datasource: 5__table
   viz_type: echarts_area
-  slice_id: 9
+  slice_id: 12
   granularity_sqla: "M\xE5ned"
   time_grain_sqla: P1Y
   time_range: No filter
   metrics:
-  - aggregate: AVG
+  - aggregate: SUM
     column:
       advanced_data_type: null
       certification_details: null
       certified_by: null
       column_name: Skov_ha
       description: null
-      expression: null
+      expression: ''
       filterable: true
       groupby: true
-      id: 13
+      id: 39
       is_certified: false
       is_dttm: false
       python_date_format: null
@@ -33,72 +33,60 @@ params:
     expressionType: SIMPLE
     hasCustomLabel: true
     label: Hektar skov
-    optionName: metric_0mxed5yakbs_if5faxnwcaf
+    optionName: metric_8s32j081oqf_9pk1lcelxxf
     sqlExpression: null
   groupby: []
-  contributionMode: null
   adhoc_filters: []
   order_desc: true
-  row_limit: 10000
+  row_limit: 1000
   truncate_metric: false
   show_empty_columns: false
-  comparison_type: percentage
-  resample_method: bfill
+  comparison_type: values
   annotation_layers:
-  - annotationType: FORMULA
-    color: null
-    descriptionColumns: []
-    hideLine: false
-    name: "2030 m\xE5l"
+  - name: "2030 m\xE5l"
+    annotationType: FORMULA
+    sourceType: ''
+    color: '#66cbe2'
     opacity: ''
+    style: dashed
+    width: 2
+    showMarkers: false
+    hideLine: false
+    value: 3000 + 6850
     overrides:
       time_range: null
     show: true
     showLabel: false
-    showMarkers: false
-    sourceType: ''
-    style: solid
-    value: 6850 + 3000
-    width: 1
-  forecastEnabled: false
-  forecastPeriods: '2'
+    titleColumn: ''
+    descriptionColumns: []
+    timeColumn: ''
+    intervalEndColumn: ''
+  forecastPeriods: 10
   forecastInterval: 0.8
-  forecastSeasonalityYearly: true
-  x_axis_title: ''
   x_axis_title_margin: 15
-  y_axis_title: Hektar
   y_axis_title_margin: 15
   y_axis_title_position: Left
   color_scheme: presetColors
-  seriesType: line
+  seriesType: middle
   opacity: 0.2
-  show_value: true
-  stack: null
   only_total: true
-  show_extra_controls: false
-  markerEnabled: false
   markerSize: 6
-  zoomable: false
   show_legend: true
   legendType: scroll
   legendOrientation: top
-  legendMargin: null
   x_axis_time_format: smart_date
-  xAxisLabelRotation: 0
   rich_tooltip: true
-  tooltipSortByMetric: false
   tooltipTimeFormat: smart_date
-  y_axis_format: '11'
-  logAxis: false
-  minorSplitLine: false
+  y_axis_format: ~g
   truncateYAxis: true
   y_axis_bounds:
-  - 6400
+  - null
   - null
   extra_form_data: {}
   dashboards:
+  - 2
   - 1
 cache_timeout: null
-uuid: 707bd7c9-2df0-4f80-8f51-c50d4ff38d2d
+uuid: 62ce0d3e-8d06-470e-959a-fa732653e665
 version: 1.0.0
-dataset_uuid: f27ccc6e-159c-4366-902b-6d12dccaa315
+dataset_uuid: 5d854d20-1117-4794-b974-7213baf22c75

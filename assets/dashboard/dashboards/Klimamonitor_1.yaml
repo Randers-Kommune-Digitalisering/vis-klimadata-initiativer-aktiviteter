@@ -10,14 +10,14 @@ css: "/* Background light gray */\n.css-t22g9u\n{\n  background-color: lightgray
 slug: klimamonitor
 uuid: 323f8fbc-9cb5-4f11-ab47-20d9c6fa9ed2
 position:
-  CHART-351TYzJzbw:
+  CHART--n7MCPSGhQ:
     children: []
-    id: CHART-351TYzJzbw
+    id: CHART--n7MCPSGhQ
     meta:
-      chartId: 11
-      height: 41
-      sliceName: 1.1 Stigning i hektar siden 2018
-      uuid: 7fa57814-635c-4455-bb3a-7296014dedf4
+      chartId: 14
+      height: 56
+      sliceName: "1.1 M\xE5lopfyldelse for skovarealer"
+      uuid: 04e951bb-7a35-4f7d-9476-535b982494fc
       width: 3
     parents:
     - ROOT_ID
@@ -25,17 +25,32 @@ position:
     - TABS-1z-XpGxc2s
     - TAB-4DEnkizFD
     - ROW-rRwYpZJGJ
-    - COLUMN-chfhrdWStR
     type: CHART
-  CHART-HLUBQIO_yg:
+  CHART-7G4tTt6EmW:
     children: []
-    id: CHART-HLUBQIO_yg
+    id: CHART-7G4tTt6EmW
     meta:
-      chartId: 9
-      height: 87
-      sliceName: 1.1 Udvikling areal skov i hektar
-      uuid: 707bd7c9-2df0-4f80-8f51-c50d4ff38d2d
-      width: 9
+      chartId: 12
+      height: 56
+      sliceName: 1.1 Stigning i skovareal
+      uuid: 62ce0d3e-8d06-470e-959a-fa732653e665
+      width: 7
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-1z-XpGxc2s
+    - TAB-4DEnkizFD
+    - ROW-rRwYpZJGJ
+    type: CHART
+  CHART-JYytJ7Pupa:
+    children: []
+    id: CHART-JYytJ7Pupa
+    meta:
+      chartId: 13
+      height: 56
+      sliceName: 1.1 Stigning i hektar siden 2018
+      uuid: 6f2ba047-86c6-493e-a56e-bbc3f47dd5a0
+      width: 2
     parents:
     - ROOT_ID
     - GRID_ID
@@ -51,7 +66,7 @@ position:
       height: 50
       sliceName: '14.1.0: Andel el- og brintbiler'
       uuid: 0beaecb2-2ce4-45a0-8586-4c8e0533b966
-      width: 4
+      width: 3
     parents:
     - ROOT_ID
     - GRID_ID
@@ -83,7 +98,7 @@ position:
       height: 50
       sliceName: '5.1.0: Andel el- og brintbiler'
       uuid: beaf8afd-141a-4865-9a76-ec9204c3e004
-      width: 4
+      width: 3
     parents:
     - ROOT_ID
     - GRID_ID
@@ -107,31 +122,15 @@ position:
     - TAB-2-wV9E7Dv
     - ROW-KAOt92ySc2
     type: CHART
-  CHART-cKN3DLHV-d:
+  CHART-c65jeKl9Jk:
     children: []
-    id: CHART-cKN3DLHV-d
+    id: CHART-c65jeKl9Jk
     meta:
-      chartId: 6
-      height: 50
-      sliceName: "5.1.0: Andel el- og brintbiler med 2030-m\xE5l"
-      uuid: fb742ff1-c77c-4633-8056-c567e60603fe
-      width: 8
-    parents:
-    - ROOT_ID
-    - GRID_ID
-    - TABS-1z-XpGxc2s
-    - TAB-2-wV9E7Dv
-    - ROW-_93eMnXOF
-    type: CHART
-  CHART-mamSoEWC_F:
-    children: []
-    id: CHART-mamSoEWC_F
-    meta:
-      chartId: 1
-      height: 50
+      chartId: 16
+      height: 54
       sliceName: "14.1.0: Andel el- og brintbiler med 2030-m\xE5l"
-      uuid: 7b1e0100-55c4-4c6a-b6d3-9f95eeb41bca
-      width: 8
+      uuid: b759132c-43d1-48ab-acba-8f3208a693b1
+      width: 9
     parents:
     - ROOT_ID
     - GRID_ID
@@ -139,38 +138,22 @@ position:
     - TAB-OEPkmtNif
     - ROW-hlCGnNWo2l
     type: CHART
-  CHART-p48UiPsY_w:
+  CHART-kf9x4tx7oe:
     children: []
-    id: CHART-p48UiPsY_w
+    id: CHART-kf9x4tx7oe
     meta:
-      chartId: 10
-      height: 41
-      sliceName: "1.1 Nuv\xE6rende areal skov i hektar "
-      uuid: b0916ea1-2b28-40c3-a6ab-309101c01af5
-      width: 3
+      chartId: 17
+      height: 50
+      sliceName: "5.1.0: Andel el- og brintbiler med 2030-m\xE5l"
+      uuid: b7089971-761b-4483-a565-aca6c9d9164d
+      width: 9
     parents:
     - ROOT_ID
     - GRID_ID
     - TABS-1z-XpGxc2s
-    - TAB-4DEnkizFD
-    - ROW-rRwYpZJGJ
-    - COLUMN-chfhrdWStR
+    - TAB-2-wV9E7Dv
+    - ROW-_93eMnXOF
     type: CHART
-  COLUMN-chfhrdWStR:
-    children:
-    - CHART-351TYzJzbw
-    - CHART-p48UiPsY_w
-    id: COLUMN-chfhrdWStR
-    meta:
-      background: BACKGROUND_TRANSPARENT
-      width: 3
-    parents:
-    - ROOT_ID
-    - GRID_ID
-    - TABS-1z-XpGxc2s
-    - TAB-4DEnkizFD
-    - ROW-rRwYpZJGJ
-    type: COLUMN
   DASHBOARD_VERSION_KEY: v2
   DIVIDER--i41v8UBzj:
     children: []
@@ -324,7 +307,7 @@ position:
   ROW-_93eMnXOF:
     children:
     - CHART-OgX32pDB90
-    - CHART-cKN3DLHV-d
+    - CHART-kf9x4tx7oe
     id: ROW-_93eMnXOF
     meta:
       background: BACKGROUND_TRANSPARENT
@@ -349,7 +332,7 @@ position:
   ROW-hlCGnNWo2l:
     children:
     - CHART-JoG8Tzo0jX
-    - CHART-mamSoEWC_F
+    - CHART-c65jeKl9Jk
     id: ROW-hlCGnNWo2l
     meta:
       background: BACKGROUND_TRANSPARENT
@@ -373,8 +356,9 @@ position:
     type: ROW
   ROW-rRwYpZJGJ:
     children:
-    - COLUMN-chfhrdWStR
-    - CHART-HLUBQIO_yg
+    - CHART-JYytJ7Pupa
+    - CHART-7G4tTt6EmW
+    - CHART--n7MCPSGhQ
     id: ROW-rRwYpZJGJ
     meta:
       background: BACKGROUND_TRANSPARENT
@@ -462,8 +446,12 @@ metadata:
   chart_configuration: {}
   cross_filters_enabled: false
   shared_label_colors:
+    '0': '#6BD3B3'
     Hektar skov: '#6BD3B3'
-    "2030 m\xE5l": '#FCC550'
+    Andel el- og brintbiler: '#6BD3B3'
+    El- og brintbiler: '#6BD3B3'
+    Fossildrevne biler: '#FCC550'
+    PHEV: '#408184'
   color_scheme_domain:
   - '#6BD3B3'
   - '#FCC550'

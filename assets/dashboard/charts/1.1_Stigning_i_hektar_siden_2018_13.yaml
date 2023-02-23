@@ -1,14 +1,13 @@
-slice_name: "1.1 Nuv\xE6rende areal skov i hektar "
+slice_name: 1.1 Stigning i hektar siden 2018
 description: null
 certified_by: null
 certification_details: null
-viz_type: big_number
+viz_type: big_number_total
 params:
-  datasource: 3__table
-  viz_type: big_number
-  slice_id: 10
+  datasource: 5__table
+  viz_type: big_number_total
+  slice_id: 13
   granularity_sqla: "M\xE5ned"
-  time_grain_sqla: P1Y
   time_range: No filter
   metric:
     aggregate: MAX
@@ -16,12 +15,12 @@ params:
       advanced_data_type: null
       certification_details: null
       certified_by: null
-      column_name: Skov_ha
+      column_name: "\xC6ndring2018_ha"
       description: null
-      expression: null
+      expression: ''
       filterable: true
       groupby: true
-      id: 13
+      id: 31
       is_certified: false
       is_dttm: false
       python_date_format: null
@@ -32,30 +31,20 @@ params:
     datasourceWarning: false
     expressionType: SIMPLE
     hasCustomLabel: false
-    label: MAX(Skov_ha)
-    optionName: metric_2el9vd7sdmt_pl4wh6n1roo
+    label: "MAX(\xC6ndring2018_ha)"
+    optionName: metric_0iroilstm9qh_96flc2i021m
     sqlExpression: null
   adhoc_filters: []
-  compare_lag: 1
-  compare_suffix: siden 2018
-  show_timestamp: true
-  show_trend_line: true
-  start_y_axis_at_zero: true
-  color_picker:
-    a: 1
-    b: 206
-    g: 209
-    r: 176
-  header_font_size: 0.3
+  subheader: + ha mere skov
+  header_font_size: 0.4
   subheader_font_size: 0.15
-  y_axis_format: ~g
-  time_format: smart_date
+  y_axis_format: SMART_NUMBER
+  time_format: '%H:%M:%S'
   force_timestamp_formatting: false
-  rolling_type: None
   extra_form_data: {}
   dashboards:
   - 1
 cache_timeout: null
-uuid: b0916ea1-2b28-40c3-a6ab-309101c01af5
+uuid: 6f2ba047-86c6-493e-a56e-bbc3f47dd5a0
 version: 1.0.0
-dataset_uuid: f27ccc6e-159c-4366-902b-6d12dccaa315
+dataset_uuid: 5d854d20-1117-4794-b974-7213baf22c75
