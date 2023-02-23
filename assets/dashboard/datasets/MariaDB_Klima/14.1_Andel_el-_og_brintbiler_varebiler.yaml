@@ -1,0 +1,112 @@
+table_name: '14.1: Andel el- og brintbiler (varebiler)'
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: klima
+sql: "# CTE \nwith cte_biltyper as (select M\xE5ned, Antal, Drivmiddel FROM dst_BIL54\
+  \ \n  where Anvendelse=\"1200 I erhvervene\" and biltype=\"4000102000 Varebiler\
+  \ i alt\"),\n\ncte_benzin as (select M\xE5ned, Antal as antal_benzin FROM cte_biltyper\
+  \ where Drivmiddel=\"20205 Benzin\"),\ncte_diesel as (select M\xE5ned, Antal as\
+  \ antal_diesel FROM cte_biltyper where Drivmiddel=\"20210 Diesel\"),\ncte_Fgas as\
+  \ (select M\xE5ned, Antal as antal_Fgas FROM cte_biltyper where Drivmiddel=\"20215\
+  \ F-gas\"),\ncte_Ngas as (select M\xE5ned, Antal as antal_Ngas FROM cte_biltyper\
+  \ where Drivmiddel=\"20220 N-gas\"),\ncte_el as (select M\xE5ned, Antal as antal_el\
+  \ FROM cte_biltyper where Drivmiddel=\"20225 El\"),  \ncte_petroleum as (select\
+  \ M\xE5ned, Antal as antal_petroleum FROM cte_biltyper where Drivmiddel=\"20230\
+  \ Petroleum\"),\ncte_brint as (select M\xE5ned, Antal as antal_brint FROM cte_biltyper\
+  \ where Drivmiddel=\"20231 Brint\"),  \ncte_pluginhybrid as (select M\xE5ned, Antal\
+  \ as antal_pluginhybrid FROM cte_biltyper where Drivmiddel=\"20232 Pluginhybrid\"\
+  ),\ncte_\xF8vrige as (select M\xE5ned, Antal as antal_\xF8vrige FROM cte_biltyper\
+  \ where Drivmiddel=\"20235 \xD8vrige drivmidler\"),\n\ncte_sum as (select \n   \
+  \   a.M\xE5ned, antal_benzin, antal_diesel, antal_Fgas, antal_Ngas, antal_el, antal_petroleum,\
+  \ antal_brint, antal_pluginhybrid, antal_\xF8vrige,\n      a.antal_benzin+b.antal_diesel+c.antal_Fgas+d.antal_Ngas+e.antal_el+f.antal_petroleum+g.antal_brint+h.antal_pluginhybrid+i.antal_\xF8\
+  vrige as total,\n      e.antal_el+g.antal_brint as antal_elbrint,\n      a.antal_benzin+b.antal_diesel+c.antal_Fgas+d.antal_Ngas+f.antal_petroleum+i.antal_\xF8\
+  vrige as antal_fossil,\n      h.antal_pluginhybrid as antal_plugin\n    from cte_benzin\
+  \ as a \n  left join cte_diesel as b on a.M\xE5ned=b.M\xE5ned \n  left join cte_Fgas\
+  \ as c on a.M\xE5ned=c.M\xE5ned \n  left join cte_Ngas as d on a.M\xE5ned=d.M\xE5\
+  ned \n  left join cte_el as e on a.M\xE5ned=e.M\xE5ned\n  left join cte_petroleum\
+  \ as f on a.M\xE5ned=f.M\xE5ned\n  left join cte_brint as g on a.M\xE5ned=g.M\xE5\
+  ned\n  left join cte_pluginhybrid as h on a.M\xE5ned=h.M\xE5ned\n  left join cte_\xF8\
+  vrige as i on a.M\xE5ned=i.M\xE5ned\n)\n\nselect \n    M\xE5ned, antal_elbrint,\
+  \ round(antal_elbrint/total, 4) as andel_elbrint, antal_fossil, antal_plugin as\
+  \ antal_pluginhybrid \n    from cte_sum\n    order by M\xE5ned ASC"
+params: null
+template_params: null
+filter_select_enabled: false
+fetch_values_predicate: null
+extra: null
+uuid: 85f7783f-80da-41ac-94a0-bbb01107163c
+metrics:
+- metric_name: count
+  verbose_name: null
+  metric_type: null
+  expression: count(*)
+  description: null
+  d3format: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: andel_elbrint
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: NEWDECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: "M\xE5ned"
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: DATE
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: antal_elbrint
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: LONGLONG
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: antal_fossil
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: LONGLONG
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: antal_pluginhybrid
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: LONG
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: cae52b6c-9c6c-4e74-b167-236f9ed6f242
