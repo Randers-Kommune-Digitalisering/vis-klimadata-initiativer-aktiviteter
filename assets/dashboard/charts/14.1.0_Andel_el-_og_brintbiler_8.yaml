@@ -1,10 +1,10 @@
-slice_name: '5.1.0: Andel el- og brintbiler (big number)'
+slice_name: '14.1.0: Andel el- og brintbiler'
 description: null
 certified_by: null
 certification_details: null
 viz_type: big_number
 params:
-  datasource: 5__table
+  datasource: 1__table
   viz_type: big_number
   slice_id: 8
   granularity_sqla: "M\xE5ned"
@@ -47,14 +47,14 @@ params:
     g: 122
     r: 0
   header_font_size: 0.4
-  subheader_font_size: 0.15
-  y_axis_format: SMART_NUMBER
+  subheader_font_size: 0.125
+  y_axis_format: ',.1%'
   time_format: smart_date
   rolling_type: None
   extra_form_data: {}
   dashboards:
-  - 7
+  - 1
 cache_timeout: null
-uuid: 81a39622-7d7f-422f-bfaa-f4599d947a67
+uuid: 0beaecb2-2ce4-45a0-8586-4c8e0533b966
 version: 1.0.0
-dataset_uuid: 7d3fe5a7-d4e0-46ba-8df7-23700da38772
+dataset_uuid: 85f7783f-80da-41ac-94a0-bbb01107163c

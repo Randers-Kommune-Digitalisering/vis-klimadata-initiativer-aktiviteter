@@ -1,5 +1,5 @@
 table_name: '14.1: Andel el- og brintbiler (varebiler)'
-main_dttm_col: "M\xE5ned"
+main_dttm_col: null
 description: null
 default_endpoint: null
 offset: 0
@@ -56,7 +56,7 @@ columns:
   advanced_data_type: null
   groupby: true
   filterable: true
-  expression: ''
+  expression: null
   description: null
   python_date_format: null
   extra: null
@@ -68,7 +68,7 @@ columns:
   advanced_data_type: null
   groupby: true
   filterable: true
-  expression: ''
+  expression: null
   description: null
   python_date_format: null
   extra: null
@@ -80,7 +80,7 @@ columns:
   advanced_data_type: null
   groupby: true
   filterable: true
-  expression: ''
+  expression: null
   description: null
   python_date_format: null
   extra: null
@@ -92,7 +92,7 @@ columns:
   advanced_data_type: null
   groupby: true
   filterable: true
-  expression: ''
+  expression: null
   description: null
   python_date_format: null
   extra: null
@@ -104,7 +104,7 @@ columns:
   advanced_data_type: null
   groupby: true
   filterable: true
-  expression: ''
+  expression: null
   description: null
   python_date_format: null
   extra: null

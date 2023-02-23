@@ -1,0 +1,488 @@
+dashboard_title: Klimamonitor
+description: null
+css: "/* Background light gray */\n.css-t22g9u\n{\n  background-color: lightgray;\n\
+  }\n\n/* Padding left when left menu bar is hidden */\n.css-18pwj0c ~ .css-t22g9u\
+  \ > *\n{\n  padding-left: 30px;\n}\n\n/* Randers-logo - change #MARKDOWN id to fit\
+  \ with project */\n#MARKDOWN-a3oipDwxS7\n.dashboard-component-chart-holder\n{\n\
+  \  background-color: #405C87;\n  background-image:url('https://www.randers.dk/static/logo.svg');\n\
+  \  background-position: 25px 16px;\n  background-repeat: no-repeat;\n  background-size:\
+  \ 17vh;\n}"
+slug: klimamonitor
+uuid: 323f8fbc-9cb5-4f11-ab47-20d9c6fa9ed2
+position:
+  CHART-351TYzJzbw:
+    children: []
+    id: CHART-351TYzJzbw
+    meta:
+      chartId: 11
+      height: 41
+      sliceName: 1.1 Stigning i hektar siden 2018
+      uuid: 7fa57814-635c-4455-bb3a-7296014dedf4
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-1z-XpGxc2s
+    - TAB-4DEnkizFD
+    - ROW-rRwYpZJGJ
+    - COLUMN-chfhrdWStR
+    type: CHART
+  CHART-HLUBQIO_yg:
+    children: []
+    id: CHART-HLUBQIO_yg
+    meta:
+      chartId: 9
+      height: 87
+      sliceName: 1.1 Udvikling areal skov i hektar
+      uuid: 707bd7c9-2df0-4f80-8f51-c50d4ff38d2d
+      width: 9
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-1z-XpGxc2s
+    - TAB-4DEnkizFD
+    - ROW-rRwYpZJGJ
+    type: CHART
+  CHART-JoG8Tzo0jX:
+    children: []
+    id: CHART-JoG8Tzo0jX
+    meta:
+      chartId: 8
+      height: 50
+      sliceName: '14.1.0: Andel el- og brintbiler'
+      uuid: 0beaecb2-2ce4-45a0-8586-4c8e0533b966
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-1z-XpGxc2s
+    - TAB-OEPkmtNif
+    - ROW-hlCGnNWo2l
+    type: CHART
+  CHART-M1VkFQHHcJ:
+    children: []
+    id: CHART-M1VkFQHHcJ
+    meta:
+      chartId: 4
+      height: 50
+      sliceName: "14.1.1: Antal biler opdelt p\xE5 type drivmiddel"
+      uuid: a21f2b61-1bc2-4771-9caf-eb96efe2f0b1
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-1z-XpGxc2s
+    - TAB-OEPkmtNif
+    - ROW-v0MO3iFhH
+    type: CHART
+  CHART-OgX32pDB90:
+    children: []
+    id: CHART-OgX32pDB90
+    meta:
+      chartId: 7
+      height: 50
+      sliceName: '5.1.0: Andel el- og brintbiler'
+      uuid: beaf8afd-141a-4865-9a76-ec9204c3e004
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-1z-XpGxc2s
+    - TAB-2-wV9E7Dv
+    - ROW-_93eMnXOF
+    type: CHART
+  CHART-ZTNMKCwr00:
+    children: []
+    id: CHART-ZTNMKCwr00
+    meta:
+      chartId: 5
+      height: 50
+      sliceName: "5.1.1: Antal biler opdelt p\xE5 type drivmiddel"
+      uuid: bb554add-3380-4bb8-96f9-e811afa3a7de
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-1z-XpGxc2s
+    - TAB-2-wV9E7Dv
+    - ROW-KAOt92ySc2
+    type: CHART
+  CHART-cKN3DLHV-d:
+    children: []
+    id: CHART-cKN3DLHV-d
+    meta:
+      chartId: 6
+      height: 50
+      sliceName: "5.1.0: Andel el- og brintbiler med 2030-m\xE5l"
+      uuid: fb742ff1-c77c-4633-8056-c567e60603fe
+      width: 8
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-1z-XpGxc2s
+    - TAB-2-wV9E7Dv
+    - ROW-_93eMnXOF
+    type: CHART
+  CHART-mamSoEWC_F:
+    children: []
+    id: CHART-mamSoEWC_F
+    meta:
+      chartId: 1
+      height: 50
+      sliceName: "14.1.0: Andel el- og brintbiler med 2030-m\xE5l"
+      uuid: 7b1e0100-55c4-4c6a-b6d3-9f95eeb41bca
+      width: 8
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-1z-XpGxc2s
+    - TAB-OEPkmtNif
+    - ROW-hlCGnNWo2l
+    type: CHART
+  CHART-p48UiPsY_w:
+    children: []
+    id: CHART-p48UiPsY_w
+    meta:
+      chartId: 10
+      height: 41
+      sliceName: "1.1 Nuv\xE6rende areal skov i hektar "
+      uuid: b0916ea1-2b28-40c3-a6ab-309101c01af5
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-1z-XpGxc2s
+    - TAB-4DEnkizFD
+    - ROW-rRwYpZJGJ
+    - COLUMN-chfhrdWStR
+    type: CHART
+  COLUMN-chfhrdWStR:
+    children:
+    - CHART-351TYzJzbw
+    - CHART-p48UiPsY_w
+    id: COLUMN-chfhrdWStR
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-1z-XpGxc2s
+    - TAB-4DEnkizFD
+    - ROW-rRwYpZJGJ
+    type: COLUMN
+  DASHBOARD_VERSION_KEY: v2
+  DIVIDER--i41v8UBzj:
+    children: []
+    id: DIVIDER--i41v8UBzj
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  GRID_ID:
+    children:
+    - ROW-KLGHFfoKEv
+    - ROW-JPQB017g7
+    - TABS-1z-XpGxc2s
+    - DIVIDER--i41v8UBzj
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Klimamonitor
+    type: HEADER
+  MARKDOWN-7CEzGuBB8p:
+    children: []
+    id: MARKDOWN-7CEzGuBB8p
+    meta:
+      code: "## 1.1: Udvikling i skovareal\nKilde: Egne beregninger baseret p\xE5\
+        \ *Danmarks Statistik - <a href=\"https://www.statbank.dk/AREALDK\" target=\"\
+        _blank\">https://www.statbank.dk/AREALDK</a>*"
+      height: 13
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-1z-XpGxc2s
+    - TAB-4DEnkizFD
+    - ROW-mirkg58HaE
+    type: MARKDOWN
+  MARKDOWN-N2YrWo9BZW:
+    children: []
+    id: MARKDOWN-N2YrWo9BZW
+    meta:
+      code: "## 14.1: Andel el- og brintbiler (varebiler)\nKilde: Egne beregninger\
+        \ baseret p\xE5 *Danmarks Statistik - <a href=\"https://statistikbanken.dk/bil54\"\
+        \ target=\"_blank\">https://statistikbanken.dk/bil54</a>*"
+      height: 14
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-1z-XpGxc2s
+    - TAB-OEPkmtNif
+    - ROW-NQ1DdrJfK
+    type: MARKDOWN
+  MARKDOWN-a3oipDwxS7:
+    children: []
+    id: MARKDOWN-a3oipDwxS7
+    meta:
+      code: '&nbsp;'
+      height: 10
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-KLGHFfoKEv
+    type: MARKDOWN
+  MARKDOWN-pw6C3Bb27I:
+    children: []
+    id: MARKDOWN-pw6C3Bb27I
+    meta:
+      code: "# Randers Kommunes Klimamonitor\n<div class=\"randersHeader\">Velkommen\
+        \ til Randers Kommunes Klimamonitor.</div>\n\n\nKlimamonitoren giver et visuelt\
+        \ overblik over en r\xE6kke datakilder som alle reletarer sig til m\xE5l og\
+        \ delm\xE5l i <a href=\"https://www.randers.dk/media/30695/dk2020-klimaplan-2050.pdf\"\
+        \ target=\"_blank\">DK2020 Randers: Klimaplan 2050 (pdf)</a>.\n\nNye m\xE5\
+        linger tilf\xF8jes l\xF8bende."
+      height: 25
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-JPQB017g7
+    type: MARKDOWN
+  MARKDOWN-uUNbbGUgva:
+    children: []
+    id: MARKDOWN-uUNbbGUgva
+    meta:
+      code: "## 5.1: Andel el- og brintbiler (personbiler)\nKilde: Egne beregninger\
+        \ baseret p\xE5 *Danmarks Statistik - <a href=\"https://statistikbanken.dk/bil54\"\
+        \ target=\"_blank\">https://statistikbanken.dk/bil54</a>*"
+      height: 14
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-1z-XpGxc2s
+    - TAB-2-wV9E7Dv
+    - ROW-cuoKQtJZS
+    type: MARKDOWN
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-JPQB017g7:
+    children:
+    - MARKDOWN-pw6C3Bb27I
+    id: ROW-JPQB017g7
+    meta:
+      background: BACKGROUND_WHITE
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-KAOt92ySc2:
+    children:
+    - CHART-ZTNMKCwr00
+    id: ROW-KAOt92ySc2
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-1z-XpGxc2s
+    - TAB-2-wV9E7Dv
+    type: ROW
+  ROW-KLGHFfoKEv:
+    children:
+    - MARKDOWN-a3oipDwxS7
+    id: ROW-KLGHFfoKEv
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-NQ1DdrJfK:
+    children:
+    - MARKDOWN-N2YrWo9BZW
+    id: ROW-NQ1DdrJfK
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-1z-XpGxc2s
+    - TAB-OEPkmtNif
+    type: ROW
+  ROW-_93eMnXOF:
+    children:
+    - CHART-OgX32pDB90
+    - CHART-cKN3DLHV-d
+    id: ROW-_93eMnXOF
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-1z-XpGxc2s
+    - TAB-2-wV9E7Dv
+    type: ROW
+  ROW-cuoKQtJZS:
+    children:
+    - MARKDOWN-uUNbbGUgva
+    id: ROW-cuoKQtJZS
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-1z-XpGxc2s
+    - TAB-2-wV9E7Dv
+    type: ROW
+  ROW-hlCGnNWo2l:
+    children:
+    - CHART-JoG8Tzo0jX
+    - CHART-mamSoEWC_F
+    id: ROW-hlCGnNWo2l
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-1z-XpGxc2s
+    - TAB-OEPkmtNif
+    type: ROW
+  ROW-mirkg58HaE:
+    children:
+    - MARKDOWN-7CEzGuBB8p
+    id: ROW-mirkg58HaE
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-1z-XpGxc2s
+    - TAB-4DEnkizFD
+    type: ROW
+  ROW-rRwYpZJGJ:
+    children:
+    - COLUMN-chfhrdWStR
+    - CHART-HLUBQIO_yg
+    id: ROW-rRwYpZJGJ
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-1z-XpGxc2s
+    - TAB-4DEnkizFD
+    type: ROW
+  ROW-v0MO3iFhH:
+    children:
+    - CHART-M1VkFQHHcJ
+    id: ROW-v0MO3iFhH
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-1z-XpGxc2s
+    - TAB-OEPkmtNif
+    type: ROW
+  TAB-2-wV9E7Dv:
+    children:
+    - ROW-cuoKQtJZS
+    - ROW-_93eMnXOF
+    - ROW-KAOt92ySc2
+    id: TAB-2-wV9E7Dv
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: PERSONTRANSPORT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-1z-XpGxc2s
+    type: TAB
+  TAB-4DEnkizFD:
+    children:
+    - ROW-mirkg58HaE
+    - ROW-rRwYpZJGJ
+    id: TAB-4DEnkizFD
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: NATUR OG LANDBRUG
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-1z-XpGxc2s
+    type: TAB
+  TAB-OEPkmtNif:
+    children:
+    - ROW-NQ1DdrJfK
+    - ROW-hlCGnNWo2l
+    - ROW-v0MO3iFhH
+    id: TAB-OEPkmtNif
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: VIRKSOMHEDER
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-1z-XpGxc2s
+    type: TAB
+  TABS-1z-XpGxc2s:
+    children:
+    - TAB-2-wV9E7Dv
+    - TAB-OEPkmtNif
+    - TAB-4DEnkizFD
+    id: TABS-1z-XpGxc2s
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: TABS
+metadata:
+  show_native_filters: true
+  color_scheme: presetColors
+  refresh_frequency: 0
+  expanded_slices: {}
+  label_colors: {}
+  timed_refresh_immune_slices: []
+  default_filters: '{}'
+  chart_configuration: {}
+  cross_filters_enabled: false
+  shared_label_colors:
+    Hektar skov: '#6BD3B3'
+    "2030 m\xE5l": '#FCC550'
+  color_scheme_domain:
+  - '#6BD3B3'
+  - '#FCC550'
+  - '#408184'
+  - '#66CBE2'
+  - '#EE5960'
+  - '#484E5A'
+  - '#FF874E'
+  - '#03748E'
+  - '#C9BBAB'
+  - '#B17BAA'
+  - '#B5E9D9'
+  - '#FDE2A7'
+  - '#9FC0C1'
+  - '#B2E5F0'
+  - '#F6ACAF'
+  - '#A4A6AC'
+  - '#FFC3A6'
+  - '#81B9C6'
+  - '#E4DDD5'
+  - '#D9BDD5'
+version: 1.0.0
