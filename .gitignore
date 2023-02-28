@@ -7,6 +7,5 @@ node_modules
 .config.users.json
 package-lock.json
 .flows.json.backup
-node-red/.config.users.json
-node-red/.config.users.json
-node-red/.config.users.json.backup
+.config.users.json
+.config.users.json.backup
