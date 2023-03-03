@@ -43,10 +43,7 @@ DM-->Datalake<-->Præsentationslag
 
 Klima monitoren er opbygget af en række løskoblede åbne komponenter
 
-Datafordeleren sørger for at forbinde til datakildernes snitflader og kan afvikle filtre, dataregler, konverteringer m.v. på de in
-
-- Lavfrekvent data hentes....
-- Højfrekvent... 
+Datafordeleren sørger for at forbinde til datakildernes snitflader og foretager automatiske filtrer og konverteringerpå data der hentes fra snitfladerne inden de skrives i Datalake
 
 ### Afhængigheder
 Løsningen er afhængig af en række software komponenter og en række netværksadgange til eksterne ressourcer for at fungere.
