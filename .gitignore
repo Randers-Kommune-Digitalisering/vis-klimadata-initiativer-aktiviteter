@@ -9,6 +9,3 @@ package-lock.json
 .flows.json.backup
 .config.users.json
 .config.users.json.backup
-node-red/.config.users.json
-node-red/.flows_cred.json.backup
-node-red/.flows.json.backup
