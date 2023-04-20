@@ -1,35 +1,32 @@
 const Node = {
   "id": "52291d6a82432a0c",
   "type": "switch",
-  "z": "452aaf8dc5cd8d45",
+  "z": "7b004c5e11e87f28",
   "g": "9fc7aa784e8175c5",
-  "name": "",
-  "property": "payload.result.resources.created",
-  "propertyType": "msg",
+  "name": "Datafilter ↓ \\n udvælg kun filer oprettet i day",
+  "property": "payload.created ~> $substring(0,10)",
+  "propertyType": "jsonata",
   "rules": [
     {
       "t": "eq",
       "v": "$substring($now(), 0, 10)",
       "vt": "jsonata"
-    },
-    {
-      "t": "else"
     }
   ],
   "checkall": "true",
   "repair": false,
-  "outputs": 2,
-  "x": 1030,
-  "y": 360,
+  "outputs": 1,
+  "x": 1470,
+  "y": 140,
   "wires": [
     [
-      "3cd6eec904070a61"
-    ],
-    [
-      "9b43c3f5c40a564f"
+      "164ebb684530a3e9"
     ]
   ],
-  "_order": 187
+  "outputLabels": [
+    "created today"
+  ],
+  "_order": 95
 }
 
 module.exports = Node;

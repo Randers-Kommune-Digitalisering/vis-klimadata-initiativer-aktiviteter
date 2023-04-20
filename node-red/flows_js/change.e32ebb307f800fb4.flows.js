@@ -1,9 +1,9 @@
 const Node = {
   "id": "e32ebb307f800fb4",
   "type": "change",
-  "z": "452aaf8dc5cd8d45",
+  "z": "7b004c5e11e87f28",
   "g": "9fc7aa784e8175c5",
-  "name": "Opsætning af forespørgsel ↓ \\n Hent metadata for \\n test-af-vad-oglavbundsjord",
+  "name": "Opsætning af forespørgsel ↓ \\n Hent metadata for \\n msg.dataset",
   "rules": [
     {
       "t": "set",
@@ -30,8 +30,8 @@ const Node = {
       "t": "set",
       "p": "payload.id",
       "pt": "msg",
-      "to": "test-af-vad-oglavbundsjord",
-      "tot": "str"
+      "to": "dataset",
+      "tot": "msg"
     }
   ],
   "action": "",
@@ -39,15 +39,15 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 340,
-  "y": 380,
+  "x": 500,
+  "y": 100,
   "wires": [
     [
       "88653441d7a95b0d"
     ]
   ],
   "info": "",
-  "_order": 177
+  "_order": 88
 }
 
 Node.info = `

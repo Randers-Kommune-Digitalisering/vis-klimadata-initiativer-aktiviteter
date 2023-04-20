@@ -1,7 +1,7 @@
 const Node = {
   "id": "bbecbdf1e68f0ded",
   "type": "change",
-  "z": "452aaf8dc5cd8d45",
+  "z": "7b004c5e11e87f28",
   "g": "9fc7aa784e8175c5",
   "name": "Opsætning af forespørgsel ↓ \\n Hent senest opdaterede datafil",
   "rules": [
@@ -9,8 +9,8 @@ const Node = {
       "t": "set",
       "p": "url",
       "pt": "msg",
-      "to": "payload.result.resources[0].url",
-      "tot": "msg"
+      "to": "payload.url",
+      "tot": "jsonata"
     },
     {
       "t": "set",
@@ -25,14 +25,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 350,
-  "y": 480,
+  "x": 490,
+  "y": 240,
   "wires": [
     [
-      "f687e22a82b980dd"
+      "4e8a18b7d9abbc0b"
     ]
   ],
-  "_order": 180
+  "_order": 91
 }
 
 module.exports = Node;
