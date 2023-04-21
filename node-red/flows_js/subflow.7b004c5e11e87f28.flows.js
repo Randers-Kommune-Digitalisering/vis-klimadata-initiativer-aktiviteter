@@ -40,7 +40,7 @@ const Node = {
       }
     ]
   },
-  "_order": 7
+  "_order": 8
 }
 
 module.exports = Node;

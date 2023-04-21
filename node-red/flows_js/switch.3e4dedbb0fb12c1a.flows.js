@@ -8,10 +8,10 @@ const Node = {
   "propertyType": "msg",
   "rules": [
     {
-      "t": "null"
+      "t": "true"
     },
     {
-      "t": "else"
+      "t": "false"
     }
   ],
   "checkall": "true",
@@ -27,7 +27,7 @@ const Node = {
       "3617dde2271328a6"
     ]
   ],
-  "_order": 102
+  "_order": 104
 }
 
 module.exports = Node;
