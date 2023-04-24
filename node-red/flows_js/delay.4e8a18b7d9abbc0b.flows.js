@@ -16,7 +16,7 @@ const Node = {
   "drop": false,
   "allowrate": false,
   "outputs": 1,
-  "x": 655,
+  "x": 645,
   "y": 240,
   "wires": [
     [
@@ -24,7 +24,7 @@ const Node = {
     ]
   ],
   "l": false,
-  "_order": 102
+  "_order": 105
 }
 
 module.exports = Node;

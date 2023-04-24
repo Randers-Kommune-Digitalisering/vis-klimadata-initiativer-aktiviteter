@@ -1,7 +1,7 @@
 const Node = {
   "id": "f68edc394a4e5259",
   "type": "subflow",
-  "name": "Subflow 1",
+  "name": "Retry",
   "info": "",
   "category": "",
   "in": [

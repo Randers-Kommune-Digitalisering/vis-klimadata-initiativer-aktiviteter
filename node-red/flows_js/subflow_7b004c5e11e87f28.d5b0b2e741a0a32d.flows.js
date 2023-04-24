@@ -3,14 +3,14 @@ const Node = {
   "type": "subflow:7b004c5e11e87f28",
   "z": "452aaf8dc5cd8d45",
   "name": "OpenData.dk Connector",
-  "x": 730,
-  "y": 100,
+  "x": 750,
+  "y": 120,
   "wires": [
     [
       "d2c872ed74b20148"
     ]
   ],
-  "_order": 210
+  "_order": 209
 }
 
 module.exports = Node;

@@ -1,28 +1,29 @@
 const Node = {
-  "id": "ad6cca2d2f39dd0f",
+  "id": "a45d66223cdc33e2",
   "type": "delay",
-  "z": "7b004c5e11e87f28",
-  "name": "Delay",
-  "pauseType": "delay",
+  "z": "5d9f87f4934f2873",
+  "name": "",
+  "pauseType": "rate",
   "timeout": "5",
   "timeoutUnits": "seconds",
   "rate": "1",
-  "nbRateUnits": "1",
+  "nbRateUnits": "3",
   "rateUnits": "second",
   "randomFirst": "1",
   "randomLast": "5",
   "randomUnits": "seconds",
-  "drop": true,
+  "drop": false,
   "allowrate": false,
   "outputs": 1,
-  "x": 1090,
-  "y": 440,
+  "x": 645,
+  "y": 740,
   "wires": [
     [
-      "node7"
+      "efa60fc4e74417d8"
     ]
   ],
-  "_order": 108
+  "l": false,
+  "_order": 232
 }
 
 module.exports = Node;
