@@ -1,7 +1,8 @@
 const Node = {
   "id": "5084542eca312ff6",
   "type": "switch",
-  "z": "5d9f87f4934f2873",
+  "z": "7b004c5e11e87f28",
+  "g": "35227f630a1419d4",
   "name": "Datafilter ↓ udvælg filer oprettet \\n  for data_age_days siden",
   "property": "payload.created ~> $substring(0,10)",
   "propertyType": "jsonata",
@@ -15,24 +16,22 @@ const Node = {
       "t": "else"
     }
   ],
-  "checkall": "true",
-  "repair": true,
+  "checkall": "false",
+  "repair": false,
   "outputs": 2,
-  "x": 1550,
-  "y": 580,
+  "x": 410,
+  "y": 300,
   "wires": [
     [
-      "a45baa0bfa1b3f64"
+      "fa939abeb90991a5"
     ],
-    [
-      "e849519eb4a2ce3a"
-    ]
+    []
   ],
   "outputLabels": [
     "created today",
     ""
   ],
-  "_order": 234
+  "_order": 102
 }
 
 module.exports = Node;

@@ -1,8 +1,9 @@
 const Node = {
   "id": "4e0b98bc09a1a4b7",
   "type": "change",
-  "z": "5d9f87f4934f2873",
-  "name": "Konfigurerer tabelnavn \\n og datatræks periode",
+  "z": "7b004c5e11e87f28",
+  "g": "0f369eeef0896547",
+  "name": "Konfigurerer tabelnavn, \\n retryCount og \\n datatræks periode",
   "rules": [
     {
       "t": "set",
@@ -17,6 +18,20 @@ const Node = {
       "pt": "msg",
       "to": "$data_age_days := data_age_days ? data_age_days : 0 \t/* Sætter værdien til 0 hvis data_age_days er NULL eller ikke eksisterer */\t",
       "tot": "jsonata"
+    },
+    {
+      "t": "set",
+      "p": "retryCount",
+      "pt": "msg",
+      "to": "0",
+      "tot": "num"
+    },
+    {
+      "t": "set",
+      "p": "delay",
+      "pt": "msg",
+      "to": "0",
+      "tot": "num"
     }
   ],
   "action": "",
@@ -24,14 +39,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 240,
-  "y": 600,
+  "x": 250,
+  "y": 100,
   "wires": [
     [
       "1817ef0c011528f5"
     ]
   ],
-  "_order": 233
+  "_order": 104
 }
 
 module.exports = Node;

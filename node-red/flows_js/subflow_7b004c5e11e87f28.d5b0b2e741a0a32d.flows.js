@@ -4,13 +4,13 @@ const Node = {
   "z": "452aaf8dc5cd8d45",
   "name": "OpenData.dk Connector",
   "x": 750,
-  "y": 120,
+  "y": 100,
   "wires": [
     [
       "d2c872ed74b20148"
     ]
   ],
-  "_order": 209
+  "_order": 207
 }
 
 module.exports = Node;

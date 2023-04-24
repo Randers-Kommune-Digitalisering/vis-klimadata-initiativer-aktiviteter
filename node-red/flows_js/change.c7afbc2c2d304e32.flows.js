@@ -1,7 +1,8 @@
 const Node = {
   "id": "c7afbc2c2d304e32",
   "type": "change",
-  "z": "5d9f87f4934f2873",
+  "z": "7b004c5e11e87f28",
+  "g": "2e3370dafaa81dac",
   "name": "Opsætning af forespørgsel ↓ \\n Hent datafiler ",
   "rules": [
     {
@@ -24,14 +25,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 480,
-  "y": 740,
+  "x": 260,
+  "y": 460,
   "wires": [
     [
       "a45d66223cdc33e2"
     ]
   ],
-  "_order": 226
+  "_order": 97
 }
 
 module.exports = Node;

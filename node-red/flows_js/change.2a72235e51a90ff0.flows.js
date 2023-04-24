@@ -10,6 +10,13 @@ const Node = {
       "pt": "msg",
       "to": "antal-krydsende-cyklister-over-randers-fjord",
       "tot": "str"
+    },
+    {
+      "t": "set",
+      "p": "data_age_days",
+      "pt": "msg",
+      "to": "0",
+      "tot": "num"
     }
   ],
   "action": "",
@@ -24,7 +31,7 @@ const Node = {
       "d5b0b2e741a0a32d"
     ]
   ],
-  "_order": 210
+  "_order": 208
 }
 
 module.exports = Node;

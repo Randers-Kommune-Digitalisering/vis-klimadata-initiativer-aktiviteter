@@ -1,7 +1,8 @@
 const Node = {
   "id": "efa60fc4e74417d8",
   "type": "http request",
-  "z": "5d9f87f4934f2873",
+  "z": "7b004c5e11e87f28",
+  "g": "2e3370dafaa81dac",
   "name": "Send forespørgsel",
   "method": "use",
   "ret": "txt",
@@ -14,14 +15,14 @@ const Node = {
   "authType": "",
   "senderr": false,
   "headers": [],
-  "x": 790,
-  "y": 740,
+  "x": 610,
+  "y": 440,
   "wires": [
     [
       "22ee05fb2aa11f3b"
     ]
   ],
-  "_order": 227
+  "_order": 98
 }
 
 module.exports = Node;

@@ -1,7 +1,8 @@
 const Node = {
   "id": "22ee05fb2aa11f3b",
   "type": "switch",
-  "z": "5d9f87f4934f2873",
+  "z": "7b004c5e11e87f28",
+  "g": "2e3370dafaa81dac",
   "name": "Check statusCode for sucess",
   "property": "statusCode",
   "propertyType": "msg",
@@ -18,17 +19,17 @@ const Node = {
   "checkall": "true",
   "repair": false,
   "outputs": 2,
-  "x": 820,
-  "y": 780,
+  "x": 640,
+  "y": 480,
   "wires": [
     [
       "7d50abf0d3091c7b"
     ],
     [
-      "44dffa29248c1287"
+      "e5361e70221c8772"
     ]
   ],
-  "_order": 244
+  "_order": 103
 }
 
 module.exports = Node;

@@ -1,7 +1,8 @@
 const Node = {
   "id": "a23b1d9fd52dfbdf",
   "type": "change",
-  "z": "5d9f87f4934f2873",
+  "z": "7b004c5e11e87f28",
+  "g": "0f369eeef0896547",
   "name": "Hent resultat",
   "rules": [
     {
@@ -10,13 +11,6 @@ const Node = {
       "pt": "msg",
       "to": "payload.result.resources",
       "tot": "msg"
-    },
-    {
-      "t": "set",
-      "p": "log",
-      "pt": "msg",
-      "to": "\"datafiler inden for kriterie: \" & $count(payload)",
-      "tot": "jsonata"
     }
   ],
   "action": "",
@@ -24,14 +18,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 1150,
-  "y": 580,
+  "x": 1250,
+  "y": 140,
   "wires": [
     [
-      "aad8b87994f0fc75"
+      "cd287725f072abe7"
     ]
   ],
-  "_order": 231
+  "_order": 109
 }
 
 module.exports = Node;

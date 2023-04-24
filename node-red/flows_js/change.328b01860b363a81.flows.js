@@ -18,13 +18,13 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 1170,
-  "y": 820,
+  "x": 1190,
+  "y": 380,
   "wires": [
     []
   ],
   "info": "",
-  "_order": 203
+  "_order": 202
 }
 
 Node.info = `
