@@ -37,7 +37,7 @@ const Node = {
     "Result output"
   ],
   "icon": "node-red/db.svg",
-  "_order": 8
+  "_order": 7
 }
 
 module.exports = Node;
