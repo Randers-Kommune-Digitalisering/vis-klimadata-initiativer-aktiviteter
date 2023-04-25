@@ -1,14 +1,14 @@
 const Node = {
-  "id": "5363bce5bcbd3beb",
+  "id": "cdfee66c56dfd051",
   "type": "change",
   "z": "452aaf8dc5cd8d45",
-  "name": "Opsætning af dataset \\n test-af-vad-oglavbundsjord",
+  "name": "Opsætning af dataset \\n test-braendstof",
   "rules": [
     {
       "t": "set",
       "p": "dataset",
       "pt": "msg",
-      "to": "test-af-vad-oglavbundsjord",
+      "to": "test-braendstof",
       "tot": "str"
     },
     {
@@ -24,14 +24,12 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 440,
-  "y": 100,
+  "x": 460,
+  "y": 220,
   "wires": [
-    [
-      "d5b0b2e741a0a32d"
-    ]
+    []
   ],
-  "_order": 187
+  "_order": 191
 }
 
 module.exports = Node;

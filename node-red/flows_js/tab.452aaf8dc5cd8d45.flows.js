@@ -1,7 +1,7 @@
 const Node = {
   "id": "452aaf8dc5cd8d45",
   "type": "tab",
-  "label": "OpenData connector",
+  "label": "OpenData.dk",
   "disabled": false,
   "info": "",
   "env": [],

@@ -15,7 +15,7 @@ const Node = {
       "t": "set",
       "p": "data_age_days",
       "pt": "msg",
-      "to": "0",
+      "to": "80",
       "tot": "num"
     }
   ],
