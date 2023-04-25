@@ -17,8 +17,8 @@ const Node = {
   ],
   "out": [
     {
-      "x": 1280,
-      "y": 440,
+      "x": 1160,
+      "y": 420,
       "wires": [
         {
           "id": "a1043807c29f2e48",
@@ -32,7 +32,7 @@ const Node = {
   "color": "#DDAA99",
   "status": {
     "x": 300,
-    "y": 660,
+    "y": 580,
     "wires": [
       {
         "id": "0edb927b549dc4ac",
