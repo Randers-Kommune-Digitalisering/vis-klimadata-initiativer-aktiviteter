@@ -17,19 +17,25 @@ const Node = {
   ],
   "out": [
     {
-      "x": 1180,
+      "x": 1310,
       "y": 420,
       "wires": [
         {
           "id": "a1043807c29f2e48",
           "port": 0
-        },
+        }
+      ]
+    },
+    {
+      "x": 1320,
+      "y": 320,
+      "wires": [
         {
-          "id": "f685a017c25bbbeb",
+          "id": "75c15c71a7c0076e",
           "port": 0
         },
         {
-          "id": "75c15c71a7c0076e",
+          "id": "f685a017c25bbbeb",
           "port": 0
         }
       ]
@@ -38,6 +44,10 @@ const Node = {
   "env": [],
   "meta": {},
   "color": "#DDAA99",
+  "outputLabels": [
+    "data",
+    "metrics"
+  ],
   "status": {
     "x": 300,
     "y": 580,

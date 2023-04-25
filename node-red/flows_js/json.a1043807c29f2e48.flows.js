@@ -4,10 +4,10 @@ const Node = {
   "z": "7b004c5e11e87f28",
   "g": "2e3370dafaa81dac",
   "name": "",
-  "property": "payload",
+  "property": "data",
   "action": "obj",
   "pretty": false,
-  "x": 990,
+  "x": 1070,
   "y": 420,
   "wires": [
     []
