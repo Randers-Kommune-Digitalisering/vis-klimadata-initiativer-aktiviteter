@@ -10,7 +10,22 @@ const Node = {
       "d2c872ed74b20148"
     ]
   ],
-  "_order": 189
+  "info": "",
+  "_order": 195
 }
+
+Node.info = `
+# Generisk connector til OpenData.dk
+
+Connectoren forbinder til alle datasæt der ligger under opendata.dk/randers-kommune/
+
+Der kræves kun 2 inputs.
+
+ 1. msg.dataset - datasættets navn 
+
+ 2. msg.data_age_days - hvor mange dage bagud i tid skal der hentes data fra
+    Der kigges på metadata "created" for datafiler.
+    Default er 0, d.v.s. 
+`
 
 module.exports = Node;

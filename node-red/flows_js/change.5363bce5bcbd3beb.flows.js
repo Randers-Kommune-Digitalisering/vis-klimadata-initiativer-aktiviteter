@@ -13,9 +13,9 @@ const Node = {
     },
     {
       "t": "set",
-      "p": "data_age_days",
+      "p": "max_file_age_days",
       "pt": "msg",
-      "to": "4",
+      "to": "5",
       "tot": "num"
     }
   ],
@@ -24,14 +24,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 440,
+  "x": 380,
   "y": 100,
   "wires": [
     [
       "d5b0b2e741a0a32d"
     ]
   ],
-  "_order": 187
+  "_order": 193
 }
 
 module.exports = Node;

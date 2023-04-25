@@ -14,9 +14,9 @@ const Node = {
     },
     {
       "t": "set",
-      "p": "data_age_days",
+      "p": "max_file_age_days",
       "pt": "msg",
-      "to": "$data_age_days := data_age_days ? data_age_days : 0 \t/* Sætter værdien til 0 hvis data_age_days er NULL eller ikke eksisterer */\t",
+      "to": "$max_file_age_days := max_file_age_days ? max_file_age_days : 0 \t/* Sætter værdien til 0 hvis max_file_age_days er NULL eller ikke eksisterer */\t",
       "tot": "jsonata"
     },
     {
@@ -46,7 +46,7 @@ const Node = {
       "1817ef0c011528f5"
     ]
   ],
-  "_order": 91
+  "_order": 93
 }
 
 module.exports = Node;

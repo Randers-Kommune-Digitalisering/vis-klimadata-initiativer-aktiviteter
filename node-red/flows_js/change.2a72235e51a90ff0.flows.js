@@ -13,10 +13,10 @@ const Node = {
     },
     {
       "t": "set",
-      "p": "data_age_days",
+      "p": "payload",
       "pt": "msg",
-      "to": "80",
-      "tot": "num"
+      "to": "",
+      "tot": "str"
     }
   ],
   "action": "",
@@ -24,14 +24,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 390,
+  "x": 430,
   "y": 160,
   "wires": [
     [
       "d5b0b2e741a0a32d"
     ]
   ],
-  "_order": 190
+  "_order": 196
 }
 
 module.exports = Node;

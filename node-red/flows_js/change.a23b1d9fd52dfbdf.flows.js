@@ -11,6 +11,11 @@ const Node = {
       "pt": "msg",
       "to": "payload.result.resources",
       "tot": "msg"
+    },
+    {
+      "t": "delete",
+      "p": "url",
+      "pt": "msg"
     }
   ],
   "action": "",
@@ -25,7 +30,7 @@ const Node = {
       "cd287725f072abe7"
     ]
   ],
-  "_order": 96
+  "_order": 98
 }
 
 module.exports = Node;

@@ -3,7 +3,7 @@ const Node = {
   "type": "delay",
   "z": "7b004c5e11e87f28",
   "g": "0f369eeef0896547",
-  "name": "",
+  "name": "Retry in 60 secs",
   "pauseType": "delay",
   "timeout": "60",
   "timeoutUnits": "seconds",
@@ -16,14 +16,14 @@ const Node = {
   "drop": false,
   "allowrate": false,
   "outputs": 1,
-  "x": 1060,
+  "x": 1080,
   "y": 140,
   "wires": [
     [
       "0f58b58f8df7f5e7"
     ]
   ],
-  "_order": 98
+  "_order": 100
 }
 
 module.exports = Node;
