@@ -16,7 +16,7 @@ const Node = {
       "payloadType": "default",
       "payload": "",
       "expressionType": "cron",
-      "expression": "0  0  1  1  *  ",
+      "expression": "0 6 * * MON#3",
       "location": "",
       "offset": "0",
       "solarType": "all",
