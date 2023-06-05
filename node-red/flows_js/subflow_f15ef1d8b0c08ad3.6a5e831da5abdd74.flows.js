@@ -1,20 +1,24 @@
 const Node = {
-  "id": "d5b0b2e741a0a32d",
-  "type": "subflow:7b004c5e11e87f28",
+  "id": "6a5e831da5abdd74",
+  "type": "subflow:f15ef1d8b0c08ad3",
   "z": "452aaf8dc5cd8d45",
+  "g": "aedcfef7c781f318",
   "name": "OpenData.dk Connector",
-  "x": 770,
-  "y": 120,
+  "x": 610,
+  "y": 240,
   "wires": [
     [
-      "d2c872ed74b20148"
+      "629fadbe2ccd3132"
     ],
     [
-      "0e5b1d5fd355f789"
+      "e70a1104df57dfc9"
+    ],
+    [
+      "6d6145a3b97ad273"
     ]
   ],
   "info": "",
-  "_order": 197
+  "_order": 259
 }
 
 Node.info = `
@@ -26,9 +30,9 @@ Der kræves kun 2 inputs.
 
  1. msg.dataset - datasættets navn 
 
- 2. msg.data_age_days - hvor mange dage bagud i tid skal der hentes data fra
+ 2. msg.max_file_age_days - hvor mange dage bagud i tid skal der hentes data fra
     Der kigges på metadata "created" for datafiler.
-    Default er 0, d.v.s. 
+    Default er 0
 `
 
 module.exports = Node;
