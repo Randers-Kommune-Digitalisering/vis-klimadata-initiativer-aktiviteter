@@ -1,5 +1,5 @@
 const Node = {
-  "id": "0e5b1d5fd355f789",
+  "id": "629fadbe2ccd3132",
   "type": "debug",
   "z": "452aaf8dc5cd8d45",
   "name": "std.out",
@@ -11,10 +11,10 @@ const Node = {
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1060,
-  "y": 180,
+  "x": 1360,
+  "y": 229,
   "wires": [],
-  "_order": 200
+  "_order": 257
 }
 
 module.exports = Node;

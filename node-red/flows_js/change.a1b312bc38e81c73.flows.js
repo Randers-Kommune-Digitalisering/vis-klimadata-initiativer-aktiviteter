@@ -1,21 +1,21 @@
 const Node = {
-  "id": "cdfee66c56dfd051",
+  "id": "a1b312bc38e81c73",
   "type": "change",
   "z": "452aaf8dc5cd8d45",
-  "name": "Opsætning af dataset \\n test-braendstof",
+  "name": "Opsætning af dataset \\n antal-krydsende-cyklister-over-randers-fjord",
   "rules": [
     {
       "t": "set",
       "p": "dataset",
       "pt": "msg",
-      "to": "test-braendstof",
+      "to": "antal-krydsende-cyklister-over-randers-fjord",
       "tot": "str"
     },
     {
       "t": "set",
-      "p": "data_age_days",
+      "p": "max_file_age_days",
       "pt": "msg",
-      "to": "4",
+      "to": "200",
       "tot": "num"
     }
   ],
@@ -24,12 +24,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 360,
-  "y": 220,
+  "x": 250,
+  "y": 240,
   "wires": [
-    []
+    [
+      "6a5e831da5abdd74"
+    ]
   ],
-  "_order": 199
+  "_order": 256
 }
 
 module.exports = Node;
