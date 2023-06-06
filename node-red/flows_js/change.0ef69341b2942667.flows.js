@@ -3,7 +3,7 @@ const Node = {
   "type": "change",
   "z": "452aaf8dc5cd8d45",
   "g": "aedcfef7c781f318",
-  "name": "",
+  "name": "Concenate data",
   "rules": [
     {
       "t": "set",
@@ -18,14 +18,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 990,
+  "x": 1040,
   "y": 200,
   "wires": [
     [
       "080d51ddc857aa0f"
     ]
   ],
-  "_order": 325
+  "_order": 415
 }
 
 module.exports = Node;
