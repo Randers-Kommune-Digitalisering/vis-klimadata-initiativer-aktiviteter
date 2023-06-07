@@ -9,7 +9,12 @@ const Node = {
   "noerr": 0,
   "initialize": "",
   "finalize": "",
-  "libs": [],
+  "libs": [
+    {
+      "var": "dayjs",
+      "module": "dayjs"
+    }
+  ],
   "x": 720,
   "y": 420,
   "wires": [
@@ -17,10 +22,10 @@ const Node = {
       "c0a1ad499d5c94df"
     ]
   ],
-  "_order": 406
+  "_order": 409
 }
 
-Node.func = async function (node, msg, RED, context, flow, global, env, util) {
+Node.func = async function (node, msg, RED, context, flow, global, env, util, dayjs) {
   // Function to suggest SQL datatype based on string content
   function suggestSqlDataType(value) {
       // Try to parse value as integer
@@ -28,19 +33,26 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util) {
           return "INTEGER";
       }
   
+      // Check if value is a date string in the format supplied in msg.validDates
+      var validDateFormats = msg.validDateFormats;
+      validDateFormats = !Array.isArray(validDateFormats) ? [validDateFormats] : validDateFormats;
+      var isValid = false;
+  
+      for (var i = 0; i < validDateFormats.length; i++) {
+          var isCurrentFormatValid = dayjs(value, validDateFormats[i], true).isValid();
+          //console.log(value + " is format (i=" + i + ") " + validDateFormats[i] + "? " + isCurrentFormatValid);
+  
+          if (isCurrentFormatValid) {
+              isValid = true;
+              break;
+          }
+      }
+      if (isValid)
+          return "DATE";
+  
       // Try to parse value as floating-point number
       if (!isNaN(parseFloat(value))) {
           return "FLOAT";
-      }
-  
-      // Check if value is a date string in the format "YYYY-MM-DD"
-      if (/^\d{4}-\d{2}-\d{2\}$/.test(value)) {
-          return "DATE";
-      }
-  
-      // Check if value is a date-time string in the format "YYYY-MM-DDTHH:mm:ss"
-      if (/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}$/.test(value)) {
-          return "DATETIME";
       }
   
       // Default to VARCHAR with a length of 255 characters
@@ -62,7 +74,6 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util) {
   }
   
   return msg;
-  
 }
 
 module.exports = Node;

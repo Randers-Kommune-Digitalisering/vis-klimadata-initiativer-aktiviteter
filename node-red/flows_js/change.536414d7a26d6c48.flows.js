@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "tablename",
       "pt": "flow",
-      "to": "opendata_vad_og_lavbundsomrader_i_randers_kommune_siden_ar_2000",
+      "to": "opendata_braendstofforbrug",
       "tot": "str"
     }
   ],
@@ -18,14 +18,12 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 440,
+  "x": 430,
   "y": 900,
   "wires": [
-    [
-      "34905a0b60aeab72"
-    ]
+    []
   ],
-  "_order": 444
+  "_order": 445
 }
 
 module.exports = Node;

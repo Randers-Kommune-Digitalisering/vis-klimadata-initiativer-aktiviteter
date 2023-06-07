@@ -1,16 +1,22 @@
 const Node = {
-  "id": "703bd9d363ef3ff0",
+  "id": "50d4d1dc04e813ec",
   "type": "change",
   "z": "452aaf8dc5cd8d45",
-  "g": "da0611271a1f2e57",
   "name": "",
   "rules": [
     {
       "t": "set",
-      "p": "payload",
+      "p": "log",
       "pt": "msg",
       "to": "topic",
       "tot": "msg"
+    },
+    {
+      "t": "set",
+      "p": "topic",
+      "pt": "msg",
+      "to": "SQL",
+      "tot": "str"
     }
   ],
   "action": "",
@@ -18,14 +24,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 880,
-  "y": 780,
+  "x": 720,
+  "y": 980,
   "wires": [
     [
-      "48f73641bfd8f140"
+      "3189dd1242211a13"
     ]
   ],
-  "_order": 419
+  "_order": 397
 }
 
 module.exports = Node;

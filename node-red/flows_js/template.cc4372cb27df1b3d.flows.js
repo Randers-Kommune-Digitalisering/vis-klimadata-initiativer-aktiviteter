@@ -14,11 +14,10 @@ const Node = {
   "y": 520,
   "wires": [
     [
-      "1adb98814879c48c",
-      "703bd9d363ef3ff0"
+      "1adb98814879c48c"
     ]
   ],
-  "_order": 409
+  "_order": 412
 }
 
 Node.template = `

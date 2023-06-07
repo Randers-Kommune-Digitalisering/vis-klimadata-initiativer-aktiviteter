@@ -19,6 +19,13 @@ const Node = {
       "pt": "msg",
       "to": "{}",
       "tot": "json"
+    },
+    {
+      "t": "set",
+      "p": "validDateFormats",
+      "pt": "msg",
+      "to": "[\"DD.MM.YYYY\",\"DD-MM-YYYY\",\"DD/MM-YYYY\",\"YYYY.MM.DD\",\"YYYY-MM-DD\"]",
+      "tot": "json"
     }
   ],
   "action": "",
@@ -33,7 +40,7 @@ const Node = {
       "070f0ec16e7893d0"
     ]
   ],
-  "_order": 412
+  "_order": 415
 }
 
 module.exports = Node;

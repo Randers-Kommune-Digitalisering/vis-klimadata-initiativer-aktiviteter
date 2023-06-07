@@ -3,18 +3,19 @@ const Node = {
   "type": "debug",
   "z": "452aaf8dc5cd8d45",
   "g": "da0611271a1f2e57",
-  "name": "debug 68",
-  "active": true,
+  "name": "SQL Request",
+  "active": false,
   "tosidebar": true,
   "console": false,
   "tostatus": false,
-  "complete": "false",
+  "complete": "payload",
+  "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1040,
+  "x": 1000,
   "y": 780,
   "wires": [],
-  "_order": 418
+  "_order": 421
 }
 
 module.exports = Node;
