@@ -17,8 +17,8 @@ const Node = {
   ],
   "out": [
     {
-      "x": 1320,
-      "y": 320,
+      "x": 1360,
+      "y": 300,
       "wires": [
         {
           "id": "9014ce0c1ddf1f70",
@@ -31,21 +31,21 @@ const Node = {
       ]
     },
     {
-      "x": 1310,
-      "y": 420,
+      "x": 1370,
+      "y": 360,
       "wires": [
         {
-          "id": "758b1a3ab736cae5",
+          "id": "66420c5109c50919",
           "port": 0
         }
       ]
     },
     {
-      "x": 1310,
-      "y": 520,
+      "x": 1370,
+      "y": 420,
       "wires": [
         {
-          "id": "66420c5109c50919",
+          "id": "758b1a3ab736cae5",
           "port": 0
         }
       ]
@@ -56,13 +56,13 @@ const Node = {
   "color": "#E9967A",
   "outputLabels": [
     "metrics",
-    "data",
-    "retry"
+    "retry",
+    "data"
   ],
   "icon": "node-red/inject.svg",
   "status": {
-    "x": 1340,
-    "y": 600,
+    "x": 1420,
+    "y": 480,
     "wires": [
       {
         "id": "c1ce98d04720ba49",
@@ -70,7 +70,7 @@ const Node = {
       }
     ]
   },
-  "_order": 10
+  "_order": 11
 }
 
 module.exports = Node;
