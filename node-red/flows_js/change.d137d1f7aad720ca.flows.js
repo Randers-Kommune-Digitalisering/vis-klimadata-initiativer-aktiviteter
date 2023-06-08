@@ -22,10 +22,11 @@ const Node = {
   "y": 260,
   "wires": [
     [
-      "e313e748ed2589dd"
+      "e313e748ed2589dd",
+      "2556f576f0cb911b"
     ]
   ],
-  "_order": 559
+  "_order": 567
 }
 
 module.exports = Node;

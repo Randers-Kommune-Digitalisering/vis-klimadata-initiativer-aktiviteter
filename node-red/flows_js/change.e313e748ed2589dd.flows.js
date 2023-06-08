@@ -7,7 +7,7 @@ const Node = {
   "rules": [
     {
       "t": "set",
-      "p": "ValidDateFormats",
+      "p": "validDateFormats",
       "pt": "msg",
       "to": "[\"DD.MM.YYYY\",\"DD-MM-YYYY\",\"DD/MM-YYYY\",\"YYYY.MM.DD\",\"YYYY-MM-DD\"]",
       "tot": "json"
@@ -22,10 +22,10 @@ const Node = {
   "y": 320,
   "wires": [
     [
-      "1bd3f80742bd3b20"
+      "fc03246ef667b432"
     ]
   ],
-  "_order": 589
+  "_order": 597
 }
 
 module.exports = Node;

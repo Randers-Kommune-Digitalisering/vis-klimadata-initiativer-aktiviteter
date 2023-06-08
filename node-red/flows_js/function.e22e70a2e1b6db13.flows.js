@@ -1,8 +1,7 @@
 const Node = {
-  "id": "1bd3f80742bd3b20",
+  "id": "e22e70a2e1b6db13",
   "type": "function",
   "z": "db9cae581f57fc84",
-  "g": "92d5ed7235f71cf0",
   "name": "dayjs conversion - not tested",
   "func": "",
   "outputs": 1,
@@ -10,12 +9,12 @@ const Node = {
   "initialize": "",
   "finalize": "",
   "libs": [],
-  "x": 980,
-  "y": 380,
+  "x": 1280,
+  "y": 460,
   "wires": [
     []
   ],
-  "_order": 590
+  "_order": 598
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {
