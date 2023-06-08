@@ -16,13 +16,13 @@ const Node = {
   "onceDelay": 0.1,
   "topic": "remove-all-dynamic",
   "x": 920,
-  "y": 102,
+  "y": 82,
   "wires": [
     [
       "a29ce748a8e221ef"
     ]
   ],
-  "_order": 557
+  "_order": 547
 }
 
 module.exports = Node;

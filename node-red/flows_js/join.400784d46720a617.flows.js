@@ -1,8 +1,8 @@
 const Node = {
-  "id": "f35ea978691dabeb",
+  "id": "400784d46720a617",
   "type": "join",
   "z": "db9cae581f57fc84",
-  "g": "92d5ed7235f71cf0",
+  "g": "bf3a5d37f980d010",
   "name": "Join datasets",
   "mode": "custom",
   "build": "array",
@@ -19,15 +19,14 @@ const Node = {
   "reduceInit": "",
   "reduceInitType": "",
   "reduceFixup": "",
-  "x": 1310,
-  "y": 320,
+  "x": 1270,
+  "y": 360,
   "wires": [
     [
-      "3a0864c29e26a421",
-      "3306be8fa5a99717"
+      "b8d7627cf8ee590c"
     ]
   ],
-  "_order": 554
+  "_order": 597
 }
 
 module.exports = Node;

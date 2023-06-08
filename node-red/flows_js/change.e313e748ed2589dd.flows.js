@@ -3,7 +3,7 @@ const Node = {
   "type": "change",
   "z": "db9cae581f57fc84",
   "g": "92d5ed7235f71cf0",
-  "name": "Rens og oversæt kendte datoformater \\n til iso8601",
+  "name": "Bestem valid + output \\n datoformatering",
   "rules": [
     {
       "t": "set",
@@ -25,14 +25,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 990,
-  "y": 320,
+  "x": 240,
+  "y": 820,
   "wires": [
     [
       "fc03246ef667b432"
     ]
   ],
-  "_order": 597
+  "_order": 575
 }
 
 module.exports = Node;

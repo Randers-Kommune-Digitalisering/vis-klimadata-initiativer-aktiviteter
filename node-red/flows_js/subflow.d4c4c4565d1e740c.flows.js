@@ -23,6 +23,10 @@ const Node = {
         {
           "id": "c00f885d81f21848",
           "port": 0
+        },
+        {
+          "id": "076ff355c5b536f3",
+          "port": 0
         }
       ]
     }
@@ -37,6 +41,20 @@ const Node = {
     "Result output"
   ],
   "icon": "node-red/db.svg",
+  "status": {
+    "x": 1000,
+    "y": 240,
+    "wires": [
+      {
+        "id": "076ff355c5b536f3",
+        "port": 0
+      },
+      {
+        "id": "9ca16ae19abcd889",
+        "port": 0
+      }
+    ]
+  },
   "_order": 16
 }
 

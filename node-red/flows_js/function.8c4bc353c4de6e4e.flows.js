@@ -15,45 +15,29 @@ const Node = {
       "module": "dayjs"
     }
   ],
-  "x": 440,
-  "y": 500,
+  "x": 460,
+  "y": 540,
   "wires": [
     [
-      "533ce7c799cfb2ce"
+      "533ce7c799cfb2ce",
+      "1f4271f61ec49e2a"
     ]
   ],
-  "_order": 558
+  "_order": 586
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util, dayjs) {
   // Function to suggest SQL datatype based on string content
-  function suggestSqlDataType(value) {
-      // Try to parse value as integer
-      if (Number.isInteger(Number(value))) {
-          return "INTEGER";
-      }
-  
-      // Check if value is a date string in the format supplied in msg.validDates
-      var validDateFormats = msg.validDateFormats;
-      validDateFormats = !Array.isArray(validDateFormats) ? [validDateFormats] : validDateFormats;
-      var isValid = false;
-  
-      for (var i = 0; i < validDateFormats.length; i++) {
-          var isCurrentFormatValid = dayjs(value, validDateFormats[i], true).isValid();
-          //console.log(value + " is format (i=" + i + ") " + validDateFormats[i] + "? " + isCurrentFormatValid);
-  
-          if (isCurrentFormatValid) {
-              isValid = true;
-              break;
-          }
-      }
-      if (isValid)
-          return "DATE";
-  
-      // Try to parse value as floating-point number
-      if (!isNaN(parseFloat(value))) {
+  function suggestSqlDataType(value)
+  {
+      // Try to parse value as integer or as float (regEx)
+      if (Number.isInteger(Number(value)) ||
+         (/^([0-9]+)(,|\.){1}([0-9]+)$/.test(value)))
           return "FLOAT";
-      }
+  
+      // Check if value is ISO date using RegEx
+      if (/^([0-9]{4})(-|\/|.)(1[0-2]|0[1-9])(-|\/|.)(3[01]|[12][0-9]|0[1-9])$|^(3[01]|[12][0-9]|0[1-9])(-|\/|.)(1[0-2]|0[1-9])(-|\/|.)([0-9]{4})$/.test(value))
+          return "DATE";
   
       // Default to VARCHAR with a length of 255 characters
       return "VARCHAR(255)";
@@ -72,6 +56,8 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util, da
           msg.payload.flatlist.push({ "name": key, "type": msg.payload.sqlDataType[key] });
       }
   }
+  
+  msg.dataskabelon = msg.payload.sqlDataType;
   
   return msg;
 }

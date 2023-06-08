@@ -4,8 +4,8 @@ const Node = {
   "z": "452aaf8dc5cd8d45",
   "g": "aedcfef7c781f318",
   "name": "OpenData.dk Connector",
-  "x": 590,
-  "y": 120,
+  "x": 650,
+  "y": 180,
   "wires": [
     [
       "629fadbe2ccd3132"
@@ -18,7 +18,7 @@ const Node = {
     ]
   ],
   "info": "",
-  "_order": 421
+  "_order": 425
 }
 
 Node.info = `

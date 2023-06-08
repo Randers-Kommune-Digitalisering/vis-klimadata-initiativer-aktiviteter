@@ -18,6 +18,11 @@ const Node = {
       "p": "outputDateFormat",
       "v": "YYYY-MM-DD",
       "vt": "str"
+    },
+    {
+      "p": "dataskabelon",
+      "v": "{\"Fakturadato\":\"DATE\",\"Antal_enheder\":\"FLOAT\",\"Fakturaenhed\":\"VARCHAR(255)\",\"UNSPSC\":\"FLOAT\",\"UNSPSC_navn\":\"VARCHAR(255)\"}",
+      "vt": "json"
     }
   ],
   "repeat": "",
@@ -25,14 +30,14 @@ const Node = {
   "once": false,
   "onceDelay": 0.1,
   "topic": "",
-  "x": 650,
-  "y": 380,
+  "x": 270,
+  "y": 900,
   "wires": [
     [
       "fc03246ef667b432"
     ]
   ],
-  "_order": 601
+  "_order": 578
 }
 
 module.exports = Node;

@@ -4,7 +4,7 @@ const Node = {
   "z": "db9cae581f57fc84",
   "g": "1e08f7eb438df347",
   "name": "SQL Request",
-  "active": false,
+  "active": true,
   "tosidebar": true,
   "console": false,
   "tostatus": false,
@@ -12,10 +12,10 @@ const Node = {
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1060,
-  "y": 955,
+  "x": 1420,
+  "y": 580,
   "wires": [],
-  "_order": 568
+  "_order": 548
 }
 
 module.exports = Node;

@@ -6,18 +6,18 @@ const Node = {
   "name": "Opsæt kolonner",
   "field": "columns",
   "fieldType": "msg",
-  "format": "sql",
+  "format": "handlebars",
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 660,
-  "y": 485,
+  "x": 720,
+  "y": 540,
   "wires": [
     [
       "2ef7eb5951d9c7f5"
     ]
   ],
-  "_order": 559
+  "_order": 587
 }
 
 Node.template = `

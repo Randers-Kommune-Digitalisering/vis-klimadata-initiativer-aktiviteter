@@ -11,20 +11,21 @@ const Node = {
   "template": "",
   "output": "str",
   "x": 510,
-  "y": 600,
+  "y": 640,
   "wires": [
     [
-      "7ec1baf99c8831bc"
+      "e867e16a899f4307",
+      "03040269b52754fb"
     ]
   ],
-  "_order": 561
+  "_order": 589
 }
 
 Node.template = `
 CREATE TABLE if not exists {{flow.tablename}} (
 created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
 last_updated TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-{{columns}}
+{{{columns}}}
 );
 `
 

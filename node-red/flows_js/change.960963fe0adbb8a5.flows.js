@@ -2,7 +2,7 @@ const Node = {
   "id": "960963fe0adbb8a5",
   "type": "change",
   "z": "452aaf8dc5cd8d45",
-  "g": "d4f48feb94aeeb77",
+  "g": "318aa83402c5bebd",
   "name": "Byg data streng \\n og kolonnenavne",
   "rules": [
     {
@@ -45,7 +45,7 @@ const Node = {
     ]
   ],
   "info": "",
-  "_order": 447
+  "_order": 451
 }
 
 Node.info = `

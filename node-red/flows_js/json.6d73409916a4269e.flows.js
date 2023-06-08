@@ -5,16 +5,16 @@ const Node = {
   "g": "1990698f251b0a12",
   "name": "",
   "property": "payload",
-  "action": "",
+  "action": "obj",
   "pretty": false,
-  "x": 1080,
-  "y": 1040,
+  "x": 1100,
+  "y": 1400,
   "wires": [
     [
       "41f8ec208752dde7"
     ]
   ],
-  "_order": 586
+  "_order": 566
 }
 
 module.exports = Node;

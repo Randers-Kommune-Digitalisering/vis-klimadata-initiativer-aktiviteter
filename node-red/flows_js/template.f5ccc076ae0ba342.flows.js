@@ -2,7 +2,7 @@ const Node = {
   "id": "f5ccc076ae0ba342",
   "type": "template",
   "z": "452aaf8dc5cd8d45",
-  "g": "d4f48feb94aeeb77",
+  "g": "318aa83402c5bebd",
   "name": "Skabelon til forespørgsel ↓\\n Indsæt data i tabel",
   "field": "topic",
   "fieldType": "msg",
@@ -10,7 +10,7 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 440,
+  "x": 460,
   "y": 660,
   "wires": [
     [
@@ -18,7 +18,7 @@ const Node = {
       "ed72f4060b2d7ad8"
     ]
   ],
-  "_order": 446
+  "_order": 450
 }
 
 Node.template = `

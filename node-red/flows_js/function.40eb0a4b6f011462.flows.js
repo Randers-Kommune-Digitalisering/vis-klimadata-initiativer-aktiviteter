@@ -1,27 +1,24 @@
 const Node = {
-  "id": "ccbc0aaeb3c93807",
+  "id": "40eb0a4b6f011462",
   "type": "function",
-  "z": "452aaf8dc5cd8d45",
-  "g": "d4f48feb94aeeb77",
-  "name": "Formater data \\n ift. skabelon",
+  "z": "f15ef1d8b0c08ad3",
+  "name": "Set Status",
   "func": "",
   "outputs": 1,
   "noerr": 0,
   "initialize": "",
   "finalize": "",
   "libs": [],
-  "x": 200,
-  "y": 660,
+  "x": 1170,
+  "y": 560,
   "wires": [
-    [
-      "960963fe0adbb8a5"
-    ]
+    []
   ],
-  "_order": 455
+  "_order": 246
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {
-  
+  node.status({ fill: msg.status.fill, shape: msg.status.shape, text: msg.status.text });
   return msg;
 }
 

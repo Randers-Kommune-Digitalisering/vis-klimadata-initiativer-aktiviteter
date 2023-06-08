@@ -1,8 +1,8 @@
 const Node = {
-  "id": "ac75fe745dfd96de",
+  "id": "73df4bb1c3f715df",
   "type": "change",
   "z": "db9cae581f57fc84",
-  "g": "92d5ed7235f71cf0",
+  "g": "bf3a5d37f980d010",
   "name": "Fjern specialkarakterer i kolonnenavne",
   "rules": [
     {
@@ -18,14 +18,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 990,
-  "y": 260,
+  "x": 1010,
+  "y": 360,
   "wires": [
     [
-      "d137d1f7aad720ca"
+      "400784d46720a617"
     ]
   ],
-  "_order": 566
+  "_order": 599
 }
 
 module.exports = Node;

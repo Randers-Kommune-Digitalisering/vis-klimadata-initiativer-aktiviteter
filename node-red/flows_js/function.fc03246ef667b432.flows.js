@@ -19,15 +19,14 @@ const Node = {
       "module": "dayjs/plugin/customParseFormat"
     }
   ],
-  "x": 990,
-  "y": 380,
+  "x": 570,
+  "y": 820,
   "wires": [
     [
-      "f35ea978691dabeb",
       "22413d13c16b68d5"
     ]
   ],
-  "_order": 599
+  "_order": 576
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util, dayjs, customParseFormat) {
@@ -41,28 +40,31 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util, da
   var validDateFormats = msg.validDateFormats;
   validDateFormats = !Array.isArray(validDateFormats) ? [validDateFormats] : validDateFormats;
   
-  // For each item (obj)
-  data.forEach(item =>
+  // For each variable in msg.dataskabelon
+  for (const [key, value] of Object.entries(msg.dataskabelon))
   {
-      // For each key in item
-      for (const [key, value] of Object.entries(item)) {
-  
-          // For each valid date format, check if parsable
-          for (var i = 0; i < validDateFormats.length; i++)
+      // Check if variable type is date
+      if(value == "DATE")
+      {
+          // For each data object
+          data.forEach(item =>
           {
-              // Strict parsing
-              var dayjsObj = dayjs(value, validDateFormats[i], true);
-  
-              // If valid parse, set date = toDate()
-              if (dayjsObj.isValid())
+              // For each valid date format, check if parsable
+              for (var i = 0; i < validDateFormats.length; i++)
               {
-                  item[key] = dayjsObj.format(msg.outputDateFormat);
-                  break;
+                  // Strict parsing
+                  var dayjsObj = dayjs(item[key], validDateFormats[i], true);
+  
+                  // If valid parse, set date = toDate()
+                  if (dayjsObj.isValid())
+                  {
+                      item[key] = dayjsObj.format(msg.outputDateFormat);
+                      break;
+                  }
               }
-          }
+          });
       }
-  });
-      
+  }
   return msg;
 }
 
