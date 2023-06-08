@@ -13,6 +13,11 @@ const Node = {
       "p": "validDateFormats",
       "v": "[\"DD.MM.YYYY\",\"DD-MM-YYYY\",\"DD/MM-YYYY\",\"YYYY.MM.DD\",\"YYYY-MM-DD\"]",
       "vt": "json"
+    },
+    {
+      "p": "outputDateFormat",
+      "v": "YYYY-MM-DD",
+      "vt": "str"
     }
   ],
   "repeat": "",

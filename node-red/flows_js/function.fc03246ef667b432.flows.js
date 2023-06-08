@@ -56,7 +56,7 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util, da
               // If valid parse, set date = toDate()
               if (dayjsObj.isValid())
               {
-                  item[key] = dayjsObj.toDate().toISOString();
+                  item[key] = dayjsObj.format(msg.outputDateFormat);
                   break;
               }
           }

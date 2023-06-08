@@ -11,6 +11,13 @@ const Node = {
       "pt": "msg",
       "to": "[\"DD.MM.YYYY\",\"DD-MM-YYYY\",\"DD/MM-YYYY\",\"YYYY.MM.DD\",\"YYYY-MM-DD\"]",
       "tot": "json"
+    },
+    {
+      "t": "set",
+      "p": "outputDateFormat",
+      "pt": "msg",
+      "to": "YYYY-MM-DD",
+      "tot": "str"
     }
   ],
   "action": "",
