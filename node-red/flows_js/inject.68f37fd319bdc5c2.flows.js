@@ -6,7 +6,7 @@ const Node = {
   "props": [
     {
       "p": "data",
-      "v": "[{\"Fakturadato\":\"02-01-2018\",\"Antal_enheder\":780,\"Fakturaenhed\":\"LTR\",\"UNSPSC\":15101701,\"UNSPSC_navn\":\"Nr. 2 Brændselsolie til opvarmning\"}]",
+      "v": "[{\"Fakturadato\":\"02-01-2018\",\"Antal_enheder\":\"7,5\",\"Fakturaenhed\":\"LTR\",\"UNSPSC\":15101701,\"UNSPSC_navn\":\"Nr. 2 Brændselsolie til opvarmning\"}]",
       "vt": "json"
     },
     {
@@ -37,7 +37,7 @@ const Node = {
       "fc03246ef667b432"
     ]
   ],
-  "_order": 578
+  "_order": 577
 }
 
 module.exports = Node;

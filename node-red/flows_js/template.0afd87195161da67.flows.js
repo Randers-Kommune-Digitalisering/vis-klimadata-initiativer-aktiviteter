@@ -6,18 +6,18 @@ const Node = {
   "name": "Skabelon til forespørgsel ↓\\n Indsæt data i tabel",
   "field": "topic",
   "fieldType": "msg",
-  "format": "handlebars",
+  "format": "sql",
   "syntax": "mustache",
   "template": "",
   "output": "str",
   "x": 460,
-  "y": 1120,
+  "y": 1040,
   "wires": [
     [
       "cc9f08c240e607f0"
     ]
   ],
-  "_order": 554
+  "_order": 553
 }
 
 Node.template = `

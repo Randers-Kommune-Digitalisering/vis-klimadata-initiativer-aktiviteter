@@ -29,7 +29,9 @@ VALUES(
         '{{data.TotalConsumption}}'
         )
 ON DUPLICATE KEY UPDATE
+    TotalConsumption = '{{data.TotalConsumption}}',
     TotalConsumption = '{{data.TotalConsumption}}'
+
 `
 
 module.exports = Node;

@@ -18,6 +18,13 @@ const Node = {
       "pt": "msg",
       "to": "50",
       "tot": "num"
+    },
+    {
+      "t": "set",
+      "p": "unique_updatable_column",
+      "pt": "msg",
+      "to": "",
+      "tot": "str"
     }
   ],
   "action": "",
@@ -25,7 +32,7 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 280,
+  "x": 220,
   "y": 340,
   "wires": [
     [

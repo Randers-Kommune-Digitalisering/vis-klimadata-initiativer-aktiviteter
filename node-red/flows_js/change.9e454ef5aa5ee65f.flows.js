@@ -17,7 +17,7 @@ const Node = {
       "t": "set",
       "p": "max_file_age_days",
       "pt": "msg",
-      "to": "200",
+      "to": "50",
       "tot": "num"
     }
   ],
