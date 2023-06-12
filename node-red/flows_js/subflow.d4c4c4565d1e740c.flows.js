@@ -8,7 +8,11 @@ const Node = {
     {
       "x": 80,
       "y": 100,
-      "wires": []
+      "wires": [
+        {
+          "id": "edcb5fc148fcf7f8"
+        }
+      ]
     }
   ],
   "out": [
@@ -51,7 +55,7 @@ const Node = {
       }
     ]
   },
-  "_order": 6
+  "_order": 5
 }
 
 module.exports = Node;

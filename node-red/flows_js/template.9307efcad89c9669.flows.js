@@ -4,7 +4,7 @@ const Node = {
   "z": "db9cae581f57fc84",
   "g": "1990698f251b0a12",
   "name": "SHOW TABLES",
-  "field": "topic",
+  "field": "sql",
   "fieldType": "msg",
   "format": "sql",
   "syntax": "mustache",
@@ -17,7 +17,7 @@ const Node = {
       "c2426c53cdfab1e6"
     ]
   ],
-  "_order": 246
+  "_order": 213
 }
 
 Node.template = `

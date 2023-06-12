@@ -4,7 +4,7 @@ const Node = {
   "z": "8571dcc8e1e9c903",
   "g": "0b6a3796775ca5e9",
   "name": "Forespørgsel ↓\\n Hent dato for seneste række ",
-  "field": "topic",
+  "field": "sql",
   "fieldType": "msg",
   "format": "sql",
   "syntax": "mustache",
@@ -17,7 +17,7 @@ const Node = {
       "6942eb1e09ceac87"
     ]
   ],
-  "_order": 206
+  "_order": 173
 }
 
 Node.template = `

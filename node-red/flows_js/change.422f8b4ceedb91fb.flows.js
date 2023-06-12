@@ -16,14 +16,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 550,
+  "x": 430,
   "y": 100,
   "wires": [
     [
       "c00f885d81f21848"
     ]
   ],
-  "_order": 108
+  "_order": 94
 }
 
 module.exports = Node;

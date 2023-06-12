@@ -4,7 +4,7 @@ const Node = {
   "z": "8b14b3c953574b40",
   "g": "558021ee7e67a81d",
   "name": "Forespørgsel ↓\\n Indsæt eller opdater \\n data i tabel",
-  "field": "topic",
+  "field": "sql",
   "fieldType": "msg",
   "format": "sql",
   "syntax": "mustache",
@@ -17,7 +17,7 @@ const Node = {
       "ea6b9ddd404c6bfa"
     ]
   ],
-  "_order": 190
+  "_order": 157
 }
 
 Node.template = `
