@@ -18,14 +18,14 @@ const Node = {
   "topic": "",
   "payload": "[{\"latest_month\":\"2023-04-30T22:00:00.000Z\"}]",
   "payloadType": "json",
-  "x": 1430,
-  "y": 480,
+  "x": 1570,
+  "y": 560,
   "wires": [
     [
       "8efc3402241b00f0"
     ]
   ],
-  "_order": 206
+  "_order": 203
 }
 
 module.exports = Node;

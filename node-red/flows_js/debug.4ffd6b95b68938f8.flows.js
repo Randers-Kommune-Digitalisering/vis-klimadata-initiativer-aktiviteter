@@ -1,21 +1,19 @@
 const Node = {
-  "id": "4b2ffedba2c0f39a",
+  "id": "4ffd6b95b68938f8",
   "type": "debug",
   "z": "8571dcc8e1e9c903",
-  "g": "5b5bb4bde21b999c",
-  "name": "SQL Request",
+  "name": "debug 86",
   "active": true,
   "tosidebar": true,
   "console": false,
   "tostatus": false,
-  "complete": "payload",
-  "targetType": "msg",
+  "complete": "false",
   "statusVal": "",
   "statusType": "auto",
-  "x": 620,
-  "y": 1600,
+  "x": 1440,
+  "y": 320,
   "wires": [],
-  "_order": 202
+  "_order": 212
 }
 
 module.exports = Node;

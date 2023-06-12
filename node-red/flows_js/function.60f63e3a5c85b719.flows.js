@@ -15,20 +15,18 @@ const Node = {
       "module": "dayjs"
     }
   ],
-  "x": 1100,
+  "x": 1060,
   "y": 400,
   "wires": [
     [
       "71fc6f4bc4f9607a"
     ]
   ],
-  "_order": 207
+  "_order": 204
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util, dayjs) {
   var dayobj = dayjs(msg.payload[0].latest_month);
-  
-  //dayobj = dayobj.add(-1, "month");
   
   msg.startdato = dayobj.format("YYYY-MM");
   

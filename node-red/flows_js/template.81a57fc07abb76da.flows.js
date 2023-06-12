@@ -14,13 +14,16 @@ const Node = {
   "y": 780,
   "wires": [
     [
-      "20fab0cd87d89962"
+      "20fab0cd87d89962",
+      "4d2fa3f6716bedee"
     ]
   ],
-  "_order": 193
+  "_order": 192
 }
 
 Node.template = `
+SET @@session.time_zone = 'Copenhagen/Europe';
+
 INSERT INTO {{flow.tablename}} 
     ({{{columnnames}}})
 VALUES {{{datastring}}}

@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "startdato",
       "pt": "msg",
-      "to": "2018-01-01",
+      "to": "2023-01-01",
       "tot": "str"
     }
   ],
@@ -22,10 +22,11 @@ const Node = {
   "y": 280,
   "wires": [
     [
-      "71fc6f4bc4f9607a"
+      "71fc6f4bc4f9607a",
+      "aaed9b5f92eccbb9"
     ]
   ],
-  "_order": 186
+  "_order": 185
 }
 
 module.exports = Node;

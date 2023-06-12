@@ -17,10 +17,11 @@ const Node = {
       "ea6b9ddd404c6bfa"
     ]
   ],
-  "_order": 163
+  "_order": 162
 }
 
 Node.template = `
+SET time_zone = '+00:00';
 INSERT INTO {{flow.tablename}} 
     ({{{columnnames}}})
 VALUES {{{datastring}}}
