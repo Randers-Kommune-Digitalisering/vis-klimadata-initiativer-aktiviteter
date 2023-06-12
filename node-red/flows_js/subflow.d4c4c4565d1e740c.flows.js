@@ -10,7 +10,7 @@ const Node = {
       "y": 100,
       "wires": [
         {
-          "id": "397b9f429260299f"
+          "id": "edcb5fc148fcf7f8"
         }
       ]
     }
@@ -55,7 +55,7 @@ const Node = {
       }
     ]
   },
-  "_order": 6
+  "_order": 5
 }
 
 module.exports = Node;

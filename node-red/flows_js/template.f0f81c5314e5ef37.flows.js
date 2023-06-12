@@ -4,7 +4,7 @@ const Node = {
   "z": "db9cae581f57fc84",
   "g": "1990698f251b0a12",
   "name": "DROP TABLE {{flow.tablename}} ",
-  "field": "topic",
+  "field": "sql",
   "fieldType": "msg",
   "format": "sql",
   "syntax": "mustache",
@@ -17,7 +17,7 @@ const Node = {
       "e9174240eaa25dae"
     ]
   ],
-  "_order": 241
+  "_order": 206
 }
 
 Node.template = `

@@ -11,7 +11,6 @@ const Node = {
     "fill-opacity": "0.5"
   },
   "nodes": [
-    "43d0cf92514303e7",
     "6ce841fbce39163d",
     "1582f6ecc6731fd7",
     "3b82b31c2cdfb3c3"
@@ -20,7 +19,7 @@ const Node = {
   "y": 55,
   "w": 732,
   "h": 130,
-  "_order": 26
+  "_order": 20
 }
 
 module.exports = Node;
