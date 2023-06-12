@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "tablename",
       "pt": "flow",
-      "to": "eds_FORBRUG",
+      "to": "eds_PRODUKTION",
       "tot": "str"
     }
   ],
@@ -23,7 +23,7 @@ const Node = {
   "wires": [
     []
   ],
-  "_order": 226
+  "_order": 236
 }
 
 module.exports = Node;

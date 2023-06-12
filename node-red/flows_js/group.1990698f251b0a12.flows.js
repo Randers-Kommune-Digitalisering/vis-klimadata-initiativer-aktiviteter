@@ -31,7 +31,7 @@ const Node = {
   "y": 1239,
   "w": 1132,
   "h": 302,
-  "_order": 34
+  "_order": 28
 }
 
 module.exports = Node;
