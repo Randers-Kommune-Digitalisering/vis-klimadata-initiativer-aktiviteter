@@ -14,7 +14,9 @@ const Node = {
   "y": 1040,
   "wires": [
     [
-      "cc9f08c240e607f0"
+      "cc9f08c240e607f0",
+      "e867e16a899f4307",
+      "b21ac2de1e66b16d"
     ]
   ],
   "_order": 553
@@ -24,6 +26,7 @@ Node.template = `
 INSERT INTO {{flow.tablename}}
     ({{columnnames}})
 VALUES {{{datastring}}}
+{{{updateon}}}
 `
 
 module.exports = Node;

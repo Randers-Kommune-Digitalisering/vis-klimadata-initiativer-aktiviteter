@@ -16,15 +16,15 @@ const Node = {
       "t": "set",
       "p": "max_file_age_days",
       "pt": "msg",
-      "to": "50",
+      "to": "1",
       "tot": "num"
     },
     {
       "t": "set",
-      "p": "unique_updatable_column",
+      "p": "unique_identifiable_column",
       "pt": "msg",
-      "to": "",
-      "tot": "str"
+      "to": "[\"Fakturadato\",\"Antal_enheder\"]",
+      "tot": "json"
     }
   ],
   "action": "",
@@ -39,7 +39,7 @@ const Node = {
       "583b23b99fc952a6"
     ]
   ],
-  "_order": 540
+  "_order": 541
 }
 
 module.exports = Node;
