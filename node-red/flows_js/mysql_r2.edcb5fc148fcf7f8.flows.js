@@ -9,19 +9,19 @@ const Node = {
   "username": "",
   "password": "",
   "sql": "",
-  "port": 3306,
-  "pooling": false,
+  "port": "3306",
+  "pooling": true,
   "waitForConnections": true,
-  "connectionLimit": 10,
-  "queueTimeout": 10000,
-  "x": 260,
+  "connectionLimit": "10",
+  "queueTimeout": "10000",
+  "x": 380,
   "y": 100,
   "wires": [
     [
-      "422f8b4ceedb91fb"
+      "05c7d3ab6247cfe9"
     ]
   ],
-  "_order": 99
+  "_order": 98
 }
 
 module.exports = Node;
