@@ -17,21 +17,13 @@ const Node = {
       "ea6b9ddd404c6bfa"
     ]
   ],
-  "_order": 160
+  "_order": 161
 }
 
 Node.template = `
 INSERT INTO {{flow.tablename}} 
-    (Month,	Industrycode_DE35,TotalConsumption)
-VALUES( 
-        '{{{data.Month}}}',
-        '{{{data.Industrycode_DE35}}}',
-        '{{data.TotalConsumption}}'
-        )
-ON DUPLICATE KEY UPDATE
-    TotalConsumption = '{{data.TotalConsumption}}',
-    TotalConsumption = '{{data.TotalConsumption}}'
-
+    ({{{columnnames}}})
+VALUES {{{datastring}}}
 `
 
 module.exports = Node;

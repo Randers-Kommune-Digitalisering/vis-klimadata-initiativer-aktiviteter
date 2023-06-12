@@ -12,12 +12,11 @@ const Node = {
   "nodes": [
     "6440c7c789cb52fe",
     "ea6b9ddd404c6bfa",
-    "69dbd2a0eb7ccecd",
     "0c9460d4938b904b"
   ],
   "x": 114,
   "y": 695,
-  "w": 582,
+  "w": 532,
   "h": 130,
   "_order": 10
 }

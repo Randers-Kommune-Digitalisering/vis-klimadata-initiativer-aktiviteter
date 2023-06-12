@@ -26,7 +26,7 @@ CREATE TABLE if not exists {{flow.tablename}} (
 	last_updated TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 	Month DATE,
 	Industrycode_DE35 VARCHAR(10),
-	TotalConsumption INT,
+	TotalCon INT,
 	UNIQUE (Month, Industrycode_DE35)
 	);
 `

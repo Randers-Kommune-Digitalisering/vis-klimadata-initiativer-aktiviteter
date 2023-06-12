@@ -11,6 +11,13 @@ const Node = {
       "pt": "flow",
       "to": "eds_FORBRUG",
       "tot": "str"
+    },
+    {
+      "t": "set",
+      "p": "datafilter",
+      "pt": "msg",
+      "to": "[\"MeasurementPoints\",\"MunicipalityNo\"]",
+      "tot": "json"
     }
   ],
   "action": "",
