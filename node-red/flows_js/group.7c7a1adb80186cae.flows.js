@@ -13,13 +13,10 @@ const Node = {
   "nodes": [
     "c2a7d80a8df9fc53",
     "2d9e69a26787f421",
-    "7f3fa659dc7e3a5c",
     "615fdc33f4919bed"
   ],
   "x": 614,
   "y": 55,
-  "w": 732,
-  "h": 130,
   "_order": 12
 }
 

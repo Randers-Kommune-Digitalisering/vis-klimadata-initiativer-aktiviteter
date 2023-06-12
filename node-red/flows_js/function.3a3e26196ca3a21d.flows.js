@@ -14,7 +14,7 @@ const Node = {
   "wires": [
     []
   ],
-  "_order": 105
+  "_order": 104
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {
