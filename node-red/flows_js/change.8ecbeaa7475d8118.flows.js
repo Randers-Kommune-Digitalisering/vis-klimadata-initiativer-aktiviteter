@@ -19,16 +19,9 @@ const Node = {
     },
     {
       "t": "set",
-      "p": "datastring_old_test",
-      "pt": "msg",
-      "to": "/* Saml værdierne i dataobjektet i en kommasepareret streng */\t$join(\t    /* Gennemløb værdierne i dataobjektet */\t    data.* ~> $map(\t        function($v, $k, $i, $a) {\t            /* Hvis værdien er en streng, omslut den med anførselstegn */\t            $type($v) = \"string\" ? \"'\" & $v & \"'\" : $string($v)\t        }\t    ),\t    \",\"\t)",
-      "tot": "jsonata"
-    },
-    {
-      "t": "set",
       "p": "datastring",
       "pt": "msg",
-      "to": "data ~> $map(\t   function($value) {\t       /* Join the values of the object into a comma-separated string */     \"(\" &\t       $join(\t           /* Iterate over the values of the object */       $value.* ~> $map(\t               function($value) {\t                   /* If the value is a string, surround it with single quotes */\t                   $type($value) = \"string\" ? \"'\" & $value & \"'\" : $string($value)         \t               }       \t           ),\t           \",\"     \t       ) & \")\"   \t   } \t)",
+      "to": "data ~> $map(\t   function($value) {\t       /* Join the values of the object into a comma-separated string */     \"(\" &\t       $join(\t           /* Iterate over the values of the object */       \t           $value.* ~> $map(\t               function($value) {\t                   /* If the value is a string, surround it with single quotes */\t                   $type($value) = \"string\" ? \"'\" & $value & \"'\" : $string($value)         \t               }       \t           ),\t           \",\"     \t       ) & \")\"   \t   } \t)",
       "tot": "jsonata"
     },
     {
@@ -60,7 +53,7 @@ const Node = {
     ]
   ],
   "info": "",
-  "_order": 554
+  "_order": 240
 }
 
 Node.info = `

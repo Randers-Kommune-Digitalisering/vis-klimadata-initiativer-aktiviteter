@@ -8,7 +8,7 @@ const Node = {
   "password": "${DB_PASS}",
   "tls": false,
   "database": "${DB_DATABASE}",
-  "_order": 174
+  "_order": 97
 }
 
 module.exports = Node;

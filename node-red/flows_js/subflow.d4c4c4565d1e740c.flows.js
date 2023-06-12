@@ -1,7 +1,7 @@
 const Node = {
   "id": "d4c4c4565d1e740c",
   "type": "subflow",
-  "name": "Database connector (4)",
+  "name": "Database connector",
   "info": "",
   "category": "",
   "in": [
@@ -55,7 +55,7 @@ const Node = {
       }
     ]
   },
-  "_order": 16
+  "_order": 6
 }
 
 module.exports = Node;

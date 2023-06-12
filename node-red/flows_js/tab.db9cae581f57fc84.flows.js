@@ -1,11 +1,11 @@
 const Node = {
   "id": "db9cae581f57fc84",
   "type": "tab",
-  "label": "Ændret flow forslag til OD",
+  "label": "OpenData.dk",
   "disabled": false,
   "info": "",
   "env": [],
-  "_order": 6
+  "_order": 4
 }
 
 module.exports = Node;

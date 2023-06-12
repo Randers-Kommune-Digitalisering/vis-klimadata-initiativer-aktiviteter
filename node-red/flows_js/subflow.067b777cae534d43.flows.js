@@ -1,7 +1,7 @@
 const Node = {
   "id": "067b777cae534d43",
   "type": "subflow",
-  "name": "OpenData.dk - Randers org. - Connector (4)",
+  "name": "OpenData.dk - Randers org. - Connector",
   "info": "",
   "category": "",
   "in": [
@@ -32,20 +32,20 @@ const Node = {
     },
     {
       "x": 1310,
-      "y": 420,
+      "y": 520,
       "wires": [
         {
-          "id": "ef87d74f847870bb",
+          "id": "3832f63b9d5a9bad",
           "port": 0
         }
       ]
     },
     {
       "x": 1310,
-      "y": 520,
+      "y": 420,
       "wires": [
         {
-          "id": "3832f63b9d5a9bad",
+          "id": "ef87d74f847870bb",
           "port": 0
         }
       ]
@@ -56,8 +56,8 @@ const Node = {
   "color": "#E9967A",
   "outputLabels": [
     "metrics",
-    "data",
-    "retry"
+    "retry",
+    "data"
   ],
   "icon": "node-red/inject.svg",
   "status": {
@@ -70,7 +70,7 @@ const Node = {
       }
     ]
   },
-  "_order": 17
+  "_order": 7
 }
 
 module.exports = Node;
