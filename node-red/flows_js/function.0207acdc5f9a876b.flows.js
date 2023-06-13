@@ -22,14 +22,18 @@ const Node = {
       "c54ea9b80c5fdba4"
     ]
   ],
-  "_order": 268
+  "_order": 266
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util, dayjs) {
+  // Get latest month from dataset
   var dayobj = dayjs(msg.payload[0].latest_month);
   
-  msg.startdato = dayobj.format("YYYY-MM-DD");
+  // Add 1 month for new startdate
+  dayobj = dayobj.add(1, "month");
   
+  // Return in desired format
+  msg.startdato = dayobj.format("YYYY-MM-DD");
   return msg;
 }
 
