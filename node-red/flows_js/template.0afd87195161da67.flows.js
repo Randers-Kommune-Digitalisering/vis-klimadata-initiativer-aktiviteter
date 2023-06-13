@@ -17,14 +17,13 @@ const Node = {
       "cc9f08c240e607f0"
     ]
   ],
-  "_order": 298
+  "_order": 297
 }
 
 Node.template = `
 INSERT INTO {{flow.tablename}}
     ({{columnnames}})
 VALUES {{{datastring}}}
-{{{updateon}}}
 `
 
 module.exports = Node;
