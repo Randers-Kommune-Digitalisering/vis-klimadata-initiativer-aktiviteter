@@ -6,8 +6,8 @@ const Node = {
   "property": "payload",
   "action": "obj",
   "pretty": false,
-  "x": 1350,
-  "y": 1040,
+  "x": 1310,
+  "y": 960,
   "wires": [
     [
       "a827acde89acc136"

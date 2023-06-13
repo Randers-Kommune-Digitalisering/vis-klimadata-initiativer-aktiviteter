@@ -32,7 +32,7 @@ const Node = {
     },
     {
       "x": 1310,
-      "y": 520,
+      "y": 620,
       "wires": [
         {
           "id": "3832f63b9d5a9bad",
@@ -41,8 +41,8 @@ const Node = {
       ]
     },
     {
-      "x": 1310,
-      "y": 420,
+      "x": 1330,
+      "y": 500,
       "wires": [
         {
           "id": "ef87d74f847870bb",
@@ -62,7 +62,7 @@ const Node = {
   "icon": "node-red/inject.svg",
   "status": {
     "x": 1340,
-    "y": 600,
+    "y": 700,
     "wires": [
       {
         "id": "b90798fadb752547",

@@ -45,15 +45,14 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 230,
-  "y": 1040,
+  "y": 960,
   "wires": [
     [
-      "0afd87195161da67",
-      "f97cb752a3d83140"
+      "0afd87195161da67"
     ]
   ],
   "info": "",
-  "_order": 297
+  "_order": 299
 }
 
 Node.info = `
