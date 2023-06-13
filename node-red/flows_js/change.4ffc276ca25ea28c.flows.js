@@ -25,7 +25,7 @@ const Node = {
     ]
   ],
   "icon": "node-red/leveldb.png",
-  "_order": 291
+  "_order": 354
 }
 
 module.exports = Node;
