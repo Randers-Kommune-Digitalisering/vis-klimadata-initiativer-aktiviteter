@@ -2,6 +2,7 @@ const Node = {
   "id": "b3eced699866b194",
   "type": "template",
   "z": "db9cae581f57fc84",
+  "g": "05fc82ad62ba62fa",
   "name": "Forespørgsel ↓\\n Tjek om tabel eksisterer",
   "field": "sql",
   "fieldType": "msg",
@@ -16,7 +17,7 @@ const Node = {
       "4ba2430025d196f9"
     ]
   ],
-  "_order": 350
+  "_order": 351
 }
 
 Node.template = `

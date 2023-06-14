@@ -2,6 +2,7 @@ const Node = {
   "id": "053a39221681cfbc",
   "type": "template",
   "z": "db9cae581f57fc84",
+  "g": "05fc82ad62ba62fa",
   "name": "Forespørgsel ↓\\n Tjek antal rækker med samme fil-id",
   "field": "sql",
   "fieldType": "msg",
@@ -16,7 +17,7 @@ const Node = {
       "6a824b2c94884d6d"
     ]
   ],
-  "_order": 343
+  "_order": 345
 }
 
 Node.template = `

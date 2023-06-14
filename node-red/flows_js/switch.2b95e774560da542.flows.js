@@ -2,9 +2,10 @@ const Node = {
   "id": "2b95e774560da542",
   "type": "switch",
   "z": "db9cae581f57fc84",
+  "g": "05fc82ad62ba62fa",
   "name": "Tjek om tabel eksisterer",
-  "property": "payload.length",
-  "propertyType": "msg",
+  "property": "$count(payload)",
+  "propertyType": "jsonata",
   "rules": [
     {
       "t": "eq",
@@ -28,10 +29,11 @@ const Node = {
       "5b92c664b1dd20a0"
     ],
     [
-      "053a39221681cfbc"
+      "053a39221681cfbc",
+      "e6adcf1a18463665"
     ]
   ],
-  "_order": 353
+  "_order": 354
 }
 
 module.exports = Node;

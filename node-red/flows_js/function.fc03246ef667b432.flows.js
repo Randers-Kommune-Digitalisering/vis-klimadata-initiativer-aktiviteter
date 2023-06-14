@@ -19,14 +19,14 @@ const Node = {
       "module": "dayjs/plugin/customParseFormat"
     }
   ],
-  "x": 490,
+  "x": 670,
   "y": 1140,
   "wires": [
     [
       "43379a8b2078619b"
     ]
   ],
-  "_order": 318
+  "_order": 324
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util, dayjs, customParseFormat) {
@@ -40,8 +40,8 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util, da
   var validDateFormats = msg.validDateFormats;
   validDateFormats = !Array.isArray(validDateFormats) ? [validDateFormats] : validDateFormats;
   
-  // For each variable in msg.dataskabelon
-  for (const [key, value] of Object.entries(msg.dataskabelon))
+  // For each variable in flow.dataskabelon
+  for (const [key, value] of Object.entries(flow.get("dataskabelon")))
   {
       // Check if variable type is date
       if(value == "DATE")

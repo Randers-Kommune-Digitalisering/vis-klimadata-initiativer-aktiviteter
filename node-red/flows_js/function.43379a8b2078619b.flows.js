@@ -10,7 +10,7 @@ const Node = {
   "initialize": "",
   "finalize": "",
   "libs": [],
-  "x": 710,
+  "x": 890,
   "y": 1140,
   "wires": [
     [
@@ -18,15 +18,15 @@ const Node = {
       "ad3a40423bcc0872"
     ]
   ],
-  "_order": 335
+  "_order": 338
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {
   // Number(s) to parse
   var data = msg.data;
   
-  // For each variable in msg.dataskabelon
-  for (const [key, value] of Object.entries(msg.dataskabelon))
+  // For each variable in flow.dataskabelon
+  for (const [key, value] of Object.entries(flow.get("dataskabelon")))
   {
       // Check if variable type is float
       if(value == "FLOAT")

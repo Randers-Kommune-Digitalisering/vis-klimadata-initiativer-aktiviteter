@@ -8,14 +8,14 @@ const Node = {
   "tosidebar": true,
   "console": false,
   "tostatus": false,
-  "complete": "payload",
-  "targetType": "msg",
+  "complete": "$flowContext(\"dataskabelon\")",
+  "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 720,
-  "y": 820,
+  "x": 900,
+  "y": 860,
   "wires": [],
-  "_order": 330
+  "_order": 335
 }
 
 module.exports = Node;

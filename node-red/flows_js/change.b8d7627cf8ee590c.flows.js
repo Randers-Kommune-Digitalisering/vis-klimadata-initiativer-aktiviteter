@@ -2,7 +2,7 @@ const Node = {
   "id": "b8d7627cf8ee590c",
   "type": "change",
   "z": "db9cae581f57fc84",
-  "g": "bf3a5d37f980d010",
+  "d": true,
   "name": "Concenate data",
   "rules": [
     {
@@ -18,14 +18,12 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 720,
-  "y": 700,
+  "x": 1400,
+  "y": 760,
   "wires": [
-    [
-      "024aa1d2d61e06e8"
-    ]
+    []
   ],
-  "_order": 333
+  "_order": 362
 }
 
 module.exports = Node;

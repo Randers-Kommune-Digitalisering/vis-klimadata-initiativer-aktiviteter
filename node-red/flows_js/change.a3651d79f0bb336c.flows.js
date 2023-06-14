@@ -2,6 +2,7 @@ const Node = {
   "id": "a3651d79f0bb336c",
   "type": "change",
   "z": "db9cae581f57fc84",
+  "g": "05fc82ad62ba62fa",
   "name": "Rename and set tablename \\n from dataset name",
   "rules": [
     {
@@ -36,7 +37,7 @@ const Node = {
       "b3eced699866b194"
     ]
   ],
-  "_order": 342
+  "_order": 344
 }
 
 module.exports = Node;

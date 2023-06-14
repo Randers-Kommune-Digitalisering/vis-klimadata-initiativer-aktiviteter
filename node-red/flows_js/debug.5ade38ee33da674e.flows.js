@@ -1,20 +1,20 @@
 const Node = {
-  "id": "afd363f408707a55",
+  "id": "5ade38ee33da674e",
   "type": "debug",
   "z": "db9cae581f57fc84",
-  "name": "FALSE",
+  "name": "FIL-ID",
   "active": true,
   "tosidebar": true,
   "console": false,
   "tostatus": false,
-  "complete": "true",
-  "targetType": "full",
+  "complete": "data[0].file_id",
+  "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1360,
-  "y": 560,
+  "x": 970,
+  "y": 380,
   "wires": [],
-  "_order": 347
+  "_order": 371
 }
 
 module.exports = Node;

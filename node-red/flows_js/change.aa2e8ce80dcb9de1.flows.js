@@ -1,19 +1,19 @@
 const Node = {
-  "id": "c1ea41d63b80c51d",
+  "id": "aa2e8ce80dcb9de1",
   "type": "change",
   "z": "db9cae581f57fc84",
-  "g": "7a26c4f3a3a06ad4",
-  "name": "Cleanup",
+  "g": "361d58eda749bdc2",
+  "name": "Clean flow vars",
   "rules": [
     {
       "t": "delete",
-      "p": "tablename",
+      "p": "dataskabelon",
       "pt": "flow"
     },
     {
       "t": "delete",
-      "p": "data",
-      "pt": "flow"
+      "p": "tablename",
+      "pt": "msg"
     }
   ],
   "action": "",
@@ -21,14 +21,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 990,
-  "y": 1280,
+  "x": 820,
+  "y": 140,
   "wires": [
     [
-      "8447f04f69bb2c68"
+      "8ba0712b7f49b9c6"
     ]
   ],
-  "_order": 295
+  "_order": 364
 }
 
 module.exports = Node;

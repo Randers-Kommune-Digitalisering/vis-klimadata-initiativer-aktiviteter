@@ -2,6 +2,7 @@ const Node = {
   "id": "e90f042f9ef5113b",
   "type": "function",
   "z": "db9cae581f57fc84",
+  "g": "295478fff9540c6a",
   "name": "function 3",
   "func": "",
   "outputs": 1,
@@ -9,11 +10,11 @@ const Node = {
   "initialize": "",
   "finalize": "",
   "libs": [],
-  "x": 870,
-  "y": 400,
+  "x": 1240,
+  "y": 360,
   "wires": [
     [
-      "a3651d79f0bb336c"
+      "b89f582204c58dfe"
     ]
   ],
   "_order": 359

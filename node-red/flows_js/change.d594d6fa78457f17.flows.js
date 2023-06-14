@@ -1,14 +1,16 @@
 const Node = {
-  "id": "3e0d6676d1936160",
+  "id": "d594d6fa78457f17",
   "type": "change",
   "z": "db9cae581f57fc84",
-  "g": "4cb2acab938256d7",
-  "name": "Delete payload",
+  "name": "",
   "rules": [
     {
-      "t": "delete",
+      "t": "set",
       "p": "payload",
-      "pt": "msg"
+      "pt": "msg",
+      "to": "lastsql",
+      "tot": "flow",
+      "dc": true
     }
   ],
   "action": "",
@@ -16,14 +18,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 200,
-  "y": 960,
+  "x": 480,
+  "y": 1820,
   "wires": [
     [
-      "87fdfac3f0d99186"
+      "58c793b4027437d9"
     ]
   ],
-  "_order": 326
+  "_order": 374
 }
 
 module.exports = Node;

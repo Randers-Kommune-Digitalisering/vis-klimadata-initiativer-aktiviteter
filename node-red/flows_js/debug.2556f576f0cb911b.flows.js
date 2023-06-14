@@ -3,7 +3,7 @@ const Node = {
   "type": "debug",
   "z": "db9cae581f57fc84",
   "name": "all",
-  "active": false,
+  "active": true,
   "tosidebar": true,
   "console": false,
   "tostatus": false,
@@ -11,10 +11,10 @@ const Node = {
   "targetType": "full",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1430,
-  "y": 960,
+  "x": 1250,
+  "y": 1240,
   "wires": [],
-  "_order": 319
+  "_order": 325
 }
 
 module.exports = Node;

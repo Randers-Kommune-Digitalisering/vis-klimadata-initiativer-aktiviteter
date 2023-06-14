@@ -15,15 +15,15 @@ const Node = {
       "module": "dayjs"
     }
   ],
-  "x": 460,
-  "y": 860,
+  "x": 640,
+  "y": 900,
   "wires": [
     [
       "533ce7c799cfb2ce",
       "1f4271f61ec49e2a"
     ]
   ],
-  "_order": 321
+  "_order": 327
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util, dayjs) {
@@ -57,7 +57,7 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util, da
       }
   }
   
-  msg.dataskabelon = msg.payload.sqlDataType;
+  flow.set("dataskabelon", msg.payload.sqlDataType);
   
   return msg;
 }
