@@ -7,13 +7,13 @@ const Node = {
   "action": "str",
   "pretty": false,
   "x": 1190,
-  "y": 960,
+  "y": 1280,
   "wires": [
     [
       "22c591b854518f59"
     ]
   ],
-  "_order": 343
+  "_order": 336
 }
 
 module.exports = Node;

@@ -10,15 +10,15 @@ const Node = {
   "initialize": "",
   "finalize": "",
   "libs": [],
-  "x": 730,
-  "y": 820,
+  "x": 710,
+  "y": 1140,
   "wires": [
     [
       "22413d13c16b68d5",
       "ad3a40423bcc0872"
     ]
   ],
-  "_order": 342
+  "_order": 335
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {
@@ -36,9 +36,9 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util) {
           {
               // Parse
               const str = String(item[key]);
-              var value = str.replace(",", ".");
+              var floatvalue = str.replace(",", ".");
   
-              var floatvalue = parseFloat(value);
+              floatvalue = parseFloat(floatvalue);
               item[key] = floatvalue;
           });
       }

@@ -21,10 +21,6 @@ const Node = {
       "y": 100,
       "wires": [
         {
-          "id": "c00f885d81f21848",
-          "port": 0
-        },
-        {
           "id": "076ff355c5b536f3",
           "port": 0
         },

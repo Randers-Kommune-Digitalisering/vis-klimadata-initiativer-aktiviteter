@@ -1,28 +1,26 @@
 const Node = {
-  "id": "7692bfa6e16780ad",
+  "id": "b3eced699866b194",
   "type": "template",
   "z": "db9cae581f57fc84",
-  "g": "8fa237cc848f11bd",
-  "name": "",
+  "name": "Forespørgsel ↓\\n Tjek om tabel eksisterer",
   "field": "sql",
   "fieldType": "msg",
-  "format": "handlebars",
+  "format": "sql",
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 500,
-  "y": 1540,
+  "x": 510,
+  "y": 480,
   "wires": [
     [
-      "873bd8c4027cad35"
+      "4ba2430025d196f9"
     ]
   ],
-  "_order": 323
+  "_order": 350
 }
 
 Node.template = `
-SELECT *
-FROM {{flow.tablename}}
+SHOW TABLES LIKE '{{{flow.tablename}}}';
 `
 
 module.exports = Node;

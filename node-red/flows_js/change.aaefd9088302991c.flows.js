@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "data",
       "pt": "msg",
-      "to": "payload ~> $map(function($v) { $merge([$v, {\"file-id\": metadata.id}]) })",
+      "to": "payload ~> $map(function($v) { $merge([$v, {\"file_id\": metadata.id}]) })",
       "tot": "jsonata"
     },
     {
@@ -30,7 +30,7 @@ const Node = {
       "ef87d74f847870bb"
     ]
   ],
-  "_order": 137
+  "_order": 135
 }
 
 module.exports = Node;
