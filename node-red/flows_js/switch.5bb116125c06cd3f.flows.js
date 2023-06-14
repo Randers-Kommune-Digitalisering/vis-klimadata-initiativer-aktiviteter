@@ -3,7 +3,7 @@ const Node = {
   "type": "switch",
   "z": "db9cae581f57fc84",
   "name": "",
-  "property": "dataskabelon",
+  "property": "dataskabelon_done",
   "propertyType": "flow",
   "rules": [
     {
@@ -26,7 +26,7 @@ const Node = {
       "111acd0ef0236c66"
     ]
   ],
-  "_order": 367
+  "_order": 291
 }
 
 module.exports = Node;

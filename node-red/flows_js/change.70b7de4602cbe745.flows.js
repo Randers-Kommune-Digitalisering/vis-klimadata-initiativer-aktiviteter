@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "tablename",
       "pt": "flow",
-      "to": "opendata_braendstofforbrug",
+      "to": "eds_PRODUKTION",
       "tot": "str"
     }
   ],
@@ -23,7 +23,7 @@ const Node = {
   "wires": [
     []
   ],
-  "_order": 317
+  "_order": 247
 }
 
 module.exports = Node;

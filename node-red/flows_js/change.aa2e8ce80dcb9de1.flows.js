@@ -14,6 +14,11 @@ const Node = {
       "t": "delete",
       "p": "tablename",
       "pt": "msg"
+    },
+    {
+      "t": "delete",
+      "p": "dataskabelon_done",
+      "pt": "msg"
     }
   ],
   "action": "",
@@ -28,7 +33,7 @@ const Node = {
       "8ba0712b7f49b9c6"
     ]
   ],
-  "_order": 364
+  "_order": 288
 }
 
 module.exports = Node;

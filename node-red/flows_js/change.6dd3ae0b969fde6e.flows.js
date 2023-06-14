@@ -1,16 +1,16 @@
 const Node = {
-  "id": "dcc8707cd7b0c9b5",
+  "id": "6dd3ae0b969fde6e",
   "type": "change",
   "z": "db9cae581f57fc84",
-  "g": "2c42a7f68ea1cb30",
+  "g": "4cb2acab938256d7",
   "name": "",
   "rules": [
     {
-      "t": "move",
-      "p": "sql",
-      "pt": "msg",
-      "to": "payload",
-      "tot": "msg"
+      "t": "set",
+      "p": "dataskabelon_done",
+      "pt": "flow",
+      "to": "",
+      "tot": "date"
     }
   ],
   "action": "",
@@ -18,14 +18,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 740,
-  "y": 1380,
+  "x": 980,
+  "y": 1000,
   "wires": [
     [
-      "d41723ad0cd21b0f"
+      "967c93ef813a39bc"
     ]
   ],
-  "_order": 369
+  "_order": 299
 }
 
 module.exports = Node;
