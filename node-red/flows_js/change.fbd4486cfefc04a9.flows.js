@@ -11,13 +11,6 @@ const Node = {
       "pt": "flow",
       "to": "",
       "tot": "date"
-    },
-    {
-      "t": "set",
-      "p": "db_isBeingCreated",
-      "pt": "msg",
-      "to": "false",
-      "tot": "bool"
     }
   ],
   "action": "",
@@ -30,7 +23,7 @@ const Node = {
   "wires": [
     []
   ],
-  "_order": 314
+  "_order": 317
 }
 
 module.exports = Node;

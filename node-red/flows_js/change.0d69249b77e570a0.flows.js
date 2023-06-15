@@ -11,13 +11,6 @@ const Node = {
       "pt": "flow",
       "to": "",
       "tot": "date"
-    },
-    {
-      "t": "set",
-      "p": "dataskabelon_isBeingCreated",
-      "pt": "flow",
-      "to": "false",
-      "tot": "bool"
     }
   ],
   "action": "",
@@ -33,7 +26,7 @@ const Node = {
       "5701ce433742e3e1"
     ]
   ],
-  "_order": 294
+  "_order": 297
 }
 
 module.exports = Node;

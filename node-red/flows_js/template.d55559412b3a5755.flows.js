@@ -1,7 +1,7 @@
 const Node = {
   "id": "d55559412b3a5755",
   "type": "template",
-  "z": "db9cae581f57fc84",
+  "z": "9cd2fc26979e7dd1",
   "g": "1990698f251b0a12",
   "name": "SELECT * FROM {{flow.tablename}}",
   "field": "sql",
@@ -11,13 +11,13 @@ const Node = {
   "template": "",
   "output": "str",
   "x": 490,
-  "y": 2240,
+  "y": 1960,
   "wires": [
     [
       "e0fc9f64744e1df9"
     ]
   ],
-  "_order": 245
+  "_order": 238
 }
 
 Node.template = `
