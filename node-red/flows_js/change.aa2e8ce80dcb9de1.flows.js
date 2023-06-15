@@ -19,6 +19,25 @@ const Node = {
       "t": "delete",
       "p": "dataskabelon_done",
       "pt": "msg"
+    },
+    {
+      "t": "set",
+      "p": "dataskabelon_isBeingCreated",
+      "pt": "msg",
+      "to": "false",
+      "tot": "bool"
+    },
+    {
+      "t": "delete",
+      "p": "db_done",
+      "pt": "flow"
+    },
+    {
+      "t": "set",
+      "p": "db_isBeingCreated",
+      "pt": "flow",
+      "to": "false",
+      "tot": "bool"
     }
   ],
   "action": "",
@@ -26,14 +45,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 820,
-  "y": 140,
+  "x": 940,
+  "y": 120,
   "wires": [
     [
       "8ba0712b7f49b9c6"
     ]
   ],
-  "_order": 288
+  "_order": 282
 }
 
 module.exports = Node;

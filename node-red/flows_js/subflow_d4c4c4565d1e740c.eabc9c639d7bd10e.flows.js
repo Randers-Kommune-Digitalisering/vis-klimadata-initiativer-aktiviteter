@@ -2,15 +2,16 @@ const Node = {
   "id": "eabc9c639d7bd10e",
   "type": "subflow:d4c4c4565d1e740c",
   "z": "db9cae581f57fc84",
+  "g": "ab0af2245cd1cfbb",
   "name": "Send forespørgsel \\n til database",
-  "x": 530,
-  "y": 680,
+  "x": 650,
+  "y": 1460,
   "wires": [
     [
-      "73df4bb1c3f715df"
+      "3b42911353bed657"
     ]
   ],
-  "_order": 298
+  "_order": 302
 }
 
 module.exports = Node;

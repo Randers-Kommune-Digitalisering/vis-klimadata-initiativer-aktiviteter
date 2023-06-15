@@ -8,12 +8,12 @@ const Node = {
   "propertyType": "jsonata",
   "rules": [
     {
-      "t": "eq",
+      "t": "gt",
       "v": "0",
       "vt": "num"
     },
     {
-      "t": "gt",
+      "t": "eq",
       "v": "0",
       "vt": "num"
     }
@@ -21,19 +21,18 @@ const Node = {
   "checkall": "true",
   "repair": false,
   "outputs": 2,
-  "x": 1010,
-  "y": 480,
+  "x": 790,
+  "y": 1060,
   "wires": [
     [
-      "e6adcf1a18463665",
+      "baaf9adbbf2231b0",
       "5b92c664b1dd20a0"
     ],
     [
-      "053a39221681cfbc",
-      "e6adcf1a18463665"
+      "a71458ca35fdca65"
     ]
   ],
-  "_order": 283
+  "_order": 278
 }
 
 module.exports = Node;

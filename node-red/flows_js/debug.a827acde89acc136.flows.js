@@ -2,7 +2,7 @@ const Node = {
   "id": "a827acde89acc136",
   "type": "debug",
   "z": "db9cae581f57fc84",
-  "name": "FINISH",
+  "name": "FINISH (NEW DATA)",
   "active": true,
   "tosidebar": true,
   "console": false,
@@ -11,10 +11,10 @@ const Node = {
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1460,
-  "y": 1280,
+  "x": 1320,
+  "y": 1780,
   "wires": [],
-  "_order": 271
+  "_order": 272
 }
 
 module.exports = Node;

@@ -10,20 +10,20 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 900,
-  "y": 900,
+  "x": 320,
+  "y": 1240,
   "wires": [
     [
       "2ef7eb5951d9c7f5"
     ]
   ],
-  "_order": 258
+  "_order": 263
 }
 
 Node.template = `
-{{#payload.flatlist}}
+{{#flow.flatlist}}
 {{name}} {{type}},
-{{/payload.flatlist}}
+{{/flow.flatlist}}
 `
 
 module.exports = Node;

@@ -4,16 +4,17 @@ const Node = {
   "z": "db9cae581f57fc84",
   "name": "Table exists IN",
   "links": [
-    "5b92c664b1dd20a0"
+    "5b92c664b1dd20a0",
+    "3d1fde047ff2bb2f"
   ],
-  "x": 685,
-  "y": 640,
+  "x": 135,
+  "y": 1400,
   "wires": [
     [
-      "73df4bb1c3f715df"
+      "053a39221681cfbc"
     ]
   ],
-  "_order": 286
+  "_order": 280
 }
 
 module.exports = Node;

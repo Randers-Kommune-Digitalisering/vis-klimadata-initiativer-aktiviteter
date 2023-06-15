@@ -2,12 +2,12 @@ const Node = {
   "id": "3b164ca195971fb6",
   "type": "comment",
   "z": "db9cae581f57fc84",
-  "name": "Evt. slet \"Join datasets\" og ændr i denne change node",
+  "name": "Retry",
   "info": "",
-  "x": 260,
-  "y": 1220,
+  "x": 950,
+  "y": 320,
   "wires": [],
-  "_order": 287
+  "_order": 281
 }
 
 module.exports = Node;

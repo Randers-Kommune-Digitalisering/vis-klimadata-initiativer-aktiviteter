@@ -2,7 +2,8 @@ const Node = {
   "id": "1c54a151e6b4f8b0",
   "type": "switch",
   "z": "db9cae581f57fc84",
-  "name": "Eksister \\n dataskabelon?",
+  "g": "8978c7606345d52b",
+  "name": "Eksisterer \\n dataskabelon?",
   "property": "dataskabelon",
   "propertyType": "flow",
   "rules": [
@@ -16,17 +17,17 @@ const Node = {
   "checkall": "true",
   "repair": false,
   "outputs": 2,
-  "x": 140,
-  "y": 900,
+  "x": 200,
+  "y": 660,
   "wires": [
     [
-      "0f7b6e7e23598f29"
+      "ed93030cf7ee3a04"
     ],
     [
       "92b3ceac2148afb0"
     ]
   ],
-  "_order": 289
+  "_order": 285
 }
 
 module.exports = Node;

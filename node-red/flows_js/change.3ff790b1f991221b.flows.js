@@ -45,13 +45,13 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 1030,
-  "y": 1680,
+  "x": 1000,
+  "y": 2320,
   "wires": [
     []
   ],
   "info": "",
-  "_order": 273
+  "_order": 274
 }
 
 Node.info = `

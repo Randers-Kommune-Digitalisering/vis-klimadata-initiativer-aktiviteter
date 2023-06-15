@@ -2,7 +2,7 @@ const Node = {
   "id": "a3651d79f0bb336c",
   "type": "change",
   "z": "db9cae581f57fc84",
-  "g": "05fc82ad62ba62fa",
+  "g": "524b1df3261ba1b3",
   "name": "Rename and set tablename \\n from dataset name",
   "rules": [
     {
@@ -31,13 +31,13 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 240,
-  "y": 480,
+  "y": 500,
   "wires": [
     [
-      "b3eced699866b194"
+      "73df4bb1c3f715df"
     ]
   ],
-  "_order": 274
+  "_order": 297
 }
 
 module.exports = Node;

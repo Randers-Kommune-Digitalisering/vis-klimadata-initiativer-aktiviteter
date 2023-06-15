@@ -1,16 +1,16 @@
 const Node = {
-  "id": "0e702f66480650a3",
+  "id": "abe7fa69de34435f",
   "type": "change",
   "z": "db9cae581f57fc84",
-  "d": true,
-  "name": "",
+  "g": "05fc82ad62ba62fa",
+  "name": "DB_isBeingCreated\\n = true",
   "rules": [
     {
       "t": "set",
-      "p": "lastsql",
+      "p": "db_isBeingCreated",
       "pt": "flow",
-      "to": "sql",
-      "tot": "msg"
+      "to": "true",
+      "tot": "bool"
     }
   ],
   "action": "",
@@ -18,12 +18,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 780,
-  "y": 1380,
+  "x": 670,
+  "y": 940,
   "wires": [
-    []
+    [
+      "b3eced699866b194"
+    ]
   ],
-  "_order": 293
+  "_order": 307
 }
 
 module.exports = Node;

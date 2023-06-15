@@ -1,21 +1,20 @@
 const Node = {
-  "id": "5ade38ee33da674e",
+  "id": "488595e350259e35",
   "type": "debug",
   "z": "db9cae581f57fc84",
-  "g": "05fc82ad62ba62fa",
-  "name": "FIL-ID",
+  "name": "FINISH (NO NEW DATA)",
   "active": true,
   "tosidebar": true,
   "console": false,
   "tostatus": false,
-  "complete": "data[0].file_id",
+  "complete": "payload",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 950,
-  "y": 440,
+  "x": 1250,
+  "y": 1360,
   "wires": [],
-  "_order": 292
+  "_order": 315
 }
 
 module.exports = Node;
