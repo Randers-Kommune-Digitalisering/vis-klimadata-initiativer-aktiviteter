@@ -18,12 +18,12 @@ const Node = {
     {
       "t": "delete",
       "p": "dataskabelon_done",
-      "pt": "msg"
+      "pt": "flow"
     },
     {
       "t": "set",
       "p": "dataskabelon_isBeingCreated",
-      "pt": "msg",
+      "pt": "flow",
       "to": "false",
       "tot": "bool"
     },

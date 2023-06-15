@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "tablename",
       "pt": "flow",
-      "to": "eds_PRODUKTION",
+      "to": "opendata_braendstofforbrug",
       "tot": "str"
     }
   ],
