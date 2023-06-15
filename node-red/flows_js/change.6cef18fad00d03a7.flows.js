@@ -9,6 +9,11 @@ const Node = {
       "t": "delete",
       "p": "payload.OMRÅDE",
       "pt": "msg"
+    },
+    {
+      "t": "delete",
+      "p": "payload.TID",
+      "pt": "msg"
     }
   ],
   "action": "",
@@ -16,14 +21,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 570,
-  "y": 480,
+  "x": 630,
+  "y": 520,
   "wires": [
     [
       "54bea232f93f8f0b"
     ]
   ],
-  "_order": 145
+  "_order": 143
 }
 
 module.exports = Node;

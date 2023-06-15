@@ -1,7 +1,7 @@
 const Node = {
   "id": "9307efcad89c9669",
   "type": "template",
-  "z": "9cd2fc26979e7dd1",
+  "z": "7f3219f0beb025c3",
   "g": "1990698f251b0a12",
   "name": "SHOW TABLES",
   "field": "sql",
@@ -10,14 +10,14 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 420,
-  "y": 2000,
+  "x": 400,
+  "y": 1600,
   "wires": [
     [
       "c2426c53cdfab1e6"
     ]
   ],
-  "_order": 241
+  "_order": 171
 }
 
 Node.template = `

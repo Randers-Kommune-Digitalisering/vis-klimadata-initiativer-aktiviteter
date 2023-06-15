@@ -10,28 +10,22 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 240,
-  "y": 640,
+  "x": 580,
+  "y": 1020,
   "wires": [
     [
-      "aa4085ae631b7f7f"
+      "f003f7882b360583"
     ]
   ],
-  "_order": 147
+  "_order": 145
 }
 
 Node.template = `
-INSERT INTO {{flow.tablename}} 
-    (Måned, Biltype, Drivmiddel, Anvendelse, Antal)
-VALUES( 
-        '{{{data.maaned}}}',
-        '{{{data.BILTYPE}}}',
-        '{{{data.DRIV}}}',
-        '{{{data.BRUG}}}',
-        '{{{data.INDHOLD}}}'
-        )
-ON DUPLICATE KEY UPDATE
-    Antal = '{{{data.INDHOLD}}}'
+INSERT INTO {{flow.tablename}}
+    ({{columnnames}})
+VALUES {{{datastring}}}
+#ON DUPLICATE KEY UPDATE
+#    {{\\{updatestring}\\}}
 `
 
 module.exports = Node;

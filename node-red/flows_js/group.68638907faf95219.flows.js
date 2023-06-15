@@ -7,7 +7,7 @@ const Node = {
     "stroke": "none",
     "stroke-opacity": "0.5",
     "label": true,
-    "fill": "#ffefbf",
+    "fill": "#ffffbf",
     "fill-opacity": "0.49"
   },
   "nodes": [
@@ -15,12 +15,12 @@ const Node = {
     "6cef18fad00d03a7",
     "54bea232f93f8f0b",
     "4b86f589fd76f9d5",
-    "3f641fcece5a6ba2"
+    "b4de503d63dc6823"
   ],
   "x": 114,
-  "y": 414,
-  "w": 1262,
-  "h": 127,
+  "y": 434,
+  "w": 1152,
+  "h": 139,
   "_order": 12
 }
 

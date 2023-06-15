@@ -3,7 +3,7 @@ const Node = {
   "type": "change",
   "z": "7f3219f0beb025c3",
   "g": "62d1b4969e322491",
-  "name": "Konfigurer tabelnavn",
+  "name": "Konfigurer tabelnavn + \\n opdaterbar kolonner og primary keys",
   "rules": [
     {
       "t": "set",
@@ -11,6 +11,20 @@ const Node = {
       "pt": "flow",
       "to": "dst_BIL54",
       "tot": "str"
+    },
+    {
+      "t": "set",
+      "p": "updatable_columns",
+      "pt": "msg",
+      "to": "[\"INDHOLD\"]",
+      "tot": "json"
+    },
+    {
+      "t": "set",
+      "p": "primary_keys",
+      "pt": "msg",
+      "to": "[\"created\",\"BRUG\",\"DRIV\",\"TID\"]",
+      "tot": "json"
     }
   ],
   "action": "",
@@ -18,14 +32,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 740,
-  "y": 120,
+  "x": 850,
+  "y": 140,
   "wires": [
     [
-      "3e67a5def24cc8e4"
+      "f332853c388a1c3d"
     ]
   ],
-  "_order": 156
+  "_order": 152
 }
 
 module.exports = Node;

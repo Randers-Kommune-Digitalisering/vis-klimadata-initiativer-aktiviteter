@@ -2,7 +2,7 @@ const Node = {
   "id": "62d1b4969e322491",
   "type": "group",
   "z": "7f3219f0beb025c3",
-  "name": "Initialisering af tabelnavn og database",
+  "name": "Initialisering af tabelnavn",
   "style": {
     "stroke": "none",
     "fill": "#bfdbef",
@@ -11,14 +11,12 @@ const Node = {
     "fill-opacity": "0.5"
   },
   "nodes": [
-    "85b6b60428bd1e4c",
-    "3e67a5def24cc8e4",
-    "acf75b18d98fad23"
+    "85b6b60428bd1e4c"
   ],
-  "x": 614,
-  "y": 55,
-  "w": 732,
-  "h": 130,
+  "x": 674,
+  "y": 87,
+  "w": 352,
+  "h": 106,
   "_order": 14
 }
 

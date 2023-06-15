@@ -1,7 +1,7 @@
 const Node = {
   "id": "3ff790b1f991221b",
   "type": "change",
-  "z": "9cd2fc26979e7dd1",
+  "z": "7f3219f0beb025c3",
   "d": true,
   "g": "1990698f251b0a12",
   "name": "Byg data streng \\n og kolonnenavne",
@@ -45,13 +45,13 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 1000,
-  "y": 2040,
+  "x": 980,
+  "y": 1640,
   "wires": [
     []
   ],
   "info": "",
-  "_order": 251
+  "_order": 181
 }
 
 Node.info = `

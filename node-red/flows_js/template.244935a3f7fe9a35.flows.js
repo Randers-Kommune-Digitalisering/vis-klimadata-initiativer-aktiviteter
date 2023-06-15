@@ -1,8 +1,8 @@
 const Node = {
-  "id": "3e67a5def24cc8e4",
+  "id": "244935a3f7fe9a35",
   "type": "template",
   "z": "7f3219f0beb025c3",
-  "g": "62d1b4969e322491",
+  "d": true,
   "name": "Forespørgsel ↓\\n Opret tabel hvis der ikke \\n eksisterer en i forvejen ",
   "field": "sql",
   "fieldType": "msg",
@@ -10,14 +10,12 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 990,
-  "y": 120,
+  "x": 210,
+  "y": 1260,
   "wires": [
-    [
-      "acf75b18d98fad23"
-    ]
+    []
   ],
-  "_order": 154
+  "_order": 182
 }
 
 Node.template = `

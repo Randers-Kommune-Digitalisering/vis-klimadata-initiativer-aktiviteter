@@ -3,7 +3,7 @@ const Node = {
   "type": "change",
   "z": "7f3219f0beb025c3",
   "g": "68638907faf95219",
-  "name": "Rens og oversæt datofelt \\n til iso8601",
+  "name": "Flyt data og oversæt  \\n datofelt til iso8601",
   "rules": [
     {
       "t": "move",
@@ -21,11 +21,6 @@ const Node = {
     },
     {
       "t": "delete",
-      "p": "data.TID",
-      "pt": "msg"
-    },
-    {
-      "t": "delete",
       "p": "payload",
       "pt": "msg"
     }
@@ -35,15 +30,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 810,
-  "y": 480,
+  "x": 880,
+  "y": 520,
   "wires": [
     [
-      "ee650a883692de95",
-      "3f641fcece5a6ba2"
+      "b4de503d63dc6823"
     ]
   ],
-  "_order": 146
+  "_order": 144
 }
 
 module.exports = Node;

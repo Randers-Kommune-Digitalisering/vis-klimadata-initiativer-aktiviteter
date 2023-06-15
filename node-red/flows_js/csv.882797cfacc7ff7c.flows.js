@@ -7,7 +7,7 @@ const Node = {
   "sep": ";",
   "hdrin": true,
   "hdrout": "none",
-  "multi": "one",
+  "multi": "mult",
   "ret": "\\n",
   "temp": "",
   "skip": "0",
@@ -15,14 +15,14 @@ const Node = {
   "include_empty_strings": "",
   "include_null_values": "",
   "x": 290,
-  "y": 480,
+  "y": 500,
   "wires": [
     [
-      "6cef18fad00d03a7",
-      "4b86f589fd76f9d5"
+      "4b86f589fd76f9d5",
+      "6cef18fad00d03a7"
     ]
   ],
-  "_order": 144
+  "_order": 142
 }
 
 module.exports = Node;
