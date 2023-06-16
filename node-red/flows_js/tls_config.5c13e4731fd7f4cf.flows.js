@@ -11,7 +11,7 @@ const Node = {
   "servername": "",
   "verifyservercert": true,
   "alpnprotocol": "",
-  "_order": 93
+  "_order": 92
 }
 
 module.exports = Node;

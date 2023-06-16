@@ -1,16 +1,15 @@
 const Node = {
-  "id": "89439360f2f8a365",
+  "id": "3add07572fa4d675",
   "type": "change",
   "z": "7f3219f0beb025c3",
-  "g": "f43dbd558657e29c",
-  "name": "",
+  "name": "Set dst_updated",
   "rules": [
     {
-      "t": "move",
-      "p": "sql",
+      "t": "set",
+      "p": "dst_updated",
       "pt": "msg",
-      "to": "payload",
-      "tot": "msg"
+      "to": "payload.updated ~> $toMillis()",
+      "tot": "jsonata"
     }
   ],
   "action": "",
@@ -18,14 +17,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 980,
-  "y": 1180,
+  "x": 1000,
+  "y": 500,
   "wires": [
     [
-      "4e2cfc1f48635be5"
+      "bd3f2309c91cc780"
     ]
   ],
-  "_order": 159
+  "_order": 197
 }
 
 module.exports = Node;

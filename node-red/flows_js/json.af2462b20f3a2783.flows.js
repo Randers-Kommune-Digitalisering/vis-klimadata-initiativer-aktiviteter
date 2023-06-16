@@ -8,13 +8,13 @@ const Node = {
   "action": "str",
   "pretty": false,
   "x": 940,
-  "y": 1520,
+  "y": 2040,
   "wires": [
     [
       "6d73409916a4269e"
     ]
   ],
-  "_order": 180
+  "_order": 176
 }
 
 module.exports = Node;

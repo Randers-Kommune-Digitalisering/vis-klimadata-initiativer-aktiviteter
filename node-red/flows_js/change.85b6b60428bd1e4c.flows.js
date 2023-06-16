@@ -3,14 +3,21 @@ const Node = {
   "type": "change",
   "z": "7f3219f0beb025c3",
   "g": "62d1b4969e322491",
-  "name": "Konfigurer tabelnavn + \\n opdaterbar kolonner og primary keys",
+  "name": "Konfigurer tabelnavn,  opdaterbare kolonner, \\n primary keys og max file age",
   "rules": [
+    {
+      "t": "set",
+      "p": "dst_tablename",
+      "pt": "msg",
+      "to": "BIL54",
+      "tot": "str"
+    },
     {
       "t": "set",
       "p": "tablename",
       "pt": "flow",
-      "to": "dst_BIL54",
-      "tot": "str"
+      "to": "\"dst_\" & dst_tablename",
+      "tot": "jsonata"
     },
     {
       "t": "set",
@@ -25,6 +32,13 @@ const Node = {
       "pt": "msg",
       "to": "[\"created\",\"BRUG\",\"DRIV\",\"TID\"]",
       "tot": "json"
+    },
+    {
+      "t": "set",
+      "p": "max_file_age_days",
+      "pt": "msg",
+      "to": "30",
+      "tot": "num"
     }
   ],
   "action": "",
@@ -32,14 +46,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 850,
+  "x": 870,
   "y": 140,
   "wires": [
     [
-      "f332853c388a1c3d"
+      "9554cee70d08eded"
     ]
   ],
-  "_order": 152
+  "_order": 151
 }
 
 module.exports = Node;

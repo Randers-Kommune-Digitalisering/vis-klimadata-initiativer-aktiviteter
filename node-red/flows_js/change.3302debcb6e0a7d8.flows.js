@@ -23,8 +23,8 @@ const Node = {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "{\"table\":\"BIL54\",\"format\":\"CSV\",\"valuePresentation\":\"CodeAndValue\",\"variables\":[{\"code\":\"OMRÅDE\",\"values\":[\"730\"]},{\"code\":\"BILTYPE\",\"values\":[\"4000101002\",\"4000102000\"]},{\"code\":\"BRUG\",\"values\":[\"1100\",\"1200\"]},{\"code\":\"DRIV\",\"values\":[\"20205\",\"20210\",\"20215\",\"20220\",\"20225\",\"20230\",\"20231\",\"20232\",\"20235\"]},{\"code\":\"Tid\",\"values\":[\"*\"]}]}",
-      "tot": "json"
+      "to": "{\t   \"table\":dst_tablename,\t   \"format\":\"CSV\",\t   \"valuePresentation\":\"CodeAndValue\",\t   \"variables\":[\t       {\"code\":\"OMRÅDE\",\"values\":[\"730\"]},\t       {\t           \"code\":\"BILTYPE\",\t           \"values\":[\"4000101002\",\"4000102000\"]\t       },\t       {\"code\":\"BRUG\",\"values\":[\"1100\",\"1200\"]},\t       {\t           \"code\":\"DRIV\",\t           \"values\":[\t               \"20205\",\t               \"20210\",\t               \"20215\",\t               \"20220\",\t               \"20225\",\t               \"20230\",\t               \"20231\",\t               \"20232\",\t               \"20235\"\t           ]\t       },\t       {\t           \"code\":\"Tid\",\t           \"values\": months\t        }\t   ]\t}",
+      "tot": "jsonata"
     }
   ],
   "action": "",
@@ -33,13 +33,13 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 340,
-  "y": 320,
+  "y": 840,
   "wires": [
     [
       "2572a9725c8bd282"
     ]
   ],
-  "_order": 148
+  "_order": 147
 }
 
 module.exports = Node;

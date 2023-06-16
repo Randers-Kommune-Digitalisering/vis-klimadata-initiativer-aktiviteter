@@ -2,7 +2,7 @@ const Node = {
   "id": "62d1b4969e322491",
   "type": "group",
   "z": "7f3219f0beb025c3",
-  "name": "Initialisering af tabelnavn",
+  "name": "Opsætning af datasæt / endpoints",
   "style": {
     "stroke": "none",
     "fill": "#bfdbef",
@@ -15,7 +15,7 @@ const Node = {
   ],
   "x": 674,
   "y": 87,
-  "w": 352,
+  "w": 392,
   "h": 106,
   "_order": 14
 }

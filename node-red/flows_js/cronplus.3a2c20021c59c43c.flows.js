@@ -16,7 +16,7 @@ const Node = {
       "payloadType": "default",
       "payload": "",
       "expressionType": "cron",
-      "expression": "0 6 * * MON#3",
+      "expression": "0 0 4 ? * TUE,WED,THU,FRI,SAT *",
       "location": "",
       "offset": "0",
       "solarType": "all",
@@ -30,7 +30,7 @@ const Node = {
       "3af44629275ce741"
     ]
   ],
-  "_order": 153
+  "_order": 152
 }
 
 module.exports = Node;
