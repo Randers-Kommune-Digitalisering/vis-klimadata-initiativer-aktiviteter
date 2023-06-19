@@ -5,10 +5,10 @@ const Node = {
   "g": "68638907faf95219",
   "name": "Manuelt \"TID\" ~> \"MÅNED\"",
   "info": "",
-  "x": 900,
-  "y": 1000,
+  "x": 1200,
+  "y": 1020,
   "wires": [],
-  "_order": 207
+  "_order": 184
 }
 
 module.exports = Node;

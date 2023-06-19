@@ -1,7 +1,7 @@
 const Node = {
   "id": "f0f81c5314e5ef37",
   "type": "template",
-  "z": "7f3219f0beb025c3",
+  "z": "8b14b3c953574b40",
   "g": "1990698f251b0a12",
   "name": "DROP TABLE {{flow.tablename}} ",
   "field": "sql",
@@ -10,14 +10,14 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 450,
-  "y": 2040,
+  "x": 430,
+  "y": 1220,
   "wires": [
     [
       "e9174240eaa25dae"
     ]
   ],
-  "_order": 160
+  "_order": 215
 }
 
 Node.template = `

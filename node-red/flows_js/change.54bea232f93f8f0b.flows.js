@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "payload ~> | $ | {\t    \"MÅNED\": $replace($substring($.TID,8),\"M\",\"-\") & \"-01\"\t    \t},  $$.columns_todelete |",
+      "to": "payload ~> | $ | {\t    \"Måned\": $replace($substring($.Måned,8),\"M\",\"-\") & \"-01\"\t    \t},  $$.columns_todelete |",
       "tot": "jsonata"
     },
     {
@@ -30,14 +30,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 880,
-  "y": 1040,
+  "x": 1180,
+  "y": 1080,
   "wires": [
     [
-      "b4de503d63dc6823"
+      "bfb52b71eef9a5e0"
     ]
   ],
-  "_order": 143
+  "_order": 144
 }
 
 module.exports = Node;

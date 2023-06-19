@@ -1,7 +1,7 @@
 const Node = {
   "id": "d499272add007c14",
   "type": "template",
-  "z": "7f3219f0beb025c3",
+  "z": "8b14b3c953574b40",
   "g": "1990698f251b0a12",
   "name": "Forespørgsel ↓\\n Slet rækker med samme fil-id",
   "field": "sql",
@@ -10,14 +10,14 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 440,
-  "y": 1900,
+  "x": 420,
+  "y": 1080,
   "wires": [
     [
       "9567d2574c400714"
     ]
   ],
-  "_order": 157
+  "_order": 234
 }
 
 Node.template = `

@@ -3,7 +3,7 @@ const Node = {
   "type": "change",
   "z": "7f3219f0beb025c3",
   "g": "62d1b4969e322491",
-  "name": "Konfigurer tabelnavn,  opdaterbare kolonner, \\n primary keys og max file age",
+  "name": "Konfigurer tabelnavn, opdaterbare kolonner, \\n nye kolonnenavne, primary keys",
   "rules": [
     {
       "t": "set",
@@ -14,31 +14,31 @@ const Node = {
     },
     {
       "t": "set",
-      "p": "tablename",
-      "pt": "flow",
-      "to": "\"dst_\" & dst_tablename",
-      "tot": "jsonata"
+      "p": "column_renaming",
+      "pt": "msg",
+      "to": "{\"TID\":\"Måned\",\"BILTYPE\":\"Biltype\",\"BRUG\":\"Anvendelse\",\"DRIV\":\"Drivmiddel\",\"INDHOLD\":\"Antal\"}",
+      "tot": "json"
     },
     {
       "t": "set",
       "p": "updatable_columns",
       "pt": "msg",
-      "to": "[\"INDHOLD\"]",
+      "to": "[\"Antal\"]",
       "tot": "json"
     },
     {
       "t": "set",
       "p": "primary_keys",
       "pt": "msg",
-      "to": "[\"created\",\"BRUG\",\"DRIV\",\"TID\"]",
+      "to": "[\"created\",\"Anvendelse\",\"Drivmiddel\",\"Måned\"]",
       "tot": "json"
     },
     {
       "t": "set",
-      "p": "max_file_age_days",
-      "pt": "msg",
-      "to": "30",
-      "tot": "num"
+      "p": "tablename",
+      "pt": "flow",
+      "to": "\"dst_\" & dst_tablename",
+      "tot": "jsonata"
     }
   ],
   "action": "",
@@ -50,10 +50,11 @@ const Node = {
   "y": 140,
   "wires": [
     [
+      "b3e832c927c23ee6",
       "9554cee70d08eded"
     ]
   ],
-  "_order": 151
+  "_order": 152
 }
 
 module.exports = Node;

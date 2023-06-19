@@ -6,9 +6,9 @@ const Node = {
   "name": "Manuelt valgte felter",
   "info": "",
   "x": 630,
-  "y": 1000,
+  "y": 1020,
   "wires": [],
-  "_order": 209
+  "_order": 186
 }
 
 module.exports = Node;

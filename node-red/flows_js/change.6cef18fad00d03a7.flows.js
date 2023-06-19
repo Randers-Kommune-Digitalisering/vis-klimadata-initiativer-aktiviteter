@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "columns_todelete",
       "pt": "msg",
-      "to": "[\"TID\", \"OMRÅDE\"]",
+      "to": "[\"OMRÅDE\"]",
       "tot": "json"
     }
   ],
@@ -19,13 +19,13 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 630,
-  "y": 1040,
+  "y": 1080,
   "wires": [
     [
-      "54bea232f93f8f0b"
+      "b4de503d63dc6823"
     ]
   ],
-  "_order": 142
+  "_order": 189
 }
 
 module.exports = Node;
