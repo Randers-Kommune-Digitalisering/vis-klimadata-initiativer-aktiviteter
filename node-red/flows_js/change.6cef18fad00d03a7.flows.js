@@ -6,14 +6,11 @@ const Node = {
   "name": "Fjern overflødige \\n datafelter",
   "rules": [
     {
-      "t": "delete",
-      "p": "payload.OMRÅDE",
-      "pt": "msg"
-    },
-    {
-      "t": "delete",
-      "p": "payload.TID",
-      "pt": "msg"
+      "t": "set",
+      "p": "columns_todelete",
+      "pt": "msg",
+      "to": "[\"TID\", \"OMRÅDE\"]",
+      "tot": "json"
     }
   ],
   "action": "",

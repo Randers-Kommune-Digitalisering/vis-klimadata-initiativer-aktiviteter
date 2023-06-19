@@ -1,0 +1,14 @@
+const Node = {
+  "id": "d6f2f21d78dfd064",
+  "type": "comment",
+  "z": "7f3219f0beb025c3",
+  "g": "68638907faf95219",
+  "name": "Manuelt \"TID\" ~> \"MÅNED\"",
+  "info": "",
+  "x": 900,
+  "y": 1000,
+  "wires": [],
+  "_order": 207
+}
+
+module.exports = Node;

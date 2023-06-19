@@ -6,6 +6,13 @@ const Node = {
   "name": "Flyt data og oversæt  \\n datofelt til iso8601",
   "rules": [
     {
+      "t": "set",
+      "p": "payload",
+      "pt": "msg",
+      "to": "payload ~> | $ | {\t    \"MÅNED\": $replace($substring($.TID,8),\"M\",\"-\") & \"-01\"\t    \t},  $$.columns_todelete |",
+      "tot": "jsonata"
+    },
+    {
       "t": "move",
       "p": "payload",
       "pt": "msg",
@@ -13,15 +20,8 @@ const Node = {
       "tot": "msg"
     },
     {
-      "t": "set",
-      "p": "data.maaned",
-      "pt": "msg",
-      "to": "$map(data.TID, function($v, $i, $a) {    $replace($substring($v,8),\"M\",\"-\") & \"-01\" })",
-      "tot": "jsonata"
-    },
-    {
       "t": "delete",
-      "p": "payload",
+      "p": "columns_todelete",
       "pt": "msg"
     }
   ],

@@ -3,8 +3,15 @@ const Node = {
   "type": "change",
   "z": "7f3219f0beb025c3",
   "g": "1990698f251b0a12",
-  "name": "",
+  "name": "TABLE NAME",
   "rules": [
+    {
+      "t": "set",
+      "p": "tablename",
+      "pt": "flow",
+      "to": "opendata_braendstofforbrug",
+      "tot": "str"
+    },
     {
       "t": "set",
       "p": "tablename",
@@ -18,7 +25,7 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 340,
+  "x": 330,
   "y": 1960,
   "wires": [
     []

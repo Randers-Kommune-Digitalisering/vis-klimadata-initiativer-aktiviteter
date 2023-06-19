@@ -15,7 +15,7 @@ const Node = {
       "module": "dayjs"
     }
   ],
-  "x": 450,
+  "x": 470,
   "y": 1240,
   "wires": [
     [
@@ -34,9 +34,9 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util, da
          (/^([0-9]+)(,|\.){1}([0-9]+)$/.test(value)))
           return "FLOAT";
   
-      /* Check if value is ISO date using RegEx
+      // Check if value is ISO date using RegEx
       if (/^([0-9]{4})(-|\/|.)(1[0-2]|0[1-9])(-|\/|.)(3[01]|[12][0-9]|0[1-9])$|^(3[01]|[12][0-9]|0[1-9])(-|\/|.)(1[0-2]|0[1-9])(-|\/|.)([0-9]{4})$/.test(value))
-          return "DATE";*/
+          return "DATE";
   
       // Default to VARCHAR with a length of 255 characters
       return "VARCHAR(255)";
