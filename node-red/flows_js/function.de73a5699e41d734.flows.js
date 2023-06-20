@@ -18,13 +18,20 @@ const Node = {
   "y": 420,
   "wires": [
     [
-      "5237b57314ead347"
+      "f38533d1c82aaf84"
     ]
   ],
-  "_order": 176
+  "_order": 186
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util, dayjs) {
+  // Check if data exists
+  if(msg.payload[0] == null)
+  {
+      msg.db_updated = 0;
+      return msg;
+  }
+  
   // Parse last_updated
   var db_updated = dayjs(msg.payload[0].last_updated);
   
