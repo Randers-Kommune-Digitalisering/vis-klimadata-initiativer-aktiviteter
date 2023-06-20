@@ -11,20 +11,6 @@ const Node = {
       "pt": "msg",
       "to": "braendstofforbrug",
       "tot": "str"
-    },
-    {
-      "t": "set",
-      "p": "max_file_age_days",
-      "pt": "msg",
-      "to": "100",
-      "tot": "num"
-    },
-    {
-      "t": "set",
-      "p": "unique_identifiable_column",
-      "pt": "msg",
-      "to": "[\"Fakturadato\",\"Antal_enheder\"]",
-      "tot": "json"
     }
   ],
   "action": "",
@@ -32,14 +18,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 220,
+  "x": 240,
   "y": 340,
   "wires": [
     [
-      "e28008cad4697a29"
+      "eef019dc51287105"
     ]
   ],
-  "_order": 291
+  "_order": 370
 }
 
 module.exports = Node;

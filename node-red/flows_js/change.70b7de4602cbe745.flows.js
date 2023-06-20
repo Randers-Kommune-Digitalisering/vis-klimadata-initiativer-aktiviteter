@@ -16,7 +16,7 @@ const Node = {
       "t": "set",
       "p": "tablename",
       "pt": "flow",
-      "to": "dst_BIL54",
+      "to": "opendata_antal_krydsende_cyklister_over_randers_fjord",
       "tot": "str"
     }
   ],
@@ -30,7 +30,7 @@ const Node = {
   "wires": [
     []
   ],
-  "_order": 243
+  "_order": 246
 }
 
 module.exports = Node;
