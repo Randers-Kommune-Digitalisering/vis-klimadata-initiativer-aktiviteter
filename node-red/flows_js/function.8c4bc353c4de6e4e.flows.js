@@ -2,8 +2,8 @@ const Node = {
   "id": "8c4bc353c4de6e4e",
   "type": "function",
   "z": "db9cae581f57fc84",
-  "g": "4cb2acab938256d7",
-  "name": "Sæt datatyper for kolonner",
+  "g": "8978c7606345d52b",
+  "name": "Sæt datatyper for \\n kolonner dynamisk",
   "func": "",
   "outputs": 1,
   "noerr": 0,
@@ -15,15 +15,14 @@ const Node = {
       "module": "dayjs"
     }
   ],
-  "x": 460,
-  "y": 540,
+  "x": 730,
+  "y": 780,
   "wires": [
     [
-      "533ce7c799cfb2ce",
-      "1f4271f61ec49e2a"
+      "0d69249b77e570a0"
     ]
   ],
-  "_order": 236
+  "_order": 329
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util, dayjs) {
@@ -57,7 +56,8 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util, da
       }
   }
   
-  msg.dataskabelon = msg.payload.sqlDataType;
+  flow.set("dataskabelon", msg.payload.sqlDataType);
+  flow.set("flatlist", msg.payload.flatlist);
   
   return msg;
 }

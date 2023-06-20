@@ -10,23 +10,20 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 460,
-  "y": 1040,
+  "x": 440,
+  "y": 1780,
   "wires": [
     [
-      "cc9f08c240e607f0",
-      "e867e16a899f4307",
-      "b21ac2de1e66b16d"
+      "cc9f08c240e607f0"
     ]
   ],
-  "_order": 204
+  "_order": 299
 }
 
 Node.template = `
 INSERT INTO {{flow.tablename}}
     ({{columnnames}})
 VALUES {{{datastring}}}
-{{{updateon}}}
 `
 
 module.exports = Node;

@@ -1,7 +1,7 @@
 const Node = {
   "id": "1990698f251b0a12",
   "type": "group",
-  "z": "db9cae581f57fc84",
+  "z": "8b14b3c953574b40",
   "name": "Test",
   "style": {
     "stroke": "none",
@@ -25,13 +25,18 @@ const Node = {
     "b548de12eb78ba55",
     "70b7de4602cbe745",
     "e16818829f4e4fb2",
-    "3018179c7d0c4cd5"
+    "3018179c7d0c4cd5",
+    "af2462b20f3a2783",
+    "3ff790b1f991221b",
+    "9567d2574c400714",
+    "d499272add007c14",
+    "691ab3e8a5f1a6cb"
   ],
-  "x": 224,
-  "y": 1239,
+  "x": 54,
+  "y": 1027,
   "w": 1132,
-  "h": 302,
-  "_order": 34
+  "h": 374,
+  "_order": 43
 }
 
 module.exports = Node;

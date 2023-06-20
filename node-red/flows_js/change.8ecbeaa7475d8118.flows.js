@@ -23,20 +23,6 @@ const Node = {
       "pt": "msg",
       "to": "data ~> $map(\t   function($value) {\t       /* Join the values of the object into a comma-separated string */     \"(\" &\t       $join(\t           /* Iterate over the values of the object */       \t           $value.* ~> $map(\t               function($value) {\t                   /* If the value is a string, surround it with single quotes */\t                   $type($value) = \"string\" ? \"'\" & $value & \"'\" : $string($value)         \t               }       \t           ),\t           \",\"     \t       ) & \")\"   \t   } \t)",
       "tot": "jsonata"
-    },
-    {
-      "t": "set",
-      "p": "unique_updatable_column",
-      "pt": "msg",
-      "to": "$map(unique_identifiable_column, function($v, $i, $a)\t{\t  $v & \" = VALUES(\" & $v & \")\" \t})",
-      "tot": "jsonata"
-    },
-    {
-      "t": "set",
-      "p": "updateon",
-      "pt": "msg",
-      "to": "unique_identifiable_column ~> $exists() ?\t\"ON DUPLICATE KEY UPDATE\\n\" &\t(\tunique_identifiable_column ~> $join(\",\\n\")\t)",
-      "tot": "jsonata"
     }
   ],
   "action": "",
@@ -44,16 +30,15 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 230,
-  "y": 1040,
+  "x": 210,
+  "y": 1780,
   "wires": [
     [
-      "0afd87195161da67",
-      "f97cb752a3d83140"
+      "0afd87195161da67"
     ]
   ],
   "info": "",
-  "_order": 205
+  "_order": 300
 }
 
 Node.info = `

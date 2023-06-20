@@ -3,8 +3,15 @@ const Node = {
   "type": "change",
   "z": "7f3219f0beb025c3",
   "g": "68638907faf95219",
-  "name": "Rens og oversæt datofelt \\n til iso8601",
+  "name": "Flyt data og oversæt  \\n datofelt til iso8601",
   "rules": [
+    {
+      "t": "set",
+      "p": "payload",
+      "pt": "msg",
+      "to": "payload ~> | $ | {\t    \"Måned\": $replace($substring($.Måned,8),\"M\",\"-\") & \"-01\"\t    \t},  $$.columns_todelete |",
+      "tot": "jsonata"
+    },
     {
       "t": "move",
       "p": "payload",
@@ -13,20 +20,8 @@ const Node = {
       "tot": "msg"
     },
     {
-      "t": "set",
-      "p": "data.maaned",
-      "pt": "msg",
-      "to": "$map(data.TID, function($v, $i, $a) {    $replace($substring($v,8),\"M\",\"-\") & \"-01\" })",
-      "tot": "jsonata"
-    },
-    {
       "t": "delete",
-      "p": "data.TID",
-      "pt": "msg"
-    },
-    {
-      "t": "delete",
-      "p": "payload",
+      "p": "columns_todelete",
       "pt": "msg"
     }
   ],
@@ -35,15 +30,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 810,
-  "y": 480,
+  "x": 1180,
+  "y": 1080,
   "wires": [
     [
-      "ee650a883692de95",
-      "3f641fcece5a6ba2"
+      "bfb52b71eef9a5e0"
     ]
   ],
-  "_order": 130
+  "_order": 154
 }
 
 module.exports = Node;

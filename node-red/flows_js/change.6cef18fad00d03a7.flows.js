@@ -6,9 +6,11 @@ const Node = {
   "name": "Fjern overflødige \\n datafelter",
   "rules": [
     {
-      "t": "delete",
-      "p": "payload.OMRÅDE",
-      "pt": "msg"
+      "t": "set",
+      "p": "columns_todelete",
+      "pt": "msg",
+      "to": "[\"OMRÅDE\"]",
+      "tot": "json"
     }
   ],
   "action": "",
@@ -16,14 +18,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 570,
-  "y": 480,
+  "x": 630,
+  "y": 1080,
   "wires": [
     [
-      "54bea232f93f8f0b"
+      "b4de503d63dc6823"
     ]
   ],
-  "_order": 129
+  "_order": 198
 }
 
 module.exports = Node;

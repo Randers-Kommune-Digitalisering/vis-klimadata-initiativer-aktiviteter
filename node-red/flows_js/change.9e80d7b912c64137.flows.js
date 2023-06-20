@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "data",
       "pt": "msg",
-      "to": "{\t   \"Month\" : payload.Month,\t   \"Industrycode_DE35\": payload.Industrycode_DE35,\t   \"TotalConsumption\": payload.TotalCon\t}\t",
+      "to": "data ~> | $ | {}, $$.datafilter |",
       "tot": "jsonata"
     },
     {
@@ -23,14 +23,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 390,
+  "x": 230,
   "y": 620,
   "wires": [
     [
-      "5144e4be8fd69dbf"
+      "9f4f1583a1403909"
     ]
   ],
-  "_order": 155
+  "_order": 213
 }
 
 module.exports = Node;

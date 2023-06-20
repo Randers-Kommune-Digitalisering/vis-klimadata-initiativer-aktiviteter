@@ -3,7 +3,7 @@ const Node = {
   "type": "change",
   "z": "8b14b3c953574b40",
   "g": "d7a0dc9f17f84cd2",
-  "name": "Konfigurer tabelnavn",
+  "name": "Konfigurer tabelnavn \\n + datafilter",
   "rules": [
     {
       "t": "set",
@@ -11,6 +11,13 @@ const Node = {
       "pt": "flow",
       "to": "eds_FORBRUG",
       "tot": "str"
+    },
+    {
+      "t": "set",
+      "p": "datafilter",
+      "pt": "msg",
+      "to": "[\"MeasurementPoints\",\"MunicipalityNo\"]",
+      "tot": "json"
     }
   ],
   "action": "",
@@ -18,14 +25,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 740,
+  "x": 760,
   "y": 120,
   "wires": [
     [
       "1582f6ecc6731fd7"
     ]
   ],
-  "_order": 165
+  "_order": 221
 }
 
 module.exports = Node;

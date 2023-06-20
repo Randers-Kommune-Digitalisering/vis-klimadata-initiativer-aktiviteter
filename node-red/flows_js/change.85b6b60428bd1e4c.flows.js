@@ -3,14 +3,42 @@ const Node = {
   "type": "change",
   "z": "7f3219f0beb025c3",
   "g": "62d1b4969e322491",
-  "name": "Konfigurer tabelnavn",
+  "name": "Konfigurer tabelnavn, opdaterbare kolonner, \\n nye kolonnenavne, primary keys",
   "rules": [
+    {
+      "t": "set",
+      "p": "dst_tablename",
+      "pt": "msg",
+      "to": "BIL54",
+      "tot": "str"
+    },
+    {
+      "t": "set",
+      "p": "column_renaming",
+      "pt": "msg",
+      "to": "{\"TID\":\"Måned\",\"BILTYPE\":\"Biltype\",\"BRUG\":\"Anvendelse\",\"DRIV\":\"Drivmiddel\",\"INDHOLD\":\"Antal\"}",
+      "tot": "json"
+    },
+    {
+      "t": "set",
+      "p": "updatable_columns",
+      "pt": "msg",
+      "to": "[\"Antal\"]",
+      "tot": "json"
+    },
+    {
+      "t": "set",
+      "p": "primary_keys",
+      "pt": "msg",
+      "to": "[\"created\",\"Anvendelse\",\"Drivmiddel\",\"Måned\"]",
+      "tot": "json"
+    },
     {
       "t": "set",
       "p": "tablename",
       "pt": "flow",
-      "to": "dst_BIL54",
-      "tot": "str"
+      "to": "\"dst_\" & dst_tablename",
+      "tot": "jsonata"
     }
   ],
   "action": "",
@@ -18,14 +46,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 740,
-  "y": 120,
+  "x": 870,
+  "y": 180,
   "wires": [
     [
-      "3e67a5def24cc8e4"
+      "4a378c40feb26413"
     ]
   ],
-  "_order": 140
+  "_order": 162
 }
 
 module.exports = Node;

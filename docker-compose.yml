@@ -30,6 +30,7 @@ services:
     environment:
       MARIADB_ROOT_PASSWORD: pass
       MARIADB_DATABASE: demo
+      TZ: "Europe/Copenhagen"
     healthcheck:
       test: mysqladmin ping -h 127.0.0.1 -u root --password=pass
       start_period: 5s

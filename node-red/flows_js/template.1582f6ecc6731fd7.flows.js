@@ -10,14 +10,14 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 990,
+  "x": 1010,
   "y": 120,
   "wires": [
     [
       "3b82b31c2cdfb3c3"
     ]
   ],
-  "_order": 166
+  "_order": 222
 }
 
 Node.template = `
@@ -26,7 +26,7 @@ CREATE TABLE if not exists {{flow.tablename}} (
 	last_updated TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 	Month DATE,
 	Industrycode_DE35 VARCHAR(10),
-	TotalConsumption INT,
+	TotalCon INT,
 	UNIQUE (Month, Industrycode_DE35)
 	);
 `

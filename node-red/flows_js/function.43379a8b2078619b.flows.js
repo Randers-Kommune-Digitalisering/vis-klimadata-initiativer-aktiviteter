@@ -10,23 +10,23 @@ const Node = {
   "initialize": "",
   "finalize": "",
   "libs": [],
-  "x": 750,
-  "y": 820,
+  "x": 710,
+  "y": 1620,
   "wires": [
     [
       "22413d13c16b68d5",
-      "8ecbeaa7475d8118"
+      "ad3a40423bcc0872"
     ]
   ],
-  "_order": 250
+  "_order": 313
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {
   // Number(s) to parse
   var data = msg.data;
   
-  // For each variable in msg.dataskabelon
-  for (const [key, value] of Object.entries(msg.dataskabelon))
+  // For each variable in flow.dataskabelon
+  for (const [key, value] of Object.entries(flow.get("dataskabelon")))
   {
       // Check if variable type is float
       if(value == "FLOAT")
@@ -36,9 +36,9 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util) {
           {
               // Parse
               const str = String(item[key]);
-              var value = str.replace(",", ".");
+              var floatvalue = str.replace(",", ".");
   
-              var floatvalue = parseFloat(value);
+              floatvalue = parseFloat(floatvalue);
               item[key] = floatvalue;
           });
       }

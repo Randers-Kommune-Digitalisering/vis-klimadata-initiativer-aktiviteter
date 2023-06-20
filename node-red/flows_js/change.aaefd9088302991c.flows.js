@@ -3,14 +3,19 @@ const Node = {
   "type": "change",
   "z": "067b777cae534d43",
   "g": "8a31b6b1e5d45bbe",
-  "name": "data",
+  "name": "merge data.values \\n with file-id",
   "rules": [
     {
-      "t": "move",
-      "p": "payload",
+      "t": "set",
+      "p": "data",
       "pt": "msg",
-      "to": "data",
-      "tot": "msg"
+      "to": "payload ~> $map(function($v) { $merge([$v, {\"file_id\": metadata.id}]) })",
+      "tot": "jsonata"
+    },
+    {
+      "t": "delete",
+      "p": "payload",
+      "pt": "msg"
     }
   ],
   "action": "",
@@ -18,14 +23,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 970,
-  "y": 420,
+  "x": 950,
+  "y": 500,
   "wires": [
     [
       "ef87d74f847870bb"
     ]
   ],
-  "_order": 114
+  "_order": 136
 }
 
 module.exports = Node;

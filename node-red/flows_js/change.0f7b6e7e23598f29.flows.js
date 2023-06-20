@@ -2,8 +2,8 @@ const Node = {
   "id": "0f7b6e7e23598f29",
   "type": "change",
   "z": "db9cae581f57fc84",
-  "g": "4cb2acab938256d7",
-  "name": "Skab dataskabelon",
+  "g": "8978c7606345d52b",
+  "name": "Skab dataskabelon \\n + sæt validDateFormats",
   "rules": [
     {
       "t": "set",
@@ -33,14 +33,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 210,
-  "y": 540,
+  "x": 470,
+  "y": 780,
   "wires": [
     [
       "8c4bc353c4de6e4e"
     ]
   ],
-  "_order": 240
+  "_order": 330
 }
 
 module.exports = Node;

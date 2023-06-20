@@ -67,7 +67,7 @@ const Node = {
     },
     {
       "t": "set",
-      "p": "payload",
+      "p": "data",
       "pt": "msg",
       "to": "payload.records",
       "tot": "msg",
@@ -86,7 +86,7 @@ const Node = {
       "c606d977ccc17344"
     ]
   ],
-  "_order": 154
+  "_order": 212
 }
 
 module.exports = Node;
