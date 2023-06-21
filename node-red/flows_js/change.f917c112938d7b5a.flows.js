@@ -16,7 +16,7 @@ const Node = {
       "t": "set",
       "p": "max_file_age_days",
       "pt": "msg",
-      "to": "100",
+      "to": "30",
       "tot": "num"
     },
     {
@@ -39,7 +39,7 @@ const Node = {
       "e28008cad4697a29"
     ]
   ],
-  "_order": 291
+  "_order": 292
 }
 
 module.exports = Node;
