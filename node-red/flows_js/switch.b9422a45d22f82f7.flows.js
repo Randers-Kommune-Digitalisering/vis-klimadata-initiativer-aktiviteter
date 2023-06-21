@@ -1,14 +1,13 @@
 const Node = {
-  "id": "93edc6173e4116e6",
+  "id": "b9422a45d22f82f7",
   "type": "switch",
   "z": "9cd2fc26979e7dd1",
-  "g": "4a217ed33a9fcb99",
-  "name": "Undersøg dato for \\n seneste række",
-  "property": "payload[0].latest_month",
+  "name": "Data = empty?",
+  "property": "data",
   "propertyType": "msg",
   "rules": [
     {
-      "t": "null"
+      "t": "empty"
     },
     {
       "t": "else"
@@ -17,17 +16,17 @@ const Node = {
   "checkall": "true",
   "repair": false,
   "outputs": 2,
-  "x": 790,
-  "y": 320,
+  "x": 1080,
+  "y": 560,
   "wires": [
     [
-      "3fe3ca9587eec005"
+      "3ed8898fec120e3e"
     ],
     [
-      "0207acdc5f9a876b"
+      "69578e7178f64af5"
     ]
   ],
-  "_order": 267
+  "_order": 289
 }
 
 module.exports = Node;

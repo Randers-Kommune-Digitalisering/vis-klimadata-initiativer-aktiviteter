@@ -1,21 +1,20 @@
 const Node = {
-  "id": "4b8ec24b2029d460",
+  "id": "3ed8898fec120e3e",
   "type": "debug",
   "z": "9cd2fc26979e7dd1",
-  "g": "5b9f3877b8784692",
-  "name": "SQL Request",
+  "name": "stdout",
   "active": true,
   "tosidebar": true,
-  "console": false,
+  "console": true,
   "tostatus": false,
-  "complete": "payload",
-  "targetType": "msg",
+  "complete": "{\t   $flowContext(\"tablename\") : \"no new data found\"\t}",
+  "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
   "x": 1320,
-  "y": 960,
+  "y": 560,
   "wires": [],
-  "_order": 285
+  "_order": 290
 }
 
 module.exports = Node;

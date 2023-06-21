@@ -18,6 +18,13 @@ const Node = {
       "pt": "flow",
       "to": "dst_BIL54",
       "tot": "str"
+    },
+    {
+      "t": "set",
+      "p": "tablename",
+      "pt": "flow",
+      "to": "eds_PRODUKTION",
+      "tot": "str"
     }
   ],
   "action": "",
@@ -30,7 +37,7 @@ const Node = {
   "wires": [
     []
   ],
-  "_order": 243
+  "_order": 242
 }
 
 module.exports = Node;
