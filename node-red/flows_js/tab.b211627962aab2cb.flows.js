@@ -1,16 +1,17 @@
 const Node = {
   "id": "b211627962aab2cb",
   "type": "tab",
-  "label": "FORBRUG2 energidataservice.dk",
+  "label": "FORBRUG energidataservice.dk",
   "disabled": false,
   "info": "",
   "env": [],
-  "_order": 2
+  "_order": 1
 }
 
 Node.info = `
+# FORBRUG
 
-https://www.energidataservice.dk/tso-electricity/CommunityProduction
+[Energidataservice](https://www.energidataservice.dk/tso-electricity/ConsumptionpermunicipalityDE35)
 `
 
 module.exports = Node;
