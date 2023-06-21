@@ -2,7 +2,7 @@ const Node = {
   "id": "07cf09a03cf2ebfb",
   "type": "debug",
   "z": "db9cae581f57fc84",
-  "name": "FINISH (ALL FILES FOR DATASET)",
+  "name": "FINISH | ALL FILES FOR DATASET",
   "active": true,
   "tosidebar": false,
   "console": false,
