@@ -11,10 +11,10 @@ const Node = {
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1440,
-  "y": 120,
+  "x": 1200,
+  "y": 160,
   "wires": [],
-  "_order": 162
+  "_order": 161
 }
 
 module.exports = Node;
