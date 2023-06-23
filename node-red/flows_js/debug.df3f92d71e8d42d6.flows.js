@@ -1,5 +1,5 @@
 const Node = {
-  "id": "9ca2fc1630c7af63",
+  "id": "df3f92d71e8d42d6",
   "type": "debug",
   "z": "db9cae581f57fc84",
   "name": "metrics",
@@ -11,10 +11,10 @@ const Node = {
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1080,
-  "y": 240,
+  "x": 1840,
+  "y": 220,
   "wires": [],
-  "_order": 284
+  "_order": 341
 }
 
 module.exports = Node;

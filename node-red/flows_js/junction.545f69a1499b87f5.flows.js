@@ -1,16 +1,15 @@
 const Node = {
-  "id": "fa5212bee455b395",
+  "id": "545f69a1499b87f5",
   "type": "junction",
   "z": "db9cae581f57fc84",
   "x": 60,
-  "y": 220,
+  "y": 200,
   "wires": [
     [
-      "9e454ef5aa5ee65f",
-      "f917c112938d7b5a"
+      "008946f29acc9c0a"
     ]
   ],
-  "_order": 55
+  "_order": 103
 }
 
 module.exports = Node;
