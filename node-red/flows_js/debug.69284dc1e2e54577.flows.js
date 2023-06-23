@@ -7,14 +7,14 @@ const Node = {
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "payload.warningStatus = 0\t? { $flowContext(\"tablename\"): \"table created\" }:\tpayload.warningStatus = 1\t? { $flowContext(\"tablename\"): \"table exists\" }:\t{\"warningstatus\" : payload.warningStatus}",
+  "complete": "payload.warningCount > 0\t? { $flowContext(\"tablename\"): \"table exists\" }\t:\t{ $flowContext(\"tablename\"): \"table created\" }\t/*:{\"warningstatus\" : payload.warningCount}*/",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1440,
+  "x": 1460,
   "y": 120,
   "wires": [],
-  "_order": 253
+  "_order": 238
 }
 
 module.exports = Node;

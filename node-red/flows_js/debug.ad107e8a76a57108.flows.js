@@ -7,14 +7,14 @@ const Node = {
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "{\t   $flowContext(\"tablename\") : \"data insert complete\",\t   \"inserted-rows\" : $count(payload)\t}",
+  "complete": "{\t   $flowContext(\"tablename\") : \"data insert complete\",\t   \"inserted-rows\" : $count(data)\t}",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
   "x": 780,
   "y": 780,
   "wires": [],
-  "_order": 252
+  "_order": 237
 }
 
 module.exports = Node;

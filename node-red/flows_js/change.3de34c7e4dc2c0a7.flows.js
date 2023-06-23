@@ -2,6 +2,7 @@ const Node = {
   "id": "3de34c7e4dc2c0a7",
   "type": "change",
   "z": "7f3219f0beb025c3",
+  "d": true,
   "name": "Byg  data streng",
   "rules": [
     {
@@ -20,12 +21,10 @@ const Node = {
   "x": 220,
   "y": 1640,
   "wires": [
-    [
-      "780d494537906c48"
-    ]
+    []
   ],
   "info": "",
-  "_order": 199
+  "_order": 197
 }
 
 Node.info = `

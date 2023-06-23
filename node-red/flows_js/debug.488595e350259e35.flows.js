@@ -2,19 +2,19 @@ const Node = {
   "id": "488595e350259e35",
   "type": "debug",
   "z": "db9cae581f57fc84",
-  "name": "FINISH (NO NEW DATA)",
+  "name": "FILE | No new data",
   "active": true,
   "tosidebar": true,
   "console": false,
   "tostatus": false,
-  "complete": "payload",
+  "complete": "parts",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1250,
+  "x": 1150,
   "y": 1360,
   "wires": [],
-  "_order": 357
+  "_order": 330
 }
 
 module.exports = Node;
