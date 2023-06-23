@@ -1,15 +1,15 @@
 const Node = {
-  "id": "fc4932f82981c759",
+  "id": "fc0914a8d50bc537",
   "type": "change",
   "z": "067b777cae534d43",
-  "name": "",
+  "name": "data = null",
   "rules": [
     {
       "t": "set",
-      "p": "dataSkabelonExists",
-      "pt": "flow",
-      "to": "",
-      "tot": "str"
+      "p": "data",
+      "pt": "msg",
+      "to": "null",
+      "tot": "jsonata"
     }
   ],
   "action": "",
@@ -17,10 +17,12 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 270,
-  "y": 700,
+  "x": 1550,
+  "y": 340,
   "wires": [
-    []
+    [
+      "30c9762921bab2e0"
+    ]
   ],
   "_order": 149
 }

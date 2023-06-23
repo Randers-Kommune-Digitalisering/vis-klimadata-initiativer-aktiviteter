@@ -13,7 +13,6 @@ const Node = {
     "d68e5df950fbcad8",
     "a6e25fca9387229e",
     "2da160df28353b1e",
-    "9d7997d34de98e79",
     "fd4171a6966f7c3f",
     "7e15b2d2d0197be7"
   ],
