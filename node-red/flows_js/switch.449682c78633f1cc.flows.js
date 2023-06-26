@@ -7,8 +7,8 @@ const Node = {
   "propertyType": "env",
   "rules": [
     {
-      "t": "eq",
-      "v": "false",
+      "t": "neq",
+      "v": "true",
       "vt": "str"
     }
   ],
