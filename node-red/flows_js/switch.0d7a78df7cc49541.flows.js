@@ -9,7 +9,7 @@ const Node = {
   "rules": [
     {
       "t": "neq",
-      "v": "false",
+      "v": "true",
       "vt": "str"
     }
   ],
