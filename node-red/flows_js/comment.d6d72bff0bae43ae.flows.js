@@ -1,13 +1,13 @@
 const Node = {
-  "id": "5c05e567bb733906",
+  "id": "d6d72bff0bae43ae",
   "type": "comment",
   "z": "db9cae581f57fc84",
-  "name": "Metrics",
+  "name": "Bad code.. sets max days to 999",
   "info": "",
-  "x": 1720,
-  "y": 220,
+  "x": 1430,
+  "y": 20,
   "wires": [],
-  "_order": 319
+  "_order": 344
 }
 
 module.exports = Node;

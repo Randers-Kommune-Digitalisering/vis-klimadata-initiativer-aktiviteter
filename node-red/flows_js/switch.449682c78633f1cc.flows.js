@@ -1,14 +1,13 @@
 const Node = {
-  "id": "0d7a78df7cc49541",
+  "id": "449682c78633f1cc",
   "type": "switch",
-  "z": "9cd2fc26979e7dd1",
-  "g": "d0265b9f621b187d",
+  "z": "db9cae581f57fc84",
   "name": "Tjek om der køres \\n i udviklermiljø",
   "property": "DEV_ENVIROMENT",
   "propertyType": "env",
   "rules": [
     {
-      "t": "neq",
+      "t": "eq",
       "v": "false",
       "vt": "str"
     }
@@ -16,14 +15,14 @@ const Node = {
   "checkall": "true",
   "repair": false,
   "outputs": 1,
-  "x": 490,
-  "y": 100,
+  "x": 1190,
+  "y": 60,
   "wires": [
     [
-      "3eb09dda45462a10"
+      "e01068b35a8d78bf"
     ]
   ],
-  "_order": 253
+  "_order": 342
 }
 
 module.exports = Node;
