@@ -1,17 +1,15 @@
 const Node = {
-  "id": "aba29e00ed4d41d0",
+  "id": "e01068b35a8d78bf",
   "type": "change",
   "z": "db9cae581f57fc84",
-  "g": "50ce8cdc07614c53",
-  "name": "",
+  "name": "Opsætning af \\n dataset metadata",
   "rules": [
     {
       "t": "set",
-      "p": "datasets",
-      "pt": "flow",
-      "to": "dataset",
-      "tot": "msg",
-      "dc": true
+      "p": "max_file_age_days",
+      "pt": "msg",
+      "to": "999",
+      "tot": "num"
     }
   ],
   "action": "",
@@ -19,14 +17,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 890,
-  "y": 320,
+  "x": 1390,
+  "y": 60,
   "wires": [
     [
-      "e729b7eab61f6ede"
+      "8ba0712b7f49b9c6"
     ]
   ],
-  "_order": 329
+  "_order": 343
 }
 
 module.exports = Node;
