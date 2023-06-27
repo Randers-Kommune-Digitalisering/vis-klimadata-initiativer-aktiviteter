@@ -23,14 +23,14 @@ const Node = {
       "solarEvents": "sunrise,sunset"
     }
   ],
-  "x": 260,
-  "y": 200,
+  "x": 180,
+  "y": 280,
   "wires": [
     [
       "3af44629275ce741"
     ]
   ],
-  "_order": 173
+  "_order": 179
 }
 
 module.exports = Node;

@@ -1,8 +1,8 @@
 const Node = {
-  "id": "85b6b60428bd1e4c",
+  "id": "d946b6be82a226f9",
   "type": "change",
   "z": "7f3219f0beb025c3",
-  "g": "62d1b4969e322491",
+  "g": "c42de2433bbf1d55",
   "name": "Konfigurer tabelnavn, opdaterbare kolonner, \\n nye kolonnenavne, primary keys",
   "rules": [
     {
@@ -46,15 +46,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 870,
-  "y": 180,
+  "x": 370,
+  "y": 80,
   "wires": [
     [
-      "4a378c40feb26413",
-      "4057cf82e6442f23"
+      "7d23dd611343c85e"
     ]
   ],
-  "_order": 172
+  "_order": 217
 }
 
 module.exports = Node;
