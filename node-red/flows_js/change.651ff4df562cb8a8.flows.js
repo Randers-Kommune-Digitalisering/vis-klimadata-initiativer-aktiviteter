@@ -2,7 +2,7 @@ const Node = {
   "id": "651ff4df562cb8a8",
   "type": "change",
   "z": "db9cae581f57fc84",
-  "g": "15164b1a650834a2",
+  "g": "caba7946f847b074",
   "name": "Opsætning af dataset \\n antal-krydsende-cyklister-over-randers-fjord",
   "rules": [
     {
@@ -18,14 +18,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 330,
-  "y": 260,
+  "x": 370,
+  "y": 80,
   "wires": [
     [
-      "c2263f722655a19e"
+      "e56eb2db19f7c8e4"
     ]
   ],
-  "_order": 350
+  "_order": 380
 }
 
 module.exports = Node;

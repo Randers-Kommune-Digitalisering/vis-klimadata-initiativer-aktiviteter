@@ -1,5 +1,5 @@
 const Node = {
-  "id": "beaf489b55ef27df",
+  "id": "bd35b2c70ae0b5e6",
   "type": "template",
   "z": "db9cae581f57fc84",
   "name": "Forespørgsel ↓\\n Slet eksisterende tabel ved deploy",
@@ -9,24 +9,18 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 680,
-  "y": 2380,
+  "x": 480,
+  "y": 460,
   "wires": [
     [
-      "6fa1a22720727561"
+      "5298b18f1a031c6e"
     ]
   ],
-  "_order": 377
+  "_order": 385
 }
 
 Node.template = `
-IF EXISTS ( SELECT
-            *
-            FROM sys.tables
-            WHERE SCHEMA_NAME(schema_id)
-            LIKE '{{flow.tablename}}'
-          )
-DROP TABLE {{flow.tablename}}
+DROP TABLE IF EXISTS {{tablename}}
 `
 
 module.exports = Node;

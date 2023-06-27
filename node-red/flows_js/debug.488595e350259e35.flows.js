@@ -3,18 +3,18 @@ const Node = {
   "type": "debug",
   "z": "db9cae581f57fc84",
   "name": "FILE | No new data",
-  "active": true,
+  "active": false,
   "tosidebar": true,
   "console": false,
   "tostatus": false,
-  "complete": "parts",
-  "targetType": "msg",
+  "complete": "\"OK\"",
+  "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
   "x": 1150,
-  "y": 1360,
+  "y": 1980,
   "wires": [],
-  "_order": 341
+  "_order": 349
 }
 
 module.exports = Node;

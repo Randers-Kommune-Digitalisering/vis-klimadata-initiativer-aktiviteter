@@ -1,19 +1,20 @@
 const Node = {
-  "id": "2d538edd80fb6930",
+  "id": "fee1df64d376b1d2",
   "type": "debug",
   "z": "db9cae581f57fc84",
-  "name": "debug 97",
+  "name": "stdout",
   "active": true,
   "tosidebar": true,
-  "console": false,
+  "console": true,
   "tostatus": false,
-  "complete": "false",
+  "complete": "{ \"openData\" : \"all datasets processed\" }",
+  "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1150,
-  "y": 2180,
+  "x": 1040,
+  "y": 680,
   "wires": [],
-  "_order": 373
+  "_order": 393
 }
 
 module.exports = Node;

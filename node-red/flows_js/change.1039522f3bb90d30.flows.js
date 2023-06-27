@@ -2,6 +2,7 @@ const Node = {
   "id": "1039522f3bb90d30",
   "type": "change",
   "z": "db9cae581f57fc84",
+  "g": "361d58eda749bdc2",
   "name": "Opsætning af \\n dataset metadata",
   "rules": [
     {
@@ -17,14 +18,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 1190,
-  "y": 120,
+  "x": 970,
+  "y": 560,
   "wires": [
     [
-      "8ba0712b7f49b9c6"
+      "e445b27349427bfa"
     ]
   ],
-  "_order": 362
+  "_order": 368
 }
 
 module.exports = Node;
