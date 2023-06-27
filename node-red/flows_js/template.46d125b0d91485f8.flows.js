@@ -1,25 +1,27 @@
 const Node = {
-  "id": "5caf4e885dfd040f",
+  "id": "46d125b0d91485f8",
   "type": "template",
   "z": "b211627962aab2cb",
-  "name": "Forespørgsel ↓\\n Hent dato for seneste række ",
+  "name": "Forespørgsel ↓\\n Slet eksisterende tabel ved deploy",
   "field": "sql",
   "fieldType": "msg",
   "format": "sql",
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 680,
-  "y": 1500,
+  "x": 960,
+  "y": 220,
   "wires": [
-    []
+    [
+      "cbac50bab96d6526"
+    ]
   ],
-  "_order": 200
+  "_order": 238
 }
 
 Node.template = `
-SELECT Month
-FROM {{flow.tablename}}
+DROP TABLE IF EXISTS {{flow.tablename}}
+
 `
 
 module.exports = Node;

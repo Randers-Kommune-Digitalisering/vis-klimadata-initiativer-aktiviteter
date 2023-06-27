@@ -16,15 +16,15 @@ const Node = {
       "payloadType": "default",
       "payload": "",
       "expressionType": "cron",
-      "expression": "0  0  1  1  *  ",
+      "expression": "0 0 4 ? * TUE,WED,THU,FRI,SAT *",
       "location": "",
       "offset": "0",
       "solarType": "all",
       "solarEvents": "sunrise,sunset"
     }
   ],
-  "x": 240,
-  "y": 160,
+  "x": 180,
+  "y": 280,
   "wires": [
     [
       "b8981f871f107b11"

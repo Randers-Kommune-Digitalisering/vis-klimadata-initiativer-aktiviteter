@@ -12,9 +12,7 @@ const Node = {
   "nodes": [
     "f904d6efdc9c5403",
     "02ce3ed32acfa5c7",
-    "5347b10a33f095c7",
     "1b73ea38ae7d18fc",
-    "998faeda5906d634",
     "4319da9edecb854a",
     "466f005d217b7ea4",
     "97aabb51832248bb",
@@ -22,7 +20,9 @@ const Node = {
   ],
   "x": 114,
   "y": 19,
-  "_order": 16
+  "w": 1332,
+  "h": 202,
+  "_order": 17
 }
 
 module.exports = Node;

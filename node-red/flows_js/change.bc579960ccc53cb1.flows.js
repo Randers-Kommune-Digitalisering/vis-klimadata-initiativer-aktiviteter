@@ -1,22 +1,22 @@
 const Node = {
-  "id": "e6036517b6111e21",
+  "id": "bc579960ccc53cb1",
   "type": "change",
-  "z": "b211627962aab2cb",
-  "g": "6cd73e834b634e42",
+  "z": "9cd2fc26979e7dd1",
+  "g": "239cde6bcb115e82",
   "name": "Konfigurer tabelnavn \\n + datafilter + date_column",
   "rules": [
     {
       "t": "set",
       "p": "tablename",
       "pt": "flow",
-      "to": "eds_FORBRUG",
+      "to": "eds_PRODUKTION",
       "tot": "str"
     },
     {
       "t": "set",
       "p": "datafilter",
       "pt": "msg",
-      "to": "[\"MeasurementPoints\",\"MunicipalityNo\"]",
+      "to": "[\"MunicipalityNo\",\"OffshoreWindPower\",\"CentralPower\",\"DecentralPower\"]",
       "tot": "json"
     },
     {
@@ -32,14 +32,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 770,
-  "y": 120,
+  "x": 310,
+  "y": 80,
   "wires": [
     [
-      "21843d1518b67d7e"
+      "15cff38df5958f84"
     ]
   ],
-  "_order": 222
+  "_order": 267
 }
 
 module.exports = Node;
