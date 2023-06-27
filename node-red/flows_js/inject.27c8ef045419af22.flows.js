@@ -15,14 +15,14 @@ const Node = {
   "once": true,
   "onceDelay": 0.1,
   "topic": "remove-all-dynamic",
-  "x": 680,
-  "y": 80,
+  "x": 240,
+  "y": 560,
   "wires": [
     [
       "a29ce748a8e221ef"
     ]
   ],
-  "_order": 262
+  "_order": 296
 }
 
 module.exports = Node;

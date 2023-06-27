@@ -18,14 +18,14 @@ const Node = {
       "module": "dayjs/plugin/customParseFormat"
     }
   ],
-  "x": 910,
-  "y": 640,
+  "x": 930,
+  "y": 920,
   "wires": [
     [
       "b3bcc8274a107269"
     ]
   ],
-  "_order": 226
+  "_order": 247
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util, dayjs, customParseFormat) {

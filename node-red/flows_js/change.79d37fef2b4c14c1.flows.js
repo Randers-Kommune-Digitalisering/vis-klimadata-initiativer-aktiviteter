@@ -2,7 +2,7 @@ const Node = {
   "id": "79d37fef2b4c14c1",
   "type": "change",
   "z": "db9cae581f57fc84",
-  "g": "d79b62ee8e7fddf6",
+  "g": "4479b20a2bb18586",
   "name": "Set retry config",
   "rules": [
     {
@@ -37,7 +37,7 @@ const Node = {
       "t": "set",
       "p": "config.retryAttempts",
       "pt": "msg",
-      "to": "3",
+      "to": "5",
       "tot": "num"
     }
   ],
@@ -46,14 +46,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 200,
-  "y": 80,
+  "x": 260,
+  "y": 880,
   "wires": [
     [
       "be878228fd8c74ed"
     ]
   ],
-  "_order": 268
+  "_order": 302
 }
 
 module.exports = Node;

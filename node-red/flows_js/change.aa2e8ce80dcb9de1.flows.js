@@ -12,8 +12,8 @@ const Node = {
     },
     {
       "t": "delete",
-      "p": "tablename",
-      "pt": "msg"
+      "p": "dataset",
+      "pt": "flow"
     },
     {
       "t": "delete",
@@ -38,6 +38,11 @@ const Node = {
       "pt": "flow",
       "to": "false",
       "tot": "bool"
+    },
+    {
+      "t": "delete",
+      "p": "datasets",
+      "pt": "flow"
     }
   ],
   "action": "",
@@ -45,14 +50,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 940,
-  "y": 120,
+  "x": 720,
+  "y": 560,
   "wires": [
     [
       "1039522f3bb90d30"
     ]
   ],
-  "_order": 287
+  "_order": 321
 }
 
 module.exports = Node;

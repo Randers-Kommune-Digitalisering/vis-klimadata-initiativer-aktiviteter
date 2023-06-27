@@ -2,6 +2,7 @@ const Node = {
   "id": "de73a5699e41d734",
   "type": "function",
   "z": "7f3219f0beb025c3",
+  "g": "68a49c0bcc64ea66",
   "name": "Set db_updated",
   "func": "",
   "outputs": 1,
@@ -14,14 +15,14 @@ const Node = {
       "module": "dayjs"
     }
   ],
-  "x": 1000,
-  "y": 420,
+  "x": 900,
+  "y": 520,
   "wires": [
     [
       "f38533d1c82aaf84"
     ]
   ],
-  "_order": 183
+  "_order": 207
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util, dayjs) {

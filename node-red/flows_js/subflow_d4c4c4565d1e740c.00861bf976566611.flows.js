@@ -4,15 +4,15 @@ const Node = {
   "z": "9cd2fc26979e7dd1",
   "g": "8edb997a61d98957",
   "name": "",
-  "x": 1240,
-  "y": 120,
+  "x": 540,
+  "y": 420,
   "wires": [
     [
       "f89fdf9931373bb2",
-      "2f2194add6a779e9"
+      "1fd9f285f57ecaa9"
     ]
   ],
-  "_order": 250
+  "_order": 277
 }
 
 module.exports = Node;

@@ -6,9 +6,9 @@ const Node = {
   "name": "Manuelle felter",
   "info": "",
   "x": 220,
-  "y": 1220,
+  "y": 1380,
   "wires": [],
-  "_order": 192
+  "_order": 216
 }
 
 module.exports = Node;

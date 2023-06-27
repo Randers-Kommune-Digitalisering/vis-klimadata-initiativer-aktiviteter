@@ -2,6 +2,7 @@ const Node = {
   "id": "0ad6f140c68a6fda",
   "type": "switch",
   "z": "7f3219f0beb025c3",
+  "g": "68a49c0bcc64ea66",
   "name": "Tjek om tabel eksisterer",
   "property": "$count(payload)",
   "propertyType": "jsonata",
@@ -20,8 +21,8 @@ const Node = {
   "checkall": "true",
   "repair": false,
   "outputs": 2,
-  "x": 970,
-  "y": 320,
+  "x": 930,
+  "y": 420,
   "wires": [
     [
       "f6528938738539ec"
@@ -30,7 +31,7 @@ const Node = {
       "08b465ae39304f21"
     ]
   ],
-  "_order": 187
+  "_order": 211
 }
 
 module.exports = Node;

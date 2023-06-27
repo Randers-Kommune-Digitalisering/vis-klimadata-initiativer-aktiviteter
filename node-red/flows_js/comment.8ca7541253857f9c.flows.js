@@ -5,9 +5,9 @@ const Node = {
   "name": "Tabel findes IKKE",
   "info": "",
   "x": 110,
-  "y": 1200,
+  "y": 1820,
   "wires": [],
-  "_order": 308
+  "_order": 342
 }
 
 module.exports = Node;

@@ -4,10 +4,10 @@ const Node = {
   "z": "db9cae581f57fc84",
   "name": "Bad code.. sets max days to 999",
   "info": "",
-  "x": 1430,
-  "y": 20,
+  "x": 910,
+  "y": 320,
   "wires": [],
-  "_order": 344
+  "_order": 376
 }
 
 module.exports = Node;

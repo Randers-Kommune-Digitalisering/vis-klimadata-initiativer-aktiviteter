@@ -30,7 +30,21 @@ const Node = {
       "t": "set",
       "p": "payload.id",
       "pt": "msg",
+      "to": "dataset_opendata",
+      "tot": "msg"
+    },
+    {
+      "t": "set",
+      "p": "dataset",
+      "pt": "flow",
       "to": "dataset",
+      "tot": "msg"
+    },
+    {
+      "t": "set",
+      "p": "url",
+      "pt": "flow",
+      "to": "url",
       "tot": "msg"
     }
   ],
@@ -43,11 +57,11 @@ const Node = {
   "y": 100,
   "wires": [
     [
-      "5347b10a33f095c7"
+      "dcfa0c1347b93ca3"
     ]
   ],
   "info": "",
-  "_order": 139
+  "_order": 159
 }
 
 Node.info = `

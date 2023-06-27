@@ -6,9 +6,9 @@ const Node = {
   "name": "Manuelt \"TID\" ~> \"MÅNED\"",
   "info": "",
   "x": 1200,
-  "y": 1020,
+  "y": 1180,
   "wires": [],
-  "_order": 191
+  "_order": 215
 }
 
 module.exports = Node;

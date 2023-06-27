@@ -2,6 +2,7 @@ const Node = {
   "id": "f38533d1c82aaf84",
   "type": "switch",
   "z": "7f3219f0beb025c3",
+  "g": "68a49c0bcc64ea66",
   "name": "Tjek om data eksisterer i tabel",
   "property": "db_updated",
   "propertyType": "msg",
@@ -18,8 +19,8 @@ const Node = {
   "checkall": "true",
   "repair": false,
   "outputs": 2,
-  "x": 1270,
-  "y": 420,
+  "x": 1190,
+  "y": 520,
   "wires": [
     [
       "7864e5ad04f1be39"
@@ -28,7 +29,7 @@ const Node = {
       "1c718de50c990f81"
     ]
   ],
-  "_order": 196
+  "_order": 220
 }
 
 module.exports = Node;
