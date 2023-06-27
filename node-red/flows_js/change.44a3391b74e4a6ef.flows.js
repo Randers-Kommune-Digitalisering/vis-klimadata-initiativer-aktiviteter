@@ -15,6 +15,21 @@ const Node = {
     },
     {
       "t": "set",
+      "p": "dataset_opendata",
+      "pt": "msg",
+      "to": "datasets[0]",
+      "tot": "flow",
+      "dc": true
+    },
+    {
+      "t": "set",
+      "p": "dataset",
+      "pt": "msg",
+      "to": "$replace(dataset, \"-\", \"_\") /* To use the tablename in mysql/mariadb only underscores are allowed as special characters */ ",
+      "tot": "jsonata"
+    },
+    {
+      "t": "set",
       "p": "tablename",
       "pt": "flow",
       "to": "\"opendata\" & \"_\" & dataset",

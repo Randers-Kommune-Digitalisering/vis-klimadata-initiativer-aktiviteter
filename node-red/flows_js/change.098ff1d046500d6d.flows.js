@@ -6,7 +6,7 @@ const Node = {
   "rules": [
     {
       "t": "set",
-      "p": "dataset",
+      "p": "dataset_maria",
       "pt": "msg",
       "to": "$replace(dataset, \"-\", \"_\") /* To use the tablename in mysql/mariadb only underscores are allowed as special characters */ ",
       "tot": "jsonata"
@@ -15,7 +15,7 @@ const Node = {
       "t": "set",
       "p": "tablename",
       "pt": "msg",
-      "to": "\"opendata\" & \"_\" & dataset",
+      "to": "\"opendata\" & \"_\" & dataset_maria",
       "tot": "jsonata"
     },
     {
