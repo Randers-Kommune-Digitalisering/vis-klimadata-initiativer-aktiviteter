@@ -1,15 +1,15 @@
 const Node = {
-  "id": "651ff4df562cb8a8",
+  "id": "7c84f4b522ac062f",
   "type": "change",
   "z": "db9cae581f57fc84",
   "g": "caba7946f847b074",
-  "name": "Opsætning af dataset \\n antal-krydsende-cyklister-over-randers-fjord",
+  "name": "Opsætning af dataset \\n braendstofforbrug",
   "rules": [
     {
       "t": "set",
       "p": "dataset",
       "pt": "msg",
-      "to": "antal-krydsende-cyklister-over-randers-fjord",
+      "to": "opendataset",
       "tot": "str"
     }
   ],
@@ -18,14 +18,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 370,
-  "y": 80,
+  "x": 300,
+  "y": 200,
   "wires": [
     [
-      "e56eb2db19f7c8e4"
+      "f2be0710a9355d4a"
     ]
   ],
-  "_order": 380
+  "_order": 397
 }
 
 module.exports = Node;
