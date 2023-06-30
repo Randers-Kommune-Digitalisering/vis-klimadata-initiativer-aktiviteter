@@ -13,7 +13,7 @@ const Node = {
   "joinerType": "str",
   "accumulate": false,
   "timeout": "",
-  "count": "2",
+  "count": "3",
   "reduceRight": false,
   "reduceExp": "",
   "reduceInit": "",
