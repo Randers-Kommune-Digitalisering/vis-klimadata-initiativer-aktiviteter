@@ -13,7 +13,7 @@ const Node = {
   "joinerType": "str",
   "accumulate": false,
   "timeout": "",
-  "count": "2",
+  "count": "3",
   "reduceRight": false,
   "reduceExp": "",
   "reduceInit": "",
@@ -26,7 +26,7 @@ const Node = {
       "aba29e00ed4d41d0"
     ]
   ],
-  "_order": 360
+  "_order": 361
 }
 
 module.exports = Node;

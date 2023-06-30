@@ -7,14 +7,14 @@ const Node = {
   "tosidebar": true,
   "console": false,
   "tostatus": false,
-  "complete": "parts",
-  "targetType": "msg",
+  "complete": "\"OK\"",
+  "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
   "x": 1300,
   "y": 2400,
   "wires": [],
-  "_order": 315
+  "_order": 316
 }
 
 module.exports = Node;
