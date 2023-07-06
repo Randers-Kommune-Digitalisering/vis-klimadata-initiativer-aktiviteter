@@ -11,11 +11,6 @@ const Node = {
     },
     {
       "t": "delete",
-      "p": "dataset",
-      "pt": "msg"
-    },
-    {
-      "t": "delete",
       "p": "dataskabelon_done",
       "pt": "flow"
     },
@@ -56,7 +51,7 @@ const Node = {
       "e01068b35a8d78bf"
     ]
   ],
-  "_order": 392
+  "_order": 399
 }
 
 module.exports = Node;

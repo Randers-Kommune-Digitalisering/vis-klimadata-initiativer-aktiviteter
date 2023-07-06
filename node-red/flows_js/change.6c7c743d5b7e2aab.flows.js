@@ -10,6 +10,13 @@ const Node = {
       "pt": "msg",
       "to": "config.currentRetryAttempt+1",
       "tot": "jsonata"
+    },
+    {
+      "t": "set",
+      "p": "config.schedule_name",
+      "pt": "msg",
+      "to": "config.schedule_name & \"_\" & config.currentRetryAttempt",
+      "tot": "str"
     }
   ],
   "action": "",
@@ -24,7 +31,7 @@ const Node = {
       "3fcc4bd01ebeb3cf"
     ]
   ],
-  "_order": 134
+  "_order": 135
 }
 
 module.exports = Node;

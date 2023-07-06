@@ -10,6 +10,13 @@ const Node = {
       "pt": "msg",
       "to": "1",
       "tot": "num"
+    },
+    {
+      "t": "set",
+      "p": "config.schedule_name",
+      "pt": "msg",
+      "to": "config.schedule_name & \"_1\"",
+      "tot": "jsonata"
     }
   ],
   "action": "",
@@ -24,7 +31,7 @@ const Node = {
       "3fcc4bd01ebeb3cf"
     ]
   ],
-  "_order": 133
+  "_order": 134
 }
 
 module.exports = Node;

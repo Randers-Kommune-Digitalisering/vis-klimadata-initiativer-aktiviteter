@@ -6,6 +6,13 @@ const Node = {
   "rules": [
     {
       "t": "set",
+      "p": "config.delay_ms",
+      "pt": "msg",
+      "to": "config.delay_mins * 10000 * 60",
+      "tot": "jsonata"
+    },
+    {
+      "t": "set",
       "p": "payload",
       "pt": "msg",
       "to": "$toMillis(payload, \"[H01]:[m01]:[s01]\")",
@@ -15,21 +22,7 @@ const Node = {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "payload + (config.delay_mins * config.currentRetryAttempt) * 60000",
-      "tot": "jsonata"
-    },
-    {
-      "t": "set",
-      "p": "payload",
-      "pt": "msg",
-      "to": "$fromMillis(payload, \"[s01] [m01] [H01]\") & \" * * *\"",
-      "tot": "jsonata"
-    },
-    {
-      "t": "set",
-      "p": "payload",
-      "pt": "msg",
-      "to": "{\t    \"command\": \"add\",\t    \"name\": config.schedule_name,\t    \"expression\": payload,\t    \"expressionType\": \"cron\",\t    \"payloadType\": \"default\",\t    \"limit\": 1\t}",
+      "to": "payload + $power(config.delay_ms, config.currentRetryAttempt)",
       "tot": "jsonata"
     }
   ],
@@ -38,15 +31,12 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 1090,
-  "y": 940,
+  "x": 910,
+  "y": 1080,
   "wires": [
-    [
-      "29fecad4413f3bc3",
-      "2d29a6dd7941906f"
-    ]
+    []
   ],
-  "_order": 412
+  "_order": 425
 }
 
 module.exports = Node;

@@ -10,10 +10,10 @@ const Node = {
   "complete": "false",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1320,
-  "y": 1020,
+  "x": 1240,
+  "y": 1040,
   "wires": [],
-  "_order": 413
+  "_order": 415
 }
 
 module.exports = Node;

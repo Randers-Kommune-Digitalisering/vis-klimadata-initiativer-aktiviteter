@@ -29,12 +29,19 @@ const Node = {
       "t": "set",
       "p": "config.delay_mins",
       "pt": "msg",
-      "to": "8",
+      "to": "1",
       "tot": "num"
     },
     {
       "t": "set",
       "p": "config.retryAttempts",
+      "pt": "msg",
+      "to": "5",
+      "tot": "num"
+    },
+    {
+      "t": "set",
+      "p": "config.currentRetryAttempt",
       "pt": "msg",
       "to": "5",
       "tot": "num"
@@ -52,7 +59,7 @@ const Node = {
       "821660cd29b94ceb"
     ]
   ],
-  "_order": 414
+  "_order": 416
 }
 
 module.exports = Node;
