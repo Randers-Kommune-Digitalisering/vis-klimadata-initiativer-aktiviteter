@@ -3,7 +3,7 @@ const Node = {
   "type": "debug",
   "z": "db9cae581f57fc84",
   "name": "Dataskabelon",
-  "active": true,
+  "active": false,
   "tosidebar": true,
   "console": false,
   "tostatus": false,
@@ -12,9 +12,9 @@ const Node = {
   "statusVal": "",
   "statusType": "auto",
   "x": 1180,
-  "y": 1400,
+  "y": 1620,
   "wires": [],
-  "_order": 336
+  "_order": 362
 }
 
 module.exports = Node;

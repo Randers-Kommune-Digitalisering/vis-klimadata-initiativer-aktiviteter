@@ -5,13 +5,13 @@ const Node = {
   "g": "ab0af2245cd1cfbb",
   "name": "Send forespørgsel \\n til database",
   "x": 650,
-  "y": 2000,
+  "y": 2220,
   "wires": [
     [
       "947fc9603f42f684"
     ]
   ],
-  "_order": 345
+  "_order": 371
 }
 
 module.exports = Node;

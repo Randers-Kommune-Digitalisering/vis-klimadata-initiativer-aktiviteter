@@ -3,7 +3,7 @@ const Node = {
   "type": "timed-counter",
   "z": "81d16821752304c3",
   "name": "",
-  "timelimit": "2",
+  "timelimit": "3",
   "timeunit": "1000",
   "withhold": true,
   "fixedtimeout": false,
@@ -16,7 +16,7 @@ const Node = {
       "5662e19cb5341719"
     ]
   ],
-  "_order": 410
+  "_order": 439
 }
 
 module.exports = Node;

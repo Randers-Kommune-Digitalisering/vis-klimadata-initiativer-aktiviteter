@@ -2,6 +2,7 @@ const Node = {
   "id": "b440a2d7dc79e5d4",
   "type": "switch",
   "z": "db9cae581f57fc84",
+  "g": "50ce8cdc07614c53",
   "name": "",
   "property": "$flowContext(\"datasets\") ~> $count",
   "propertyType": "jsonata",
@@ -15,15 +16,15 @@ const Node = {
   "checkall": "true",
   "repair": false,
   "outputs": 1,
-  "x": 495,
-  "y": 660,
+  "x": 615,
+  "y": 720,
   "wires": [
     [
-      "fee1df64d376b1d2"
+      "f979cefa7ea50d1f"
     ]
   ],
   "l": false,
-  "_order": 402
+  "_order": 427
 }
 
 module.exports = Node;

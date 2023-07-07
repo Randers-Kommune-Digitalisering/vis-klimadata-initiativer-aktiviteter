@@ -34,9 +34,11 @@ const Node = {
       "tot": "bool"
     },
     {
-      "t": "delete",
+      "t": "set",
       "p": "datasets",
-      "pt": "flow"
+      "pt": "flow",
+      "to": "[]",
+      "tot": "json"
     }
   ],
   "action": "",
@@ -51,7 +53,7 @@ const Node = {
       "e01068b35a8d78bf"
     ]
   ],
-  "_order": 399
+  "_order": 424
 }
 
 module.exports = Node;
