@@ -16,7 +16,7 @@ const Node = {
   "onceDelay": 0.1,
   "topic": "remove-all-dynamic",
   "x": 240,
-  "y": 560,
+  "y": 700,
   "wires": [
     [
       "a29ce748a8e221ef"
