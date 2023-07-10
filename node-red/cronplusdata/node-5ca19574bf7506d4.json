@@ -1,0 +1,1 @@
+{"version":1,"schedules":[{"topic":"retry","name":"retry","payloadType":"default","limit":1,"expressionType":"cron","expression":"23 07 14 * * *"}]}

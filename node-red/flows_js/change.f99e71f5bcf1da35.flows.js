@@ -11,11 +11,6 @@ const Node = {
     },
     {
       "t": "delete",
-      "p": "dataset",
-      "pt": "msg"
-    },
-    {
-      "t": "delete",
       "p": "dataskabelon_done",
       "pt": "flow"
     },
@@ -39,9 +34,11 @@ const Node = {
       "tot": "bool"
     },
     {
-      "t": "delete",
+      "t": "set",
       "p": "datasets",
-      "pt": "flow"
+      "pt": "flow",
+      "to": "[]",
+      "tot": "json"
     }
   ],
   "action": "",
@@ -50,13 +47,13 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 660,
-  "y": 360,
+  "y": 500,
   "wires": [
     [
       "e01068b35a8d78bf"
     ]
   ],
-  "_order": 390
+  "_order": 421
 }
 
 module.exports = Node;

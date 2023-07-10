@@ -13,20 +13,20 @@ const Node = {
   "joinerType": "str",
   "accumulate": false,
   "timeout": "",
-  "count": "3",
+  "count": "",
   "reduceRight": false,
   "reduceExp": "",
   "reduceInit": "",
   "reduceInitType": "",
   "reduceFixup": "",
-  "x": 170,
-  "y": 760,
+  "x": 410,
+  "y": 960,
   "wires": [
     [
       "aba29e00ed4d41d0"
     ]
   ],
-  "_order": 361
+  "_order": 393
 }
 
 module.exports = Node;

@@ -14,13 +14,6 @@ const Node = {
     },
     {
       "t": "set",
-      "p": "config.schedule_name",
-      "pt": "msg",
-      "to": "retry",
-      "tot": "str"
-    },
-    {
-      "t": "set",
       "p": "config.timezone",
       "pt": "msg",
       "to": "TZ",
@@ -39,6 +32,13 @@ const Node = {
       "pt": "msg",
       "to": "5",
       "tot": "num"
+    },
+    {
+      "t": "set",
+      "p": "config.schedule_name",
+      "pt": "msg",
+      "to": "\"retry_\" & dataset",
+      "tot": "jsonata"
     }
   ],
   "action": "",
@@ -47,13 +47,13 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 260,
-  "y": 880,
+  "y": 1120,
   "wires": [
     [
       "be878228fd8c74ed"
     ]
   ],
-  "_order": 303
+  "_order": 335
 }
 
 module.exports = Node;

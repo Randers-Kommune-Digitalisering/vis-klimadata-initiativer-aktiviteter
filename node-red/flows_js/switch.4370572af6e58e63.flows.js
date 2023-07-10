@@ -3,7 +3,7 @@ const Node = {
   "type": "switch",
   "z": "5ee0ae05e3ad5b5a",
   "name": "",
-  "property": "config.currentRetryAttempts",
+  "property": "config.currentRetryAttempt",
   "propertyType": "msg",
   "rules": [
     {
@@ -18,7 +18,7 @@ const Node = {
   "checkall": "true",
   "repair": false,
   "outputs": 2,
-  "x": 190,
+  "x": 170,
   "y": 100,
   "wires": [
     [
@@ -28,7 +28,7 @@ const Node = {
       "3d995f447af30ece"
     ]
   ],
-  "_order": 130
+  "_order": 136
 }
 
 module.exports = Node;

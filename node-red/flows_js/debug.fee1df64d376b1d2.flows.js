@@ -7,14 +7,14 @@ const Node = {
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "{ \"openData\" : \"all datasets processed\" }",
+  "complete": "{ \"openData\" : \"all datasets processed\",\t    \"dataset_count\": datasetCount }",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 600,
-  "y": 660,
+  "x": 760,
+  "y": 820,
   "wires": [],
-  "_order": 395
+  "_order": 423
 }
 
 module.exports = Node;

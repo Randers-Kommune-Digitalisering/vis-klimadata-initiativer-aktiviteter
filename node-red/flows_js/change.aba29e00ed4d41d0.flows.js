@@ -3,7 +3,7 @@ const Node = {
   "type": "change",
   "z": "db9cae581f57fc84",
   "g": "50ce8cdc07614c53",
-  "name": "",
+  "name": "Set flow.datasets",
   "rules": [
     {
       "t": "set",
@@ -12,6 +12,13 @@ const Node = {
       "to": "dataset",
       "tot": "msg",
       "dc": true
+    },
+    {
+      "t": "set",
+      "p": "datasetCount",
+      "pt": "flow",
+      "to": "$flowContext(\"datasets\") ~> $count()",
+      "tot": "jsonata"
     }
   ],
   "action": "",
@@ -19,14 +26,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 370,
-  "y": 760,
+  "x": 630,
+  "y": 960,
   "wires": [
     [
       "e729b7eab61f6ede"
     ]
   ],
-  "_order": 362
+  "_order": 394
 }
 
 module.exports = Node;
