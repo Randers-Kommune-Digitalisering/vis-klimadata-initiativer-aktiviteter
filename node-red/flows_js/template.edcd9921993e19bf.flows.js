@@ -21,9 +21,9 @@ const Node = {
 
 Node.template = `
 INSERT INTO {{flow.metadata_tablename}}
-(uid, sensor_type, sensor_location)
+(uid, tablename, sensor_type, sensor_location)
 VALUES
-('{{data.id}}', '{{data.type}}', '{{data.location.value.coordinates}}')
+('{{data.id}}', 'os2iot_{{data.id}}', '{{data.type}}', '{{data.location.value.coordinates}}')
 `
 
 module.exports = Node;

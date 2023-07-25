@@ -18,12 +18,10 @@ const Node = {
 }
 
 Node.template = `
-CREATE TABLE if not exists '{{data.id}}' (
-	created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-	last_updated TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-	tablename VARCHAR(255),
-	sensor_type VARCHAR(255),
-	sensor_location VARCHAR(255)
+CREATE TABLE if not exists 'os2iot_{{data.id}}' (
+	observedAt TIMESTAMP NOT NULL,
+	type VARCHAR(255),
+	value FLOAT SIGNED
 	);
 `
 
