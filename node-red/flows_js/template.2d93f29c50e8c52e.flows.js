@@ -9,14 +9,14 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 480,
-  "y": 320,
+  "x": 300,
+  "y": 360,
   "wires": [
     [
       "20eb9649f07da6f1"
     ]
   ],
-  "_order": 440
+  "_order": 452
 }
 
 Node.template = `
@@ -27,6 +27,7 @@ CREATE TABLE if not exists {{flow.metadata_tablename}} (
 	tablename VARCHAR(255),
 	sensor_type VARCHAR(255),
 	sensor_location VARCHAR(255),
+	last_observation TIMESTAMP,
 	UNIQUE (uid)
 	);
 `

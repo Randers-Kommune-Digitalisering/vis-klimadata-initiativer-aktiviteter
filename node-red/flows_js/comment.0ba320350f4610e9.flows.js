@@ -2,12 +2,12 @@ const Node = {
   "id": "0ba320350f4610e9",
   "type": "comment",
   "z": "aad50484a0b40b44",
-  "name": "Metadata",
+  "name": "Opret metadata",
   "info": "",
-  "x": 400,
-  "y": 260,
+  "x": 240,
+  "y": 300,
   "wires": [],
-  "_order": 453
+  "_order": 463
 }
 
 module.exports = Node;

@@ -9,18 +9,19 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 450,
-  "y": 660,
+  "x": 370,
+  "y": 720,
   "wires": [
     [
       "6ce8ea2c3738553d"
     ]
   ],
-  "_order": 445
+  "_order": 456
 }
 
 Node.template = `
-SELECT last_updated FROM {{flow.metadata_tablename}} WHERE uid = '{{data.id}}' ORDER BY last_updated DESC LIMIT 1
+SELECT last_observation FROM {{flow.metadata_tablename}}
+WHERE uid = '{{data.id}}' ORDER BY last_observation DESC LIMIT 1;
 `
 
 module.exports = Node;

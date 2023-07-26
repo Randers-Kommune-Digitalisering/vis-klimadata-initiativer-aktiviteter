@@ -4,10 +4,10 @@ const Node = {
   "z": "aad50484a0b40b44",
   "name": "Flyt og split per dataelement i listen",
   "info": "",
-  "x": 480,
-  "y": 440,
+  "x": 300,
+  "y": 480,
   "wires": [],
-  "_order": 452
+  "_order": 462
 }
 
 module.exports = Node;

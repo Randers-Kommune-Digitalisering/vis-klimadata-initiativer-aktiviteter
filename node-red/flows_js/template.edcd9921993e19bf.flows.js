@@ -9,21 +9,21 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 440,
-  "y": 800,
+  "x": 600,
+  "y": 900,
   "wires": [
     [
       "2145297f72052f22"
     ]
   ],
-  "_order": 455
+  "_order": 465
 }
 
 Node.template = `
 INSERT INTO {{flow.metadata_tablename}}
 (uid, tablename, sensor_type, sensor_location)
 VALUES
-('{{data.id}}', 'os2iot_{{data.id}}', '{{data.type}}', '{{data.location.value.coordinates}}')
+('{{data.id}}', 'os2iot_{{data.id}}', '{{data.type}}', '{{data.location.value.coordinates}}');
 `
 
 module.exports = Node;

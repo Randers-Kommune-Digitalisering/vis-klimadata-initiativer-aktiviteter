@@ -16,7 +16,7 @@ const Node = {
       "fcf306e4303e1c3d"
     ]
   ],
-  "_order": 438
+  "_order": 450
 }
 
 Node.template = `
@@ -24,20 +24,18 @@ Node.template = `
     {
         "id": "refrigerator-sensor_309c-talkpool",
         "type": "refrigerator-sensor",
-        "name": {
-            "type": "Property",
-            "value": "Talkpool temp - Randers"
-        },
-        "temperature": {
-            "type": "Property",
-            "value": 21.5,
-            "observedAt": "2023-07-24T15:13:25.145786Z"
-        },
-        "humidity": {
-            "type": "Property",
-            "value": 45.2,
-            "observedAt": "2023-07-24T15:13:25.145786Z"
-        },
+        "observedAt": "2023-07-24T15:13:25.145786Z",
+        "name": "Talkpool temp - Randers",
+        "values": [
+            {
+                "type": "temperature",
+                "value": 21.5
+            },
+            {
+                "type": "humidity",
+                "value": 45.2
+            }
+        ],
         "location": {
             "type": "GeoProperty",
             "value": {
