@@ -9,18 +9,18 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 750,
-  "y": 1020,
+  "x": 770,
+  "y": 1040,
   "wires": [
     [
       "379b7d11f7126cdc"
     ]
   ],
-  "_order": 453
+  "_order": 460
 }
 
 Node.template = `
-CREATE TABLE if not exists 'os2iot_{{data.id}}' (
+CREATE TABLE if not exists {{data.tablename}} (
 	observedAt TIMESTAMP NOT NULL,
 	type VARCHAR(255),
 	value FLOAT SIGNED

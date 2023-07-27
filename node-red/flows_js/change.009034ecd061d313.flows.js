@@ -2,7 +2,7 @@ const Node = {
   "id": "009034ecd061d313",
   "type": "change",
   "z": "aad50484a0b40b44",
-  "name": "Flyt payload til msg.data",
+  "name": "Flyt payload \\n til msg.data",
   "rules": [
     {
       "t": "move",
@@ -17,14 +17,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 810,
-  "y": 520,
+  "x": 610,
+  "y": 540,
   "wires": [
     [
-      "ce76806c8311fa4b"
+      "939d77a327d8abfc"
     ]
   ],
-  "_order": 461
+  "_order": 468
 }
 
 module.exports = Node;

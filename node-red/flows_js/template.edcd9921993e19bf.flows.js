@@ -16,14 +16,14 @@ const Node = {
       "2145297f72052f22"
     ]
   ],
-  "_order": 465
+  "_order": 471
 }
 
 Node.template = `
 INSERT INTO {{flow.metadata_tablename}}
 (uid, tablename, sensor_type, sensor_location)
 VALUES
-('{{data.id}}', 'os2iot_{{data.id}}', '{{data.type}}', '{{data.location.value.coordinates}}');
+('{{data.id}}', '{{data.tablename}}', '{{data.type}}', '{{data.location.value.coordinates}}');
 `
 
 module.exports = Node;

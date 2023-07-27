@@ -16,7 +16,7 @@ const Node = {
       "20eb9649f07da6f1"
     ]
   ],
-  "_order": 452
+  "_order": 459
 }
 
 Node.template = `
@@ -27,7 +27,7 @@ CREATE TABLE if not exists {{flow.metadata_tablename}} (
 	tablename VARCHAR(255),
 	sensor_type VARCHAR(255),
 	sensor_location VARCHAR(255),
-	last_observation TIMESTAMP,
+	last_observation VARCHAR(255),
 	UNIQUE (uid)
 	);
 `

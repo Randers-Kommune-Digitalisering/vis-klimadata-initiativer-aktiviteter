@@ -8,7 +8,7 @@ const Node = {
   "rules": [
     {
       "t": "gte",
-      "v": "data.observedAt ~> $toMillis",
+      "v": "(data.observedAt ~>$split('.'))[0] ~> $toMillis",
       "vt": "jsonata"
     },
     {
@@ -19,16 +19,16 @@ const Node = {
   "repair": false,
   "outputs": 2,
   "x": 380,
-  "y": 1160,
+  "y": 1180,
   "wires": [
     [
-      "1186e95d964e4127"
+      "bfb02ac182e1d95b"
     ],
     [
-      "85c10287d8d017e4"
+      "e88e7148db86ed42"
     ]
   ],
-  "_order": 473
+  "_order": 479
 }
 
 module.exports = Node;

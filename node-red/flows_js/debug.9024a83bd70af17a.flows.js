@@ -7,14 +7,14 @@ const Node = {
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "payload.warningCount > 0\t? { \"os2iot_\" & data.id: \"table exists\" }\t:\t{ \"os2iot_\" & data.id: \"table created\" }\t/*:{\"warningstatus\" : payload.warningCount}*/",
+  "complete": "payload.warningCount > 0\t? { data.tablename: \"table exists\" }\t:\t{ data.tablename: \"table created\" }",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1260,
-  "y": 1020,
+  "x": 1280,
+  "y": 1040,
   "wires": [],
-  "_order": 483
+  "_order": 486
 }
 
 module.exports = Node;

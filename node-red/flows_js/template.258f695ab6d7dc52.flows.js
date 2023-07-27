@@ -9,21 +9,21 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 780,
-  "y": 1440,
+  "x": 800,
+  "y": 1360,
   "wires": [
     [
-      "85c10287d8d017e4"
+      "597b176723af7dca"
     ]
   ],
-  "_order": 484
+  "_order": 487
 }
 
 Node.template = `
-INSERT INTO {{flow.metadata_tablename}}
-(uid, tablename, sensor_type, sensor_location)
+INSERT INTO {{data.tablename}}
+(observedAt, type, value)
 VALUES
-('{{data.id}}', 'os2iot_{{data.id}}', '{{data.type}}', '{{data.location.value.coordinates}}');
+{{{sqlvalues}}}
 `
 
 module.exports = Node;

@@ -5,9 +5,9 @@ const Node = {
   "name": "Sensor data findes i DB",
   "info": "",
   "x": 360,
-  "y": 1100,
+  "y": 1120,
   "wires": [],
-  "_order": 474
+  "_order": 480
 }
 
 module.exports = Node;
