@@ -1,20 +1,20 @@
 const Node = {
-  "id": "d04ceef6925303fc",
+  "id": "4dd3a13eb342c3db",
   "type": "debug",
   "z": "aad50484a0b40b44",
-  "g": "4be49ca197686888",
-  "name": "debug 4",
+  "name": "INGRESS OS2IOT",
   "active": true,
   "tosidebar": true,
-  "console": false,
+  "console": true,
   "tostatus": false,
-  "complete": "false",
+  "complete": "true",
+  "targetType": "full",
   "statusVal": "",
   "statusType": "auto",
-  "x": 840,
-  "y": 2020,
+  "x": 560,
+  "y": 60,
   "wires": [],
-  "_order": 476
+  "_order": 502
 }
 
 module.exports = Node;

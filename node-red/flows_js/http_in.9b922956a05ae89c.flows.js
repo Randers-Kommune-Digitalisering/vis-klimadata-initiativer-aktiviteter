@@ -3,15 +3,15 @@ const Node = {
   "type": "http in",
   "z": "aad50484a0b40b44",
   "name": "",
-  "url": "/os2iot/api",
+  "url": "/os2iot",
   "method": "post",
   "upload": false,
   "swaggerDoc": "",
-  "x": 180,
+  "x": 170,
   "y": 80,
   "wires": [
     [
-      "fcf306e4303e1c3d"
+      "4dd3a13eb342c3db"
     ]
   ],
   "_order": 456
