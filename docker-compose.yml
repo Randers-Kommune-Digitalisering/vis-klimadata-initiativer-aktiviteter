@@ -41,19 +41,6 @@ services:
       retries: 55
     networks:
       - node_red
-
-  ingress:
-    enabled: true
-    annotations:
-      cert-manager.io/cluster-issuer: letsencrypt-prod
-    hosts:
-      - host: os2iot.randers.t0.hosting.kitkube.dk
-        paths:
-          - path: /
-    tls:
-      - hosts:
-          - os2iot.randers.t0.hosting.kitkube.dk
-        secretName: os2iot.randers.t0.hosting.kitkube.dk
       
 networks: 
   node_red:
