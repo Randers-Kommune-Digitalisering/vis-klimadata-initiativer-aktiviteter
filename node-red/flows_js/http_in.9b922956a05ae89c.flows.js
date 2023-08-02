@@ -7,11 +7,11 @@ const Node = {
   "method": "post",
   "upload": false,
   "swaggerDoc": "",
-  "x": 170,
-  "y": 80,
+  "x": 130,
+  "y": 120,
   "wires": [
     [
-      "4dd3a13eb342c3db"
+      "47b05f5026729b73"
     ]
   ],
   "_order": 456
