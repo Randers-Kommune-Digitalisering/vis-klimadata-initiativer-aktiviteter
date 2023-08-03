@@ -7,6 +7,9 @@ const Node = {
   "propertyType": "msg",
   "rules": [
     {
+      "t": "null"
+    },
+    {
       "t": "empty"
     },
     {
@@ -15,10 +18,13 @@ const Node = {
   ],
   "checkall": "true",
   "repair": false,
-  "outputs": 2,
+  "outputs": 3,
   "x": 330,
-  "y": 920,
+  "y": 900,
   "wires": [
+    [
+      "edcd9921993e19bf"
+    ],
     [
       "edcd9921993e19bf"
     ],
