@@ -7,23 +7,23 @@ const Node = {
   "propertyType": "msg",
   "rules": [
     {
-      "t": "null"
+      "t": "nnull"
     },
     {
-      "t": "nnull"
+      "t": "null"
     }
   ],
   "checkall": "true",
   "repair": false,
   "outputs": 2,
-  "x": 350,
-  "y": 940,
+  "x": 270,
+  "y": 1200,
   "wires": [
     [
-      "edcd9921993e19bf"
+      "95b355ae77a29945"
     ],
     [
-      "8e3bb04c7e0fbde5"
+      "524029eb5aa1b087"
     ]
   ],
   "_order": 493

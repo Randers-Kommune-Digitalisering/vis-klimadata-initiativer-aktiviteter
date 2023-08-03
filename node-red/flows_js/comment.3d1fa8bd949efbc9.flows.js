@@ -4,7 +4,7 @@ const Node = {
   "z": "aad50484a0b40b44",
   "name": "Sensor data findes i DB",
   "info": "",
-  "x": 360,
+  "x": 600,
   "y": 1120,
   "wires": [],
   "_order": 473
