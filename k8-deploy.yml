@@ -1,0 +1,13 @@
+service:
+  ingress:
+    enabled: true
+    annotations:
+      cert-manager.io/cluster-issuer: letsencrypt-prod
+    hosts:
+      - host: os2iot.randers.t0.hosting.kitkube.dk
+        paths:
+          - path: /os2iot
+    tls:
+      - hosts:
+          - os2iot.randers.t0.hosting.kitkube.dk
+        secretName: os2iot.randers.t0.hosting.kitkube.dk
