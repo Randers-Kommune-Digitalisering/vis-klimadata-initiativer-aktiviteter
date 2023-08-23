@@ -5,9 +5,10 @@ const Node = {
   "name": "OpenData Opsætning OUT",
   "mode": "return",
   "links": [],
-  "x": 705,
-  "y": 100,
+  "x": 810,
+  "y": 200,
   "wires": [],
+  "l": true,
   "_order": 432
 }
 
