@@ -1,15 +1,16 @@
 const Node = {
-  "id": "e01068b35a8d78bf",
+  "id": "cba64328b766fb60",
   "type": "change",
   "z": "db9cae581f57fc84",
-  "name": "Opsætning af \\n dataset metadata",
+  "g": "caba7946f847b074",
+  "name": "Opsætning af dataset \\n okologiske-fodevarer",
   "rules": [
     {
       "t": "set",
-      "p": "max_file_age_days",
+      "p": "dataset",
       "pt": "msg",
-      "to": "999",
-      "tot": "num"
+      "to": "okologiske-fodevarer",
+      "tot": "str"
     }
   ],
   "action": "",
@@ -17,14 +18,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 870,
-  "y": 500,
+  "x": 340,
+  "y": 400,
   "wires": [
     [
-      "c29775f4044283a1"
+      "b2b57f7cfc320d7b"
     ]
   ],
-  "_order": 430
+  "_order": 457
 }
 
 module.exports = Node;
