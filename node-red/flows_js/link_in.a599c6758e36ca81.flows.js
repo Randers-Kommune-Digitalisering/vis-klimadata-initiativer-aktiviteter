@@ -4,8 +4,8 @@ const Node = {
   "z": "db9cae581f57fc84",
   "name": "OpenData Opsætning IN",
   "links": [],
-  "x": 45,
-  "y": 100,
+  "x": 55,
+  "y": 200,
   "wires": [
     [
       "d409562e43ede32c"
