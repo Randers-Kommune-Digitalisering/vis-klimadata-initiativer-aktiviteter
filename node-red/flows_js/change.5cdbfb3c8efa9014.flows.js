@@ -3,7 +3,7 @@ const Node = {
   "type": "change",
   "z": "db9cae581f57fc84",
   "g": "caba7946f847b074",
-  "name": "Opsætning af dataset \\n forbrug-af-fossile-braendstoffer-i-industrien",
+  "name": "Opsætning af dataset \\n flyrejser-foretaget-af-personale-i-randers-kommune",
   "rules": [
     {
       "t": "set",
@@ -18,14 +18,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 370,
+  "x": 430,
   "y": 320,
   "wires": [
     [
       "e56eb2db19f7c8e4"
     ]
   ],
-  "_order": 455
+  "_order": 457
 }
 
 module.exports = Node;
