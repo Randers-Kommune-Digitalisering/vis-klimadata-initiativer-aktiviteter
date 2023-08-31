@@ -77,7 +77,7 @@ jobs:
       - name: Checkout Target Repository
         uses: actions/checkout@v3
         with:
-          repository: Randers-Kommune-Digitalisering/kithosting-randers-kommune-apps
+          repository: Randers-Kommune-Digitalisering/kithosting-randers-kommune-apps.git
           ref: 'test'
           path: infrastructure
           token: ${{ secrets.GITHUB_TOKEN }}
