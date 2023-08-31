@@ -72,3 +72,23 @@ jobs:
       - name: Push version service docker image.
         if: ${{ steps.tag.conclusion != 'skipped' }}
         run: ./build/docker-push.sh ${{ env.DOCKER_SERVICE }}:${{ steps.tag.outputs.VERSION }}
+        
+# Update tagged verion i config
+      - name: Checkout Target Repository
+        uses: actions/checkout@v3
+        with:
+          repository: Randers-Kommune-Digitalisering/kithosting-randers-kommune-apps
+          path: infrastructure
+          token: ${{ secrets.GITHUB_TOKEN }} 
+          
+      - name: Update Image Version in the related HelmChart values.yaml
+        uses: fjogeleit/yaml-update-action@main
+        with:
+          valueFile: 'vis-klimadata-initiativer-aktiviteter/values.yaml'
+          propertyPath: 'service.image.tag'
+          value: ${{ steps.tag.outputs.VERSION }}
+          repository: Randers-Kommune-Digitalisering/kithosting-randers-kommune-apps
+          branch: test
+          message: 'Update Image Version to ${{ steps.image.outputs.version }}'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          workDir: infrastructure
