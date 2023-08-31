@@ -79,7 +79,6 @@ jobs:
         with:
           repository: Randers-Kommune-Digitalisering/kithosting-randers-kommune-apps
           path: infrastructure
-          token: ${{ secrets.GITHUB_TOKEN }} 
           
       - name: Update Image Version in the related HelmChart values.yaml
         uses: fjogeleit/yaml-update-action@main
