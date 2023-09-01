@@ -91,5 +91,5 @@ jobs:
           repository: Randers-Kommune-Digitalisering/kithosting-randers-kommune-apps
           branch: test
           message: 'Update Image Version to ${{ steps.image.outputs.version }}'
-          token: ${{ secrets.ACCESS_ARGO_APPS }}
           workDir: infrastructure
+          createPR: false
