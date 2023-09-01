@@ -75,12 +75,11 @@ jobs:
         
 # Update tagged verion i config
       - name: Checkout Target Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
         with:
           repository: Randers-Kommune-Digitalisering/kithosting-randers-kommune-apps
           ref: 'test'
           path: infrastructure
-          token: ${{ secrets.ACCESS_ARGO_APPS }}
           
       - name: Update Image Version in the related HelmChart values.yaml
         uses: fjogeleit/yaml-update-action@main
