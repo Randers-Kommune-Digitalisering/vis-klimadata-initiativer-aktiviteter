@@ -87,7 +87,7 @@ jobs:
         with:
           valueFile: 'vis-klimadata-initiativer-aktiviteter/values.yaml'
           propertyPath: 'service.image.tag'
-          value: ${{ steps.tag.outputs.VERSION }}
+          value: test-mmb #${{ steps.tag.outputs.VERSION }}
           repository: Randers-Kommune-Digitalisering/kithosting-randers-kommune-apps
           branch: test
           message: 'Update Image Version to ${{ steps.image.outputs.version }}'
