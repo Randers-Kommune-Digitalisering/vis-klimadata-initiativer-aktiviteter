@@ -93,3 +93,4 @@ jobs:
           message: 'Update Image Version to ${{ steps.image.outputs.version }}'
           workDir: infrastructure
           createPR: false
+          token: ${{ secrets.GITHUB_TOKEN }}
