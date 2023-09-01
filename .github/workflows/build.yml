@@ -90,6 +90,8 @@ jobs:
           value: test-mmb #${{ steps.tag.outputs.VERSION }}
           repository: Randers-Kommune-Digitalisering/kithosting-randers-kommune-apps
           branch: test
+          targetBranch: test
+          masterBranchName: test
           message: 'Update Image Version to ${{ steps.image.outputs.version }}'
           workDir: infrastructure
           createPR: false
