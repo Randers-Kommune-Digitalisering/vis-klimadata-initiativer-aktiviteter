@@ -68,7 +68,7 @@ Krav til anvendelse af miljøvariable:
 
 :spiral_calendar: [Projektoverblik og opgavestyring](https://github.com/orgs/Randers-Kommune-Digitalisering/projects/2/)
 
-### Deploy yil prototypes
+### Deploy til prototypes
 Når en version er klar til at blive lagt på prototypes. Oprettes der et git tag i formatet v*.*.* fx v1.1.0
 ```
 git tag v1.1.0
