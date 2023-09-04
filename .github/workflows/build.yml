@@ -88,7 +88,7 @@ jobs:
 
       - name: Update version
         run: |
-          yq e ".service.image.tag = \"${{ github.sha }}\"" -i vis-klimadata-initiativer-aktiviteter/values.yaml
+          yq e ".service.image.tag = \"${{ github.sha }}\"" -i infrastructure/vis-klimadata-initiativer-aktiviteter/values.yaml
 
       - name: Commit and push
         run: |
