@@ -67,3 +67,12 @@ Krav til anvendelse af miljøvariable:
 :books: [Dokumentation og projektbeskrivelse](https://sbsip-web-drift01.randers.dk/sbsys/#/sager/495259)
 
 :spiral_calendar: [Projektoverblik og opgavestyring](https://github.com/orgs/Randers-Kommune-Digitalisering/projects/2/)
+
+### Deploy yil prototypes
+Når en version er klar til at blive lagt på prototypes. Oprettes der et git tag i formatet v*.*.* fx v1.1.0
+```
+git tag v1.1.0
+git push --tags
+```
+Her efter bygges et docker image med dette tag, samt bliver tagget opdatere i yaml for deplymentet i kithosting-randers-kommune-apps repo. 
+Hereftet vil Argo-CD efter nogle minutter selv ligge den nye version på prototypes.

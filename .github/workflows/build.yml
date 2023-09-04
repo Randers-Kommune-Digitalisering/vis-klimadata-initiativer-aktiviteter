@@ -75,20 +75,30 @@ jobs:
         
 # Update tagged verion i config
       - name: Checkout Target Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
+        if: ${{ steps.tag.conclusion != 'skipped' }}
         with:
           repository: Randers-Kommune-Digitalisering/kithosting-randers-kommune-apps
+          ref: 'test'
           path: infrastructure
-          token: ${{ secrets.GITHUB_TOKEN }} 
+          ssh-key: ${{ secrets.ACCESS_ARGO_APPS }}
           
-      - name: Update Image Version in the related HelmChart values.yaml
-        uses: fjogeleit/yaml-update-action@main
-        with:
-          valueFile: 'vis-klimadata-initiativer-aktiviteter/values.yaml'
-          propertyPath: 'service.image.tag'
-          value: ${{ steps.tag.outputs.VERSION }}
-          repository: Randers-Kommune-Digitalisering/kithosting-randers-kommune-apps
-          branch: test
-          message: 'Update Image Version to ${{ steps.image.outputs.version }}'
-          token: ${{ secrets.GITHUB_TOKEN }}
-          workDir: infrastructure
+      - name: Install yq
+        if: ${{ steps.tag.conclusion != 'skipped' }}
+        run: |
+          sudo apt install -y jq
+
+      - name: Update version
+        if: ${{ steps.tag.conclusion != 'skipped' }}
+        run: |
+          yq e ".service.image.tag = \"${{ steps.tag.outputs.VERSION }}\"" -i infrastructure/vis-klimadata-initiativer-aktiviteter/values.yaml
+
+      - name: Commit and push
+        if: ${{ steps.tag.conclusion != 'skipped' }}
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          cd infrastructure
+          git commit -am "Update version"
+          git push
+          
