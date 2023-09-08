@@ -6,7 +6,17 @@ I topmenuen vælges `SQL => SQL Lab` hvorved følgende side vises:
 
 ### Syntaks
 
-### Variabeltyper
+### Datatyper (de vigtigste)
+`INT`
+`DECIMAL`
+`INTEGER`
+`BOOLEAN`
+`DATE`
+`TIME`
+`DATETIME`
+`TIMESTAMP`
+`YEAR`
+
 
 ## SQL-kommandoer
 Den eneste SQL-kommando, der kan køres i SQL Lab er `SELECT`. Hvis man forsøger andet, får man fejlbeskeden: 
@@ -26,6 +36,8 @@ Den eneste SQL-kommando, der kan køres i SQL Lab er `SELECT`. Hvis man forsøge
 `LIMIT`
 
 `ORDER BY [variabel1, variabel2, ... ] [ASC]|DESC`
+
+`CASE`
 
 ### Operatorer
 #### Matematiske operatorer
@@ -68,3 +80,4 @@ Den eneste SQL-kommando, der kan køres i SQL Lab er `SELECT`. Hvis man forsøge
 
 
 ## Gode ressourcer
+* [w3schools.com/sql](https://www.w3schools.com/sql/default.asp)
