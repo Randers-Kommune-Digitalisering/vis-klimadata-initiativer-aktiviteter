@@ -47,15 +47,15 @@ Den eneste SQL-kommando, der kan køres i SQL Lab er `SELECT`. Hvis man forsøge
 
 ### Datatyper (de vigtigste)
 |Datatype|Beskrivelse|
-|---|---|
-|Streng||
+|:---|:---|
+|_Streng_||
 |`VARCHAR`| A VARIABLE length string (can contain letters, numbers, and special characters). The size parameter specifies the maximum string length in characters - can be from 0 to 65535|
-|Numerisk||
+|_Numerisk_||
 |`FLOAT`| A floating point number. The total number of digits is specified in size. The number of digits after the decimal point is specified in the d parameter.|
 |`DECIMAL`|  An exact fixed-point number. The total number of digits is specified in size. The number of digits after the decimal point is specified in the d parameter. The maximum number for size is 65. The maximum number for d is 30. The default value for size is 10. The default value for d is 0.|
 |`INTEGER`| -2147483648 to 2147483647 signed.|
 |`BOOLEAN`| Zero is considered as false, nonzero values are considered as true.|
-|Dato||
+|_Dato_||
 |`DATE`| YYYY-MM-DD|
 |`TIME`|  hh:mm:ss|
 |`DATETIME`| YYYY-MM-DD hh:mm:ss|
