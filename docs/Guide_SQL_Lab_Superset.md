@@ -6,10 +6,12 @@ __Indhold__
 * [SQL-kommandoer](#sql-kommandoer)
   * [Syntaks](#syntaks)
   * [Datatyper (de vigtigste)](#datatyper-de-vigtigste)
-  * [Forespørgsel](#forespørgsel)
+  * [Simple forespørgsler](#simple-forespørgsler)
   * [Operatorer](#operatorer)
     * [Matematiske operatorer](#matematiske-operatorer)
     * [Logiske operatorer](#logiske-operatorer)
+  * [Funktioner](#funktioner)
+  * [Flere forespørgsler](#flere-forespørgsler)
   * [Common Table Expressions (CTE)](#common-table-expressions-cte)
   * [Fletning](#fletning)
   * [Funktioner](#funktioner)
@@ -27,6 +29,10 @@ I venstre del af siden vælges Database, Schema (databaseområde) og Table schem
 
 I højre side af billedet vises øvers selve SQL-editoren og nederst resultatet af ens forespørgsler. 
 
+**_Genvejstast:_** 
+
+`[CTRL]`+`[ENTER]` eksekverer forespørgslen. 
+
 Det er muligt at gemme selve forespørgslen ved at trykke 
 
 ![billede](https://github.com/Randers-Kommune-Digitalisering/vis-klimadata-initiativer-aktiviteter/assets/122357806/74da5771-7174-4137-bec3-3431883be264)
@@ -37,9 +43,8 @@ Hvis resultatet af forespørgslen skal bruges til visualisering, skal et (virtue
 
 ## SQL-kommandoer
 
-
 ### Syntaks
-SQL er ikke case-sensitiv men der er tradition for at skrive syntaks med stort.
+SQL er ikke case-sensitiv, men der er tradition for at skrive syntaks med stort.
 
 Den eneste SQL-kommando, der kan køres i SQL Lab er `SELECT`. Hvis man forsøger andet, får man fejlbeskeden: 
 
@@ -49,26 +54,49 @@ Den eneste SQL-kommando, der kan køres i SQL Lab er `SELECT`. Hvis man forsøge
 |Datatype|Beskrivelse|
 |:---|:---|
 |_Streng_||
-|`VARCHAR`| A VARIABLE length string (can contain letters, numbers, and special characters). The size parameter specifies the maximum string length in characters - can be from 0 to 65535|
+|`VARCHAR`| En streg med et variablet antal tegn. Kan indeholde bogstaver, tal og specialtegn.|
 |_Numerisk_||
-|`FLOAT`| A floating point number. The total number of digits is specified in size. The number of digits after the decimal point is specified in the d parameter.|
-|`DECIMAL`|  An exact fixed-point number. The total number of digits is specified in size. The number of digits after the decimal point is specified in the d parameter. The maximum number for size is 65. The maximum number for d is 30. The default value for size is 10. The default value for d is 0.|
-|`INTEGER`| -2147483648 to 2147483647 signed.|
-|`BOOLEAN`| Zero is considered as false, nonzero values are considered as true.|
+|`FLOAT`| Et decimaltal med et flydende antal decimaler.|
+|`DECIMAL`| Et decimailtal med et eksakt antal decimaler.|
+|`INTEGER`| Et heltal fra -2147483648 til 2147483647. |
+|`BOOLEAN`| Sand/falsk. Nul betragtes som falsk, mens alle andre tal betragtes som sand.|
 |_Dato_||
-|`DATE`| YYYY-MM-DD|
-|`TIME`|  hh:mm:ss|
-|`DATETIME`| YYYY-MM-DD hh:mm:ss|
-|`TIMESTAMP`| A timestamp. TIMESTAMP values are stored as the number of seconds since the Unix epoch ('1970-01-01 00:00:00' UTC). Format: YYYY-MM-DD hh:mm:ss|
-|`YEAR`| A year in four-digit format.|
+|`DATE`| Dato på formatet YYYY-MM-DD (År-Måned-Dato).|
+|`TIME`| Tidspunkt på formatet hh:mm:ss (time:minuttal:sekund).|
+|`DATETIME`| Dato og tidspunkt på formatet YYYY-MM-DD hh:mm:ss.|
+|`TIMESTAMP`| Et tidsstempel for formatet YYYY-MM-DD hh:mm:ss opgjort som antal sekunder siden UNIX Epoch ('1970-01-01 00:00:00' UTC). |
+|`YEAR`| Årstal på formatet YYYY. |
 
-### Forespørgsel
+### Simple forespørgsel
+Den mest simple forespørgsel der kan foretages har formen
 
-`SELECT * FROM [tabel]`
+`SELECT * FROM [tabel]`,
 
-`*`, `[variabel1, variabel2, ... ]`
+hvor `*` angiver, at alle kolonner fra tabel `[tabel]` ønskes vist. Hvis man blot ønsker en afgrænset mængde kolonner, kan specificeres ved  `[kolonne1, kolonne2, ... ]`, således forespørgslen bliver: 
 
-`SELECT DISTINCT`
+`SELECT [kolonne11, kolonne12, ... ] FROM [tabel]`
+
+Hvis der kun ønskes én række pr. muligt udfald for en given kolonne, skal `DISTINCT` specificeres foran kolonnenavnet. I dette tilfældes udtrækkes første række for alle mulige udfald af `kolonne11`. 
+
+`SELECT DISTINCT kolonne11, [kolonne12, ... ] FROM [tabel]`. 
+
+En kolonne, tabel eller forespørgsel kan tilknyttes et alias. 
+
+---
+**_Eksempel:_**
+
+Det simpelt `SELECT * FROM dst_AREALDK` giver:
+
+![image](https://github.com/Randers-Kommune-Digitalisering/vis-klimadata-initiativer-aktiviteter/assets/122357806/d928b9f0-ef31-4735-ba90-18765a3401c6)
+
+Hvis et tabel med forskellige arealtyper ønskes, da det findes ved:
+
+`SELECT DISTINCT Arealtype FROM dst_AREALDK`
+
+![image](https://github.com/Randers-Kommune-Digitalisering/vis-klimadata-initiativer-aktiviteter/assets/122357806/0cda6d92-8922-4c19-aa42-b3f7790a13d6)
+
+---
+
 
 `AS`
 
@@ -80,23 +108,13 @@ Den eneste SQL-kommando, der kan køres i SQL Lab er `SELECT`. Hvis man forsøge
 
 `CASE`
 
-### Operatorer
+`GROUP BY`
+
+### Operatorer 
 #### Matematiske operatorer
 `+`, `-`, `*`, `/`, `%`
 #### Logiske operatorer 
 `AND`, `OR`, `NOT`
-
-### Common Table Expressions (CTE)
-`WITH`
-
-### Fletning
-`INNER JOIN`
-`LEFT JOIN`
-`RIGHT JOIN`
-`FULL OUTER JOIN`
-
-`ON`
-
 
 ### Funktioner
 `COUNT()`
@@ -112,6 +130,22 @@ Den eneste SQL-kommando, der kan køres i SQL Lab er `SELECT`. Hvis man forsøge
 `RIGHT()`
 
 `CAST()`
+
+### Flere forespørgsler
+
+### Common Table Expressions (CTE)
+`WITH`
+
+### Fletning
+`INNER JOIN`
+`LEFT JOIN`
+`RIGHT JOIN`
+`FULL OUTER JOIN`
+
+`ON`
+
+
+
 
 
 
