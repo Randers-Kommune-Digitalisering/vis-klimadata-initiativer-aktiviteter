@@ -7,9 +7,6 @@ __Indhold__
   * [Syntaks](#syntaks)
   * [Datatyper (de vigtigste)](#datatyper-de-vigtigste)
   * [Simple forespørgsler](#simple-forespørgsler)
-  * [Operatorer](#operatorer)
-    * [Matematiske operatorer](#matematiske-operatorer)
-    * [Logiske operatorer](#logiske-operatorer)
   * [Funktioner](#funktioner)
   * [Flere forespørgsler](#flere-forespørgsler)
   * [Common Table Expressions (CTE)](#common-table-expressions-cte)
@@ -27,11 +24,11 @@ I venstre del af siden vælges Database, Schema (databaseområde) og Table schem
 
 ![billede](https://github.com/Randers-Kommune-Digitalisering/vis-klimadata-initiativer-aktiviteter/assets/122357806/c42633ad-ba71-4937-a3c0-f22ada94a463)
 
-I højre side af billedet vises øvers selve SQL-editoren og nederst resultatet af ens forespørgsler. 
+I højre side af billedet vises øvers selve SQL-editoren og nederst resultatet af ens forespørgsler. En forespørgsel eksekveres ved at trykke
 
-**_Genvejstast:_** 
+![image](https://github.com/Randers-Kommune-Digitalisering/vis-klimadata-initiativer-aktiviteter/assets/122357806/27d4a680-ad00-4eb8-bbd3-79a23648dcd4)
 
-`[CTRL]`+`[ENTER]` eksekverer forespørgslen. 
+**_Genvejstast:_** `[CTRL]`+`[ENTER]` er en genvejstast til at eksekvere forespørgslen. 
 
 Det er muligt at gemme selve forespørgslen ved at trykke 
 
@@ -67,7 +64,7 @@ Den eneste SQL-kommando, der kan køres i SQL Lab er `SELECT`. Hvis man forsøge
 |`TIMESTAMP`| Et tidsstempel for formatet YYYY-MM-DD hh:mm:ss opgjort som antal sekunder siden UNIX Epoch ('1970-01-01 00:00:00' UTC). |
 |`YEAR`| Årstal på formatet YYYY. |
 
-### Simple forespørgsel
+### Simple forespørgsler
 Den mest simple forespørgsel der kan foretages har formen
 
 `SELECT * FROM [tabel]`,
@@ -80,10 +77,8 @@ Hvis der kun ønskes én række pr. muligt udfald for en given kolonne, skal `DI
 
 `SELECT DISTINCT kolonne11, [kolonne12, ... ] FROM [tabel]`. 
 
-En kolonne, tabel eller forespørgsel kan tilknyttes et alias. 
-
 ---
-**_Eksempel:_**
+**_Eksempel:_** Simpelt udtræk
 
 Det simpelt `SELECT * FROM dst_AREALDK` giver:
 
@@ -97,26 +92,58 @@ Hvis et tabel med forskellige arealtyper ønskes, da det findes ved:
 
 ---
 
+En kolonne, tabel eller forespørgsel kan tilknyttes et alias. For en kolonnes vedkomne svarer det til at omdøbe kolonneoverskriften. Det gøres ved:  
 
 `AS`
 
-`WHERE`
-
-`LIMIT`
+Det er desuden muligt at sortere et udtræk ved en eller flere kolonner ved at specifcere 
 
 `ORDER BY [variabel1, variabel2, ... ] [ASC]|DESC`
 
-`CASE`
+`[ASC]` (ascending/stigende) er default og behøves ikke specificeres, mens `DESC` (descending/faldende) skal specificeres hvis det ønskes. 
 
-`GROUP BY`
+Hvis det begrænset antal rækkes ønsket udtrukket, kan forespørgsmålet tilføjes en øvre grænse med 
 
-### Operatorer 
-#### Matematiske operatorer
-`+`, `-`, `*`, `/`, `%`
-#### Logiske operatorer 
-`AND`, `OR`, `NOT`
+`LIMIT`
+
+Bemærk at SQL Lab i frontend automatisk begrænser antallet af udtrukne rækker til 1000:
+
+![image](https://github.com/Randers-Kommune-Digitalisering/vis-klimadata-initiativer-aktiviteter/assets/122357806/8202529f-e64f-48fb-ba37-6e026ecede2a)
+
+---
+**_Eksempel:_** Afgrænset udtræk
+
+Udtræk de to rækker med størst areal (uafhængigh af type) og omdøb kolonnen til "areal"
+
+`SELECT Areal_km2 AS areal FROM dst_AREALDK ORDER BY areal_km2 DESC LIMIT 2`
+
+![image](https://github.com/Randers-Kommune-Digitalisering/vis-klimadata-initiativer-aktiviteter/assets/122357806/da215dc1-3c9c-48dd-ac07-60dd063d98a6)
+
+
+
+Ofte er det nødvendigt at afgrænse forespørgslen på baggrund af forskellige kolonneværdier. Her anvedes 
+
+`WHERE`
+
+sammen med diverse [operatorer](https://www.w3schools.com/sql/sql_operators.asp). 
+
+---
+**_Eksempel:_** Forskellige brug af `WHERE`
+
+`SELECT Arealtype, Areal_km2 FROM dst_AREALDK WHERE Arealtype = "Enge, moser og anden våd natur"`
+![image](https://github.com/Randers-Kommune-Digitalisering/vis-klimadata-initiativer-aktiviteter/assets/122357806/ea7dc2e8-e534-4f6d-a303-a801cdfa8494)
+
+`SELECT Arealtype, Areal_km2 FROM dst_AREALDK WHERE Arealtype <> "Enge, moser og anden våd natur"`
+![image](https://github.com/Randers-Kommune-Digitalisering/vis-klimadata-initiativer-aktiviteter/assets/122357806/b48224e4-6b14-4498-b703-55c84e47ea54)
+
+`SELECT Måned, Arealtype, Areal_km2 FROM dst_AREALDK WHERE måned>"2017-01-01"`
+![image](https://github.com/Randers-Kommune-Digitalisering/vis-klimadata-initiativer-aktiviteter/assets/122357806/135c800c-ba89-4c8f-a8d5-f6bba18884cf)
+
+---
 
 ### Funktioner
+`CAST()`
+
 `COUNT()`
 
 `SUM()`
@@ -129,9 +156,14 @@ Hvis et tabel med forskellige arealtyper ønskes, da det findes ved:
 
 `RIGHT()`
 
-`CAST()`
+
 
 ### Flere forespørgsler
+
+`CASE`
+
+`GROUP BY`
+
 
 ### Common Table Expressions (CTE)
 `WITH`
