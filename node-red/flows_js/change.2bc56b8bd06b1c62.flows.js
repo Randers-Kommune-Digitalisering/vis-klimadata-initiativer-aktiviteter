@@ -1,16 +1,16 @@
 const Node = {
-  "id": "1039522f3bb90d30",
+  "id": "2bc56b8bd06b1c62",
   "type": "change",
   "z": "db9cae581f57fc84",
-  "g": "361d58eda749bdc2",
-  "name": "Opsætning af \\n dataset metadata",
+  "g": "caba7946f847b074",
+  "name": "Opsætning af dataset \\n biogas",
   "rules": [
     {
       "t": "set",
-      "p": "max_file_age_days",
+      "p": "dataset",
       "pt": "msg",
-      "to": "100",
-      "tot": "num"
+      "to": "biogas",
+      "tot": "str"
     }
   ],
   "action": "",
@@ -18,14 +18,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 970,
-  "y": 820,
+  "x": 340,
+  "y": 500,
   "wires": [
     [
-      "e445b27349427bfa"
+      "6eade890d5f22e7d"
     ]
   ],
-  "_order": 425
+  "_order": 461
 }
 
 module.exports = Node;
