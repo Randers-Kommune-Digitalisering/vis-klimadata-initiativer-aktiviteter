@@ -1,15 +1,15 @@
 const Node = {
-  "id": "ab5a7bfab65811c8",
+  "id": "1bc5eb911c15d588",
   "type": "change",
   "z": "db9cae581f57fc84",
   "g": "caba7946f847b074",
-  "name": "Opsætning af dataset \\n forbrug-af-fossile-braendstoffer-i-industrien",
+  "name": "Opsætning af dataset \\n drivmidler-for-busser-6by-nogletal",
   "rules": [
     {
       "t": "set",
       "p": "dataset",
       "pt": "msg",
-      "to": "forbrug-af-fossile-braendstoffer-i-industrien",
+      "to": "drivmidler-for-busser-6by-nogletal",
       "tot": "str"
     }
   ],
@@ -18,14 +18,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 470,
-  "y": 240,
+  "x": 440,
+  "y": 540,
   "wires": [
     [
-      "e56eb2db19f7c8e4"
+      "6eade890d5f22e7d"
     ]
   ],
-  "_order": 456
+  "_order": 462
 }
 
 module.exports = Node;
