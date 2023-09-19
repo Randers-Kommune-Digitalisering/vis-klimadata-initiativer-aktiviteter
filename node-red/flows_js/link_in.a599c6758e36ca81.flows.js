@@ -5,13 +5,13 @@ const Node = {
   "name": "OpenData Opsætning IN",
   "links": [],
   "x": 55,
-  "y": 200,
+  "y": 80,
   "wires": [
     [
-      "d409562e43ede32c"
+      "71c5b61816be2584"
     ]
   ],
-  "_order": 434
+  "_order": 441
 }
 
 module.exports = Node;
