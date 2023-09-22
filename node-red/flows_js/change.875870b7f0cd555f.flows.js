@@ -1,16 +1,13 @@
 const Node = {
-  "id": "40c4b4012f6c88d2",
+  "id": "875870b7f0cd555f",
   "type": "change",
   "z": "db9cae581f57fc84",
-  "d": true,
-  "name": "Set tablename",
+  "name": "",
   "rules": [
     {
-      "t": "set",
+      "t": "delete",
       "p": "tablename",
-      "pt": "flow",
-      "to": "\"opendata\" & \"_\" & dataset",
-      "tot": "jsonata"
+      "pt": "msg"
     }
   ],
   "action": "",
@@ -18,12 +15,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 1560,
+  "x": 1180,
   "y": 820,
   "wires": [
-    []
+    [
+      "75bdad065ce1e703"
+    ]
   ],
-  "_order": 455
+  "_order": 463
 }
 
 module.exports = Node;

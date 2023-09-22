@@ -5,7 +5,7 @@ const Node = {
   "name": "Retry",
   "info": "",
   "x": 1340,
-  "y": 1220,
+  "y": 1320,
   "wires": [],
   "_order": 410
 }

@@ -1,20 +1,21 @@
 const Node = {
-  "id": "964ad383d4c8637e",
+  "id": "80c3a9e82bc2aad3",
   "type": "debug",
-  "z": "aad50484a0b40b44",
+  "z": "db9cae581f57fc84",
+  "g": "4cb2acab938256d7",
   "name": "stdout",
   "active": true,
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "{\t    $flowContext(\"metadata_tablename\"): \"metadata created for sensor\",\t    \"sensorUid\": data.id\t}",
+  "complete": "{ $flowContext(\"tablename\"): \"table created\" }",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1100,
-  "y": 900,
+  "x": 1320,
+  "y": 2320,
   "wires": [],
-  "_order": 487
+  "_order": 465
 }
 
 module.exports = Node;

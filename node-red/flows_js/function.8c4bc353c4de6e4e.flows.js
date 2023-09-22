@@ -16,7 +16,7 @@ const Node = {
     }
   ],
   "x": 730,
-  "y": 1740,
+  "y": 1840,
   "wires": [
     [
       "0d69249b77e570a0"
@@ -49,14 +49,14 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util, da
   msg.payload.flatlist = [];
   
   // Iterate through the input JSON object and suggest SQL datatype for each value
-  for (var key in msg.dataskabelon) {
-      if (msg.dataskabelon.hasOwnProperty(key)) {
-          msg.payload.sqlDataType[key] = suggestSqlDataType(msg.dataskabelon[key]);
+  for (var key in flow.get("dataskabelon")) {
+      if (flow.get("dataskabelon").hasOwnProperty(key)) {
+          msg.payload.sqlDataType[key] = suggestSqlDataType(flow.get("dataskabelon")[key]);
           msg.payload.flatlist.push({ "name": key, "type": msg.payload.sqlDataType[key] });
       }
   }
   
-  flow.set("dataskabelon", msg.payload.sqlDataType);
+  //flow.set("dataskabelon", msg.payload.sqlDataType);
   flow.set("flatlist", msg.payload.flatlist);
   
   return msg;

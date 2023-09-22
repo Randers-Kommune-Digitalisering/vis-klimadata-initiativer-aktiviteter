@@ -1,30 +1,27 @@
 const Node = {
-  "id": "47b05f5026729b73",
+  "id": "ec185aadade979f4",
   "type": "function",
-  "z": "aad50484a0b40b44",
-  "name": "Rens svar",
+  "z": "db9cae581f57fc84",
+  "g": "92d5ed7235f71cf0",
+  "name": "JSON fix",
   "func": "",
   "outputs": 1,
   "noerr": 0,
   "initialize": "",
   "finalize": "",
   "libs": [],
-  "x": 300,
-  "y": 120,
+  "x": 440,
+  "y": 2680,
   "wires": [
     [
-      "fcf306e4303e1c3d"
+      "fc03246ef667b432"
     ]
   ],
-  "_order": 503
+  "_order": 464
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {
-  let payload = msg.payload;
-  
-  msg = {};
-  msg.payload = payload;
-  
+  msg.data = JSON.parse(JSON.stringify(msg.data));
   return msg;
 }
 
