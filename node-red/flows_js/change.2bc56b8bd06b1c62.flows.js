@@ -3,13 +3,13 @@ const Node = {
   "type": "change",
   "z": "db9cae581f57fc84",
   "g": "caba7946f847b074",
-  "name": "Opsætning af dataset \\n biogas",
+  "name": "Opsætning af dataset \\n el-og-fjernvarmeanlaeg-i-randers-kommune",
   "rules": [
     {
       "t": "set",
       "p": "dataset",
       "pt": "msg",
-      "to": "biogas",
+      "to": "el-og-fjernvarmeanlaeg-i-randers-kommune",
       "tot": "str"
     }
   ],
@@ -18,14 +18,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 400,
-  "y": 480,
+  "x": 910,
+  "y": 120,
   "wires": [
     [
-      "6eade890d5f22e7d"
+      "ede947f0154bcc7f"
     ]
   ],
-  "_order": 460
+  "_order": 472
 }
 
 module.exports = Node;
