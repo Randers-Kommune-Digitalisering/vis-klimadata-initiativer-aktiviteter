@@ -1,20 +1,20 @@
 const Node = {
-  "id": "8ce0d4495d52280b",
+  "id": "8e5a3821f3931fbf",
   "type": "debug",
-  "z": "db9cae581f57fc84",
-  "name": "stdout",
+  "z": "540d125162a3e331",
+  "name": "dataset count",
   "active": true,
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "{ tablename: \"table dropped\" }\t",
+  "complete": "{\t    \"new datasets\": $flowContext(\"count\")\t}",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1140,
-  "y": 780,
+  "x": 1500,
+  "y": 140,
   "wires": [],
-  "_order": 449
+  "_order": 244
 }
 
 module.exports = Node;

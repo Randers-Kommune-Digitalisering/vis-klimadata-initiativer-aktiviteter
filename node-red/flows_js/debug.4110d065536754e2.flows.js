@@ -1,21 +1,20 @@
 const Node = {
-  "id": "2696fceced2ea41e",
+  "id": "4110d065536754e2",
   "type": "debug",
   "z": "db9cae581f57fc84",
-  "d": true,
-  "name": "metrics",
+  "name": "ERROR",
   "active": true,
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "payload.metrics.labels",
-  "targetType": "msg",
+  "complete": "{\t    \"openData\": \"error encountered\",\t    \"error\": error\t}",
+  "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1380,
-  "y": 2520,
+  "x": 420,
+  "y": 3120,
   "wires": [],
-  "_order": 377
+  "_order": 477
 }
 
 module.exports = Node;
