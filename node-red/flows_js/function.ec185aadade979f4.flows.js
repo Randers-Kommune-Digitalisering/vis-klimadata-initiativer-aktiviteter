@@ -1,9 +1,9 @@
 const Node = {
-  "id": "de3f5d8f24b2cd6a",
+  "id": "ec185aadade979f4",
   "type": "function",
   "z": "db9cae581f57fc84",
-  "g": "50ce8cdc07614c53",
-  "name": "Shift datasets",
+  "g": "92d5ed7235f71cf0",
+  "name": "JSON fix",
   "func": "",
   "outputs": 1,
   "noerr": 0,
@@ -11,24 +11,17 @@ const Node = {
   "finalize": "",
   "libs": [],
   "x": 440,
-  "y": 1120,
+  "y": 2680,
   "wires": [
     [
-      "b440a2d7dc79e5d4",
-      "44712cc1c5ad8835"
+      "fc03246ef667b432"
     ]
   ],
-  "_order": 429
+  "_order": 464
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {
-  // Shift dataset[0]
-  var datasets = flow.get("datasets");
-  datasets.shift();
-  
-  // Set new datasets flow var
-  flow.set("datasets", datasets);
-  
+  msg.data = JSON.parse(JSON.stringify(msg.data));
   return msg;
 }
 

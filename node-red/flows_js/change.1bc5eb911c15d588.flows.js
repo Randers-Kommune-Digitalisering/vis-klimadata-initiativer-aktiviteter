@@ -1,15 +1,15 @@
 const Node = {
-  "id": "0c019b1cd4dfcb56",
+  "id": "1bc5eb911c15d588",
   "type": "change",
   "z": "db9cae581f57fc84",
   "g": "caba7946f847b074",
-  "name": "Opsætning af dataset \\n randers-kommunes-biler",
+  "name": "Opsætning af dataset \\n drivmidler-for-busser-6by-nogletal",
   "rules": [
     {
       "t": "set",
       "p": "dataset",
       "pt": "msg",
-      "to": "randers-kommunes-biler",
+      "to": "drivmidler-for-busser-6by-nogletal",
       "tot": "str"
     }
   ],
@@ -18,14 +18,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 410,
-  "y": 420,
+  "x": 440,
+  "y": 540,
   "wires": [
     [
-      "1a1cc9d3ed5ec970"
+      "6eade890d5f22e7d"
     ]
   ],
-  "_order": 459
+  "_order": 461
 }
 
 module.exports = Node;

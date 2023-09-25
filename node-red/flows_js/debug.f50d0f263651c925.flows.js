@@ -8,12 +8,12 @@ const Node = {
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "$count(payload) > 0 ? \t    { $flowContext(\"tablename\"): \"table exists\" }\t:\t    { $flowContext(\"tablename\"): \"table created\" }",
+  "complete": "$count(payload) > 0 ? \t    { $flowContext(\"tablename\"): \"table exists\" }\t:\t    { $flowContext(\"tablename\"): \"table does not exist\" }",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
   "x": 740,
-  "y": 1980,
+  "y": 2080,
   "wires": [],
   "_order": 445
 }

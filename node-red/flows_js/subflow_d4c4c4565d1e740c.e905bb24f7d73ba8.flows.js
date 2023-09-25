@@ -4,8 +4,8 @@ const Node = {
   "z": "db9cae581f57fc84",
   "g": "7a26c4f3a3a06ad4",
   "name": "Send forespørgsel \\n til database",
-  "x": 790,
-  "y": 2740,
+  "x": 820,
+  "y": 2860,
   "wires": [
     [
       "8447f04f69bb2c68",
