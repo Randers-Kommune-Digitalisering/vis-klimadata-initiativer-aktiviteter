@@ -15,14 +15,6 @@ const Node = {
     },
     {
       "t": "set",
-      "p": "dataset_opendata",
-      "pt": "msg",
-      "to": "datasets[0]",
-      "tot": "flow",
-      "dc": true
-    },
-    {
-      "t": "set",
       "p": "dataset",
       "pt": "msg",
       "to": "$replace(dataset, \"-\", \"_\") /* To use the tablename in mysql/mariadb only underscores are allowed as special characters */ ",
@@ -34,6 +26,14 @@ const Node = {
       "pt": "flow",
       "to": "\"opendata\" & \"_\" & dataset",
       "tot": "jsonata"
+    },
+    {
+      "t": "set",
+      "p": "dataset_opendata",
+      "pt": "msg",
+      "to": "datasets[0]",
+      "tot": "flow",
+      "dc": true
     }
   ],
   "action": "",
@@ -42,13 +42,13 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 1050,
-  "y": 1080,
+  "y": 1180,
   "wires": [
     [
       "a00f7e1112c294b9"
     ]
   ],
-  "_order": 427
+  "_order": 428
 }
 
 module.exports = Node;

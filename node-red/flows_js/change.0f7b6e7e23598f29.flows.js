@@ -8,10 +8,9 @@ const Node = {
     {
       "t": "set",
       "p": "dataskabelon",
-      "pt": "msg",
-      "to": "data[0]",
-      "tot": "msg",
-      "dc": true
+      "pt": "flow",
+      "to": "data ~> $merge()",
+      "tot": "jsonata"
     },
     {
       "t": "set",
@@ -34,13 +33,13 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 470,
-  "y": 1740,
+  "y": 1840,
   "wires": [
     [
       "8c4bc353c4de6e4e"
     ]
   ],
-  "_order": 390
+  "_order": 391
 }
 
 module.exports = Node;

@@ -3,7 +3,7 @@ const Node = {
   "type": "change",
   "z": "db9cae581f57fc84",
   "g": "19c2db021d7d414f",
-  "name": "Byg data streng \\n og kolonnenavne",
+  "name": "Byg kolonnenavne",
   "rules": [
     {
       "t": "delete",
@@ -14,14 +14,7 @@ const Node = {
       "t": "set",
       "p": "columnnames",
       "pt": "msg",
-      "to": "$keys(data)",
-      "tot": "jsonata"
-    },
-    {
-      "t": "set",
-      "p": "datastring",
-      "pt": "msg",
-      "to": "data ~> $map(\t   function($value) {\t       /* Join the values of the object into a comma-separated string */     \"(\" &\t       $join(\t           /* Iterate over the values of the object */       \t           $value.* ~> $map(\t               function($value) {\t                   /* If the value is a string, surround it with single quotes */\t                   $type($value) = \"string\" ? \"'\" & $value & \"'\" : $string($value)         \t               }       \t           ),\t           \",\"     \t       ) & \")\"   \t   } \t)",
+      "to": "$keys($flowContext(\"dataskabelon\"))",
       "tot": "jsonata"
     }
   ],
@@ -31,14 +24,14 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 210,
-  "y": 2740,
+  "y": 2840,
   "wires": [
     [
-      "0afd87195161da67"
+      "2c6891898da04502"
     ]
   ],
   "info": "",
-  "_order": 365
+  "_order": 366
 }
 
 Node.info = `

@@ -19,14 +19,14 @@ const Node = {
       "module": "dayjs/plugin/customParseFormat"
     }
   ],
-  "x": 490,
-  "y": 2580,
+  "x": 630,
+  "y": 2680,
   "wires": [
     [
       "43379a8b2078619b"
     ]
   ],
-  "_order": 370
+  "_order": 371
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util, dayjs, customParseFormat) {
@@ -39,6 +39,36 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util, da
   // Check if value is a date string in the format supplied in msg.validDates
   var validDateFormats = msg.validDateFormats;
   validDateFormats = !Array.isArray(validDateFormats) ? [validDateFormats] : validDateFormats;
+  
+  // For each variable in flow.flatlist
+  for (var i = 0; i < flow.get("flatlist").length; i++)
+  {
+      const obj = flow.get("flatlist")[i];
+      
+      // Check if variable type is date
+      if (obj.type == "DATE")
+      {
+          // For each data object
+          data.forEach(item =>
+          {
+              // For each valid date format, check if parsable
+              for (var i = 0; i < validDateFormats.length; i++)
+              {
+                  // Strict parsing
+                  var dayjsObj = dayjs(item[obj.name], validDateFormats[i], true);
+  
+                  // If valid parse, set date = toDate()
+                  if (dayjsObj.isValid())
+                  {
+                      item[obj.name] = dayjsObj.format(msg.outputDateFormat);
+                      break;
+                  }
+              }
+          });
+      }
+  
+  }
+      /*
   
   // For each variable in flow.dataskabelon
   for (const [key, value] of Object.entries(flow.get("dataskabelon")))
@@ -65,6 +95,8 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util, da
           });
       }
   }
+  
+  */
   return msg;
 }
 
