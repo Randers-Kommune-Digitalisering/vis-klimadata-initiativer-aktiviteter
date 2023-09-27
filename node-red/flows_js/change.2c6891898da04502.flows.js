@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "datastring",
       "pt": "msg",
-      "to": "data ~> $map(function($value)\t{\t    \"(\" & (\t\t    columnnames\t    ~> $map ( function($key)\t    {\t\t        $value ~> $lookup($key) ~> $exists() ? \t        (\t            ($flowContext(\"flatlist\")[name = $key].type) != \"FLOAT\" ?\t\t                \"'\" & ($value ~> $lookup($key)) & \"'\" :\t                       $value ~> $lookup($key)\t        )\t        :\t        (\t            ($flowContext(\"flatlist\")[name = $key].type) ~> $contains(\"VARCHAR\") ?\t                \"\" : 0\t        )\t\t    } ~> $string )\t      ~> $join(\",\")\t\t    ) & \")\"\t} )\t\t~> $join(\",\")",
+      "to": "data ~> $map(function($value)\t{\t    \"(\" & (\t\t    columnnames\t    ~> $map ( function($key)\t    {\t\t        $value ~> $lookup($key) ~> $exists() ? \t        (\t            ($flowContext(\"flatlist\")[name = $key].type) = \"FLOAT\" ?\t                           $value ~> $lookup($key)\t                :\t                    \"'\" & ($value ~> $lookup($key)) & \"'\"\t        )\t        :\t            \"null\"\t\t    } ~> $string )\t      ~> $join(\",\")\t\t    ) & \")\"\t} )\t\t~> $join(\",\")",
       "tot": "jsonata"
     }
   ],

@@ -34,7 +34,9 @@ services:
       MARIADB_DATABASE: demo
       TZ: "Europe/Copenhagen"
     command: [
-        '--wait_timeout=120'
+        '--wait_timeout=90',
+        '--connect_timeout=60',
+        '--max_connections=1000'
     ]
     healthcheck:
       test: mysqladmin ping -h 127.0.0.1 -u root --password=pass

@@ -19,7 +19,7 @@ const Node = {
       "module": "dayjs/plugin/customParseFormat"
     }
   ],
-  "x": 630,
+  "x": 490,
   "y": 2680,
   "wires": [
     [
