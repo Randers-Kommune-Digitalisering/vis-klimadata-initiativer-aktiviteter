@@ -1,7 +1,7 @@
 # Dokumentation af datakilder på Klimamonitoren
 For at dokumentere datakilder ens på Klimamonitoren, anvendes et metadatasæt og særlig chart:
 
-* [klimamonitor: Datakilder og seneste opdatering`](https://superset.prototypes.randers.dk/explore/?datasource_type=table&datasource_id=47)
+* [`klimamonitor: Datakilder og seneste opdatering`](https://superset.prototypes.randers.dk/explore/?datasource_type=table&datasource_id=47)
 * [`Handlebars-template: Datakilde`](https://superset.prototypes.randers.dk/explore/?slice_id=75)
 
 Resultatet bliver (før evt. CSS)
