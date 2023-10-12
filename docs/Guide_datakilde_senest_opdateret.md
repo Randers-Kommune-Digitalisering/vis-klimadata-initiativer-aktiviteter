@@ -1,5 +1,5 @@
 # Dokumentation af datakilder på Klimamonitoren
-For at dokumentere datakilder ens på Klimamonitoren, anvendes et metadatasæt og særlig chart:
+For at dokumentere datakilder ens på Klimamonitoren, anvendes et metadatasæt og et særlig chart:
 
 * [`klimamonitor: Datakilder og seneste opdatering`](https://superset.prototypes.randers.dk/explore/?datasource_type=table&datasource_id=47)
 * [`Handlebars-template: Datakilde`](https://superset.prototypes.randers.dk/explore/?slice_id=75)
@@ -10,7 +10,7 @@ Resultatet bliver (før evt. CSS)
 
 
 
-## Hvordan tilføjer dokumentation på en datakilde?
+## Hvordan tilføjes dokumentation på en datakilde?
 ### Trin 1: Tilføj data 
 Åben datasættet [`klimamonitor: Datakilder og seneste opdatering`](https://superset.prototypes.randers.dk/explore/?datasource_type=table&datasource_id=47) i SQL Lab: 
 
@@ -40,11 +40,11 @@ Verificer at forespørgslen stadig kører og overskriv datasættet [`klimamonito
 ### Trin 2: Lav nyt chart 
 Åben chartet [`Handlebars-template: Datakilde`](https://superset.prototypes.randers.dk/explore/?slice_id=75) og erstat filteret med værdien af `[SERIE]`. 
 
-Gem chartet som et nyt chart med navnet "`Datakilde [SERIE]`". F.eks "`Datakilde BIL54`" 
-
 ![Alt text](image-3.png)
 
+Gem chartet som et nyt chart med navnet "`Datakilde [SERIE]`". F.eks "`Datakilde BIL54`" 
+
 ### Trin 3: Tilføj chart til Klimamonitoren
-Tilføj chartet til Klimamonitoren øverst ved siden af titlen, således dokumentationen for alle datakilder bliver ens. Evt. uddybende tekst kan skrives under titlen. 
+Tilføj chartet til Klimamonitoren øverst ved siden af titlen for relevante delmål (flere delmål kan have samme kilde), således dokumentationen for alle delmål får samme udtryk. Evt. uddybende tekst kan skrives under titlen. 
 
 ![Alt text](image-2.png)
