@@ -131,12 +131,15 @@ sammen med diverse [operatorer](https://www.w3schools.com/sql/sql_operators.asp)
 **_Eksempel:_** Forskellige brug af `WHERE`
 
 `SELECT Arealtype, Areal_km2 FROM dst_AREALDK WHERE Arealtype = "Enge, moser og anden våd natur"`
+
 ![image](https://github.com/Randers-Kommune-Digitalisering/vis-klimadata-initiativer-aktiviteter/assets/122357806/ea7dc2e8-e534-4f6d-a303-a801cdfa8494)
 
 `SELECT Arealtype, Areal_km2 FROM dst_AREALDK WHERE Arealtype <> "Enge, moser og anden våd natur"`
+
 ![image](https://github.com/Randers-Kommune-Digitalisering/vis-klimadata-initiativer-aktiviteter/assets/122357806/b48224e4-6b14-4498-b703-55c84e47ea54)
 
 `SELECT Måned, Arealtype, Areal_km2 FROM dst_AREALDK WHERE måned>"2017-01-01"`
+
 ![image](https://github.com/Randers-Kommune-Digitalisering/vis-klimadata-initiativer-aktiviteter/assets/122357806/135c800c-ba89-4c8f-a8d5-f6bba18884cf)
 
 ---
