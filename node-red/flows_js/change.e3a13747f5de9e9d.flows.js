@@ -1,15 +1,15 @@
 const Node = {
-  "id": "cba64328b766fb60",
+  "id": "e3a13747f5de9e9d",
   "type": "change",
   "z": "db9cae581f57fc84",
   "g": "caba7946f847b074",
-  "name": "Opsætning af dataset \\n okologiske-fodevarer",
+  "name": "Opsætning af dataset \\n indsamlet-emballageplast-fra-husholdningerne",
   "rules": [
     {
       "t": "set",
       "p": "dataset",
       "pt": "msg",
-      "to": "okologiske-fodevarer",
+      "to": "indsamlet-emballageplast-fra-husholdningerne",
       "tot": "str"
     }
   ],
@@ -18,14 +18,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 880,
-  "y": 300,
+  "x": 420,
+  "y": 420,
   "wires": [
     [
-      "0740df29cb5a41cb"
+      "22dd43984781d11d"
     ]
   ],
-  "_order": 451
+  "_order": 458
 }
 
 module.exports = Node;
