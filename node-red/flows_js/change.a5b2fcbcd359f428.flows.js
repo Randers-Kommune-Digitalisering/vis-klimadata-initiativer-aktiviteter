@@ -7,9 +7,9 @@ const Node = {
   "rules": [
     {
       "t": "set",
-      "p": "baseurl",
+      "p": "url",
       "pt": "msg",
-      "to": "https://api.energidataservice.dk/dataset/ConsumptionpermunicipalityDE35",
+      "to": "https://api.energidataservice.dk/dataset/ConsumptionIndustry?columns=HourDK,Branche,ConsumptionkWh&filter={%22MunicipalityNo%22:%22730%22}",
       "tot": "str"
     },
     {
@@ -21,10 +21,10 @@ const Node = {
     },
     {
       "t": "set",
-      "p": "url",
+      "p": "url2",
       "pt": "msg",
-      "to": "baseurl & \"?offset=0&start=\"&startdato&\"&end=now&filter=%7B%22MunicipalityNo%22:[%22730%22]%7D&sort=Month%20DESC&timezone=dk&limit=10000\"",
-      "tot": "jsonata"
+      "to": "baseurl & \"?columns=HourDK,Branche,ConsumptionkWh&filter={'MunicipalityNo':'730'}\"",
+      "tot": "str"
     }
   ],
   "action": "",

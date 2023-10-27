@@ -9,21 +9,21 @@ const Node = {
       "t": "set",
       "p": "tablename",
       "pt": "flow",
-      "to": "eds_FORBRUG",
+      "to": "ConsumptionIndustry",
       "tot": "str"
     },
     {
       "t": "set",
       "p": "datafilter",
       "pt": "msg",
-      "to": "[\"MeasurementPoints\",\"MunicipalityNo\"]",
+      "to": "[\"HourDK\",\"ConsumptionkWh\",\"Branche\"]",
       "tot": "json"
     },
     {
       "t": "set",
-      "p": "date_column",
+      "p": "HourDK",
       "pt": "msg",
-      "to": "Month",
+      "to": "HourDK",
       "tot": "str"
     }
   ],
