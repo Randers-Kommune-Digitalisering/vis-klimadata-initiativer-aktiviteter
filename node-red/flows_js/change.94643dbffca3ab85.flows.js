@@ -16,7 +16,7 @@ const Node = {
       "t": "set",
       "p": "datafilter",
       "pt": "msg",
-      "to": "[\"HourDK\",\"ConsumptionkWh\",\"Branche\"]",
+      "to": "[]",
       "tot": "json"
     },
     {
@@ -39,7 +39,7 @@ const Node = {
       "383a20ecf799c604"
     ]
   ],
-  "_order": 309
+  "_order": 302
 }
 
 module.exports = Node;

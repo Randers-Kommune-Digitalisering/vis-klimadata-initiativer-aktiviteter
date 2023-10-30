@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "url",
       "pt": "msg",
-      "to": "https://api.energidataservice.dk/dataset/ConsumptionIndustry?columns=HourDK,Branche,ConsumptionkWh&filter={%22MunicipalityNo%22:%22730%22}",
+      "to": "https://api.energidataservice.dk/dataset/ConsumptionIndustry?columns=HourDK,Branche,ConsumptionkWh&limit=0&filter={%22MunicipalityNo%22:%22730%22}",
       "tot": "str"
     },
     {
@@ -40,7 +40,7 @@ const Node = {
     ]
   ],
   "info": "",
-  "_order": 285
+  "_order": 279
 }
 
 Node.info = `
