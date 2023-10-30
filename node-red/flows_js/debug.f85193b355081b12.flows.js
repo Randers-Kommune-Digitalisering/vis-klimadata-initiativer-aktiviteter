@@ -1,5 +1,5 @@
 const Node = {
-  "id": "b6d8aab1d1bb8deb",
+  "id": "f85193b355081b12",
   "type": "debug",
   "z": "b211627962aab2cb",
   "name": "debug 1",
@@ -7,14 +7,14 @@ const Node = {
   "tosidebar": true,
   "console": false,
   "tostatus": false,
-  "complete": "payload",
+  "complete": "sql",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 420,
-  "y": 1020,
+  "x": 410,
+  "y": 1000,
   "wires": [],
-  "_order": 304
+  "_order": 301
 }
 
 module.exports = Node;

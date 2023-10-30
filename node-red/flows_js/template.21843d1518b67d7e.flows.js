@@ -17,14 +17,14 @@ const Node = {
       "2d962db6eced9c3b"
     ]
   ],
-  "_order": 295
+  "_order": 292
 }
 
 Node.template = `
 CREATE TABLE if not exists {{flow.tablename}} (
 	created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	last_updated TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-	HourDK DATE,
+	HourDK DATETIME,
 	Branche VARCHAR(15),
 	ConsumptionkWh FLOAT
 	);
