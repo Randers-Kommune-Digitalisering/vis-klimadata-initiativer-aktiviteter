@@ -9,21 +9,21 @@ const Node = {
       "t": "set",
       "p": "tablename",
       "pt": "flow",
-      "to": "eds_FORBRUG",
+      "to": "ConsumptionIndustry",
       "tot": "str"
     },
     {
       "t": "set",
       "p": "datafilter",
       "pt": "msg",
-      "to": "[\"MeasurementPoints\",\"MunicipalityNo\"]",
+      "to": "[]",
       "tot": "json"
     },
     {
       "t": "set",
-      "p": "date_column",
+      "p": "HourDK",
       "pt": "msg",
-      "to": "Month",
+      "to": "HourDK",
       "tot": "str"
     }
   ],
@@ -39,7 +39,7 @@ const Node = {
       "383a20ecf799c604"
     ]
   ],
-  "_order": 309
+  "_order": 302
 }
 
 module.exports = Node;

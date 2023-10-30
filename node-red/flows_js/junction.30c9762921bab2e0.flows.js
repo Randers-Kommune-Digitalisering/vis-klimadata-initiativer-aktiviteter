@@ -9,7 +9,7 @@ const Node = {
       "95f6638233c342b6"
     ]
   ],
-  "_order": 100
+  "_order": 98
 }
 
 module.exports = Node;
