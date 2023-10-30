@@ -18,13 +18,6 @@ const Node = {
       "pt": "msg",
       "to": "GET",
       "tot": "str"
-    },
-    {
-      "t": "set",
-      "p": "url2",
-      "pt": "msg",
-      "to": "baseurl & \"?columns=HourDK,Branche,ConsumptionkWh&filter={'MunicipalityNo':'730'}\"",
-      "tot": "str"
     }
   ],
   "action": "",
