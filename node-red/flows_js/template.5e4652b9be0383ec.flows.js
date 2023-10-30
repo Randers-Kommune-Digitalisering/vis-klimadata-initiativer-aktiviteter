@@ -11,10 +11,11 @@ const Node = {
   "template": "",
   "output": "str",
   "x": 240,
-  "y": 1060,
+  "y": 900,
   "wires": [
     [
-      "976cc783bd55ab9a"
+      "976cc783bd55ab9a",
+      "b6d8aab1d1bb8deb"
     ]
   ],
   "_order": 284

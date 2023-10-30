@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "url",
       "pt": "msg",
-      "to": "https://api.energidataservice.dk/dataset/ConsumptionIndustry?columns=HourDK,Branche,ConsumptionkWh&limit=0&filter={%22MunicipalityNo%22:%22730%22}",
+      "to": "https://api.energidataservice.dk/dataset/ConsumptionIndustry?columns=HourDK,Branche,ConsumptionkWh&limit=100&filter={%22MunicipalityNo%22:%22730%22}",
       "tot": "str"
     },
     {
@@ -26,7 +26,7 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 270,
-  "y": 800,
+  "y": 620,
   "wires": [
     [
       "288791f6f17df6b3"

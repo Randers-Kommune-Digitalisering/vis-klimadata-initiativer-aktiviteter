@@ -8,7 +8,7 @@ const Node = {
       "t": "set",
       "p": "outputDateFormat",
       "pt": "msg",
-      "to": "YYYY-MM-DD",
+      "to": "YYYY-MM-DDTHH:mm",
       "tot": "str"
     }
   ],
@@ -18,7 +18,7 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 700,
-  "y": 920,
+  "y": 760,
   "wires": [
     [
       "baa6dce40c7bd6f4"
