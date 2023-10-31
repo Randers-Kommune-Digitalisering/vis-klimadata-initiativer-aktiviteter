@@ -24,7 +24,7 @@ Node.template = `
 CREATE TABLE if not exists {{flow.tablename}} (
 	created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	last_updated TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-	HourDK DATETIME,
+	HourDK TIMESTAMP,
 	Branche VARCHAR(15),
 	ConsumptionkWh FLOAT
 	);

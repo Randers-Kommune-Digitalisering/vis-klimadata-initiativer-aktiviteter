@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "tablename",
       "pt": "flow",
-      "to": "ConsumptionIndustry",
+      "to": "EDS_ConsumptionIndustry",
       "tot": "str"
     },
     {
