@@ -8,7 +8,7 @@ const Node = {
       "t": "set",
       "p": "outputDateFormat",
       "pt": "msg",
-      "to": "YYYY-MM-DDTHH:mm",
+      "to": "YYYY-MM-DDHH:mm:ss",
       "tot": "str"
     }
   ],
@@ -24,7 +24,7 @@ const Node = {
       "baa6dce40c7bd6f4"
     ]
   ],
-  "_order": 287
+  "_order": 288
 }
 
 module.exports = Node;
