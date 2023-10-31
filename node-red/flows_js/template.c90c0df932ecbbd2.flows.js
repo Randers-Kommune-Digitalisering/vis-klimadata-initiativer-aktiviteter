@@ -1,28 +1,26 @@
 const Node = {
-  "id": "0479781613d9a020",
+  "id": "c90c0df932ecbbd2",
   "type": "template",
   "z": "8a53080563b8e8f2",
-  "name": "Custom DB-query #1",
+  "name": "Custom DB-query #2",
   "field": "sql",
   "fieldType": "msg",
-  "format": "sql",
+  "format": "handlebars",
   "syntax": "mustache",
   "template": "",
   "output": "str",
   "x": 560,
-  "y": 160,
+  "y": 220,
   "wires": [
     [
       "f013c79b839dfddf"
     ]
   ],
-  "_order": 455
+  "_order": 458
 }
 
 Node.template = `
-SELECT HourDK from {{flow.tablename}} limit 100
-
-
+SHOW COLUMNS FROM {{flow.tablename}}
 `
 
 module.exports = Node;
