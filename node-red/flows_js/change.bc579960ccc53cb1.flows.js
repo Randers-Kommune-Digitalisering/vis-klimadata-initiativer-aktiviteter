@@ -9,14 +9,14 @@ const Node = {
       "t": "set",
       "p": "tablename",
       "pt": "flow",
-      "to": "eds_PRODUKTION",
+      "to": "EDS_communityproduction",
       "tot": "str"
     },
     {
       "t": "set",
       "p": "datafilter",
       "pt": "msg",
-      "to": "[\"MunicipalityNo\",\"OffshoreWindPower\",\"CentralPower\",\"DecentralPower\"]",
+      "to": "[\"MunicipalityNo\",\"CentralPower\",\"DecentralPower\"]",
       "tot": "json"
     },
     {
@@ -39,7 +39,7 @@ const Node = {
       "15cff38df5958f84"
     ]
   ],
-  "_order": 329
+  "_order": 326
 }
 
 module.exports = Node;

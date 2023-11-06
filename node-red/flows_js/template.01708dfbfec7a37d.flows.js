@@ -17,7 +17,7 @@ const Node = {
       "00861bf976566611"
     ]
   ],
-  "_order": 326
+  "_order": 323
 }
 
 Node.template = `
@@ -26,8 +26,9 @@ CREATE TABLE if not exists {{flow.tablename}} (
 	last_updated TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 	Month DATE,
 	OnshoreWindPower DECIMAL(10,2),
+	OffshoreWindPower DECIMAL(10,2),
 	SolarPower DECIMAL(10,2),
-	UNIQUE (Month, OnshoreWindPower, SolarPower)
+	UNIQUE (Month, OnshoreWindPower, OffshoreWindPower, SolarPower)
 	);
 `
 

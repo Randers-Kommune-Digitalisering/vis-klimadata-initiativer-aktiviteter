@@ -1,10 +1,9 @@
 const Node = {
-  "id": "22413d13c16b68d5",
+  "id": "9c07ad37828edf60",
   "type": "debug",
-  "z": "db9cae581f57fc84",
-  "g": "92d5ed7235f71cf0",
-  "name": "Parsed data",
-  "active": false,
+  "z": "9cd2fc26979e7dd1",
+  "name": "debug 2",
+  "active": true,
   "tosidebar": true,
   "console": false,
   "tostatus": false,
@@ -12,10 +11,10 @@ const Node = {
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 990,
-  "y": 2680,
+  "x": 1100,
+  "y": 800,
   "wires": [],
-  "_order": 346
+  "_order": 333
 }
 
 module.exports = Node;

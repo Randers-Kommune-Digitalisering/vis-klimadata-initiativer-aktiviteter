@@ -1,7 +1,7 @@
 const Node = {
   "id": "9cd2fc26979e7dd1",
   "type": "tab",
-  "label": "PRODUKTION energidataservice.dk",
+  "label": "EDS - CommunityProduction",
   "disabled": false,
   "info": "",
   "env": [],

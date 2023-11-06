@@ -1,7 +1,7 @@
 const Node = {
   "id": "b211627962aab2cb",
   "type": "tab",
-  "label": "FORBRUG energidataservice.dk",
+  "label": "EDS - ConsumptionIndustry",
   "disabled": false,
   "info": "",
   "env": [],
