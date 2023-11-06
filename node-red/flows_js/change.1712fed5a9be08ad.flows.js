@@ -23,7 +23,7 @@ const Node = {
       "t": "set",
       "p": "url",
       "pt": "msg",
-      "to": "baseurl & \"?offset=0&start=\"&startdato&\"&end=now&filter=%7B%22MunicipalityNo%22:[%22730%22]%7D&sort=Month%20DESC&timezone=dk&limit=10000\"",
+      "to": "baseurl & \"?filter=%7B%22MunicipalityNo%22:[%22730%22]%7D&sort=Month%20DESC&timezone=dk&limit=10000\"",
       "tot": "jsonata"
     }
   ],
@@ -40,7 +40,7 @@ const Node = {
     ]
   ],
   "info": "",
-  "_order": 310
+  "_order": 307
 }
 
 Node.info = `
