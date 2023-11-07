@@ -1,20 +1,20 @@
 const Node = {
-  "id": "2f755bb1629f6e4c",
+  "id": "b68042e1913812fe",
   "type": "debug",
   "z": "c0f39fa937e7d6f9",
-  "name": "LAST ITEM LOOPED",
+  "name": "sql-queries",
   "active": true,
   "tosidebar": true,
   "console": false,
   "tostatus": false,
-  "complete": "payload",
+  "complete": "sql-queries",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 960,
-  "y": 1260,
+  "x": 1070,
+  "y": 320,
   "wires": [],
-  "_order": 486
+  "_order": 507
 }
 
 module.exports = Node;

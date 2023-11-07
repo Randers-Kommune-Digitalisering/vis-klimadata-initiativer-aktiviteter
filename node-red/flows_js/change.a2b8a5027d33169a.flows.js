@@ -13,19 +13,18 @@ const Node = {
     },
     {
       "t": "set",
-      "p": "sql-query",
+      "p": "data",
       "pt": "msg",
-      "to": "sql-queries[count]",
+      "to": "datasets[count]",
       "tot": "jsonata",
       "dc": true
     },
     {
       "t": "set",
-      "p": "data",
+      "p": "sql",
       "pt": "msg",
-      "to": "dataset[count]",
-      "tot": "jsonata",
-      "dc": true
+      "to": "sql-queries[0]",
+      "tot": "jsonata"
     }
   ],
   "action": "",
@@ -33,11 +32,13 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 700,
-  "y": 380,
+  "x": 800,
+  "y": 420,
   "wires": [
     [
-      "d423f06fa505ec18"
+      "8916108c3c5d115f",
+      "f192915d5df5f13c",
+      "6c95b4cee23db2fa"
     ]
   ],
   "_order": 489

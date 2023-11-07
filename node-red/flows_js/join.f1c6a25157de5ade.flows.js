@@ -2,10 +2,10 @@ const Node = {
   "id": "f1c6a25157de5ade",
   "type": "join",
   "z": "c0f39fa937e7d6f9",
-  "name": "sql-queries",
+  "name": "sql-query",
   "mode": "custom",
   "build": "array",
-  "property": "sql-queries",
+  "property": "sql-query",
   "propertyType": "msg",
   "key": "datasets",
   "joiner": "\\n",
@@ -18,11 +18,11 @@ const Node = {
   "reduceInit": "",
   "reduceInitType": "",
   "reduceFixup": "",
-  "x": 690,
-  "y": 320,
+  "x": 660,
+  "y": 360,
   "wires": [
     [
-      "a2b8a5027d33169a"
+      "9d0925e0c0e07d05"
     ]
   ],
   "_order": 495

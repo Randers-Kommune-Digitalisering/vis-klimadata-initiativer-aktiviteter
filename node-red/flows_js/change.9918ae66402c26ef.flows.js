@@ -13,7 +13,7 @@ const Node = {
     },
     {
       "t": "set",
-      "p": "sql-queries",
+      "p": "sql-query",
       "pt": "msg",
       "to": "SELECT  cast(     concat(aarstal,\"-01-01\") as DATE    ) as År,   aarstal, husdyrsgoedning_biogas, lokalt_potentiale, andel   from opendata_biogas ",
       "tot": "str"

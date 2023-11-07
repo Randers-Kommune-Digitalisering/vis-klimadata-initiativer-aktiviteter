@@ -1,20 +1,20 @@
 const Node = {
-  "id": "2f755bb1629f6e4c",
+  "id": "6c95b4cee23db2fa",
   "type": "debug",
   "z": "c0f39fa937e7d6f9",
-  "name": "LAST ITEM LOOPED",
+  "name": "count",
   "active": true,
   "tosidebar": true,
   "console": false,
   "tostatus": false,
-  "complete": "payload",
+  "complete": "count",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 960,
-  "y": 1260,
+  "x": 1050,
+  "y": 420,
   "wires": [],
-  "_order": 486
+  "_order": 502
 }
 
 module.exports = Node;

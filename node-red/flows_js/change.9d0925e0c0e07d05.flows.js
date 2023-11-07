@@ -1,15 +1,15 @@
 const Node = {
-  "id": "7be173b145756d1c",
+  "id": "9d0925e0c0e07d05",
   "type": "change",
   "z": "c0f39fa937e7d6f9",
-  "name": "LOOP \\n TRANSFORMATION",
+  "name": "sql-queries",
   "rules": [
     {
       "t": "set",
-      "p": "payload.looped",
+      "p": "sql-queries",
       "pt": "msg",
-      "to": "true",
-      "tot": "bool"
+      "to": "sql-query",
+      "tot": "msg"
     }
   ],
   "action": "",
@@ -17,14 +17,16 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 600,
-  "y": 1080,
+  "x": 810,
+  "y": 360,
   "wires": [
     [
-      "6ae4d558ad8907c7"
+      "461359beec2b6e56",
+      "b68042e1913812fe",
+      "a2b8a5027d33169a"
     ]
   ],
-  "_order": 479
+  "_order": 505
 }
 
 module.exports = Node;
