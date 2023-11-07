@@ -2,7 +2,7 @@ const Node = {
   "id": "8078c1890c410bb1",
   "type": "change",
   "z": "c0f39fa937e7d6f9",
-  "name": "",
+  "name": "Loop = 0",
   "rules": [
     {
       "t": "set",
@@ -23,7 +23,7 @@ const Node = {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "data[count]",
+      "to": "data[$$.count]",
       "tot": "jsonata"
     }
   ],
@@ -32,8 +32,8 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 580,
-  "y": 940,
+  "x": 620,
+  "y": 1140,
   "wires": [
     [
       "7be173b145756d1c"

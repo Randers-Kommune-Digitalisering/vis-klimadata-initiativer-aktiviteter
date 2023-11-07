@@ -3,12 +3,12 @@ const Node = {
   "type": "switch",
   "z": "c0f39fa937e7d6f9",
   "name": "Loop complete?",
-  "property": "count",
-  "propertyType": "msg",
+  "property": "count+1",
+  "propertyType": "jsonata",
   "rules": [
     {
       "t": "lt",
-      "v": "(data ~> $count()) -1",
+      "v": "(data ~> $count())",
       "vt": "jsonata"
     },
     {
@@ -18,18 +18,17 @@ const Node = {
   "checkall": "true",
   "repair": false,
   "outputs": 2,
-  "x": 580,
+  "x": 360,
   "y": 1240,
   "wires": [
     [
-      "1514b262b25ba298"
+      "d656430bc4b9bef7"
     ],
     [
-      "952a75481b39dd63",
-      "2f755bb1629f6e4c"
+      "952a75481b39dd63"
     ]
   ],
-  "_order": 483
+  "_order": 506
 }
 
 module.exports = Node;

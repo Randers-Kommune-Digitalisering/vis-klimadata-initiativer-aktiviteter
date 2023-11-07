@@ -5,6 +5,20 @@ const Node = {
   "name": "LOOP \\n TRANSFORMATION",
   "rules": [
     {
+      "t": "move",
+      "p": "payload",
+      "pt": "msg",
+      "to": "sql-query",
+      "tot": "msg"
+    },
+    {
+      "t": "set",
+      "p": "payload",
+      "pt": "msg",
+      "to": "{}",
+      "tot": "json"
+    },
+    {
       "t": "set",
       "p": "payload.looped",
       "pt": "msg",
@@ -17,11 +31,11 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 600,
-  "y": 1080,
+  "x": 940,
+  "y": 1180,
   "wires": [
     [
-      "6ae4d558ad8907c7"
+      "1514b262b25ba298"
     ]
   ],
   "_order": 479
