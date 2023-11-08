@@ -3,7 +3,7 @@ const Node = {
   "type": "change",
   "z": "db9cae581f57fc84",
   "g": "caba7946f847b074",
-  "name": "Opsætning af dataset \\n el-og-fjernvarmeproduktion-og-forbrug-i-randers-kommun",
+  "name": "Opsætning af dataset \\n el-og-fjernvarmeproduktion-og-forbrug-i-randers-kommune",
   "rules": [
     {
       "t": "set",
@@ -18,7 +18,7 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 450,
+  "x": 460,
   "y": 480,
   "wires": [
     [
