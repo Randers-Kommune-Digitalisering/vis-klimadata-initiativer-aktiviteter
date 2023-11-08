@@ -8,7 +8,7 @@ const Node = {
       "t": "set",
       "p": "tablename",
       "pt": "flow",
-      "to": "EDS_ConsumptionIndustry_prep",
+      "to": "opendata_vomgasser_fra_dyrehold_prep",
       "tot": "str"
     }
   ],
@@ -24,7 +24,7 @@ const Node = {
       "264e58d31d564268"
     ]
   ],
-  "_order": 482
+  "_order": 486
 }
 
 module.exports = Node;

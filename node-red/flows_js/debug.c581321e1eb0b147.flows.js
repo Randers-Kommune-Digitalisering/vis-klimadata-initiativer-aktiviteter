@@ -1,20 +1,21 @@
 const Node = {
-  "id": "7633fa7363ada217",
+  "id": "c581321e1eb0b147",
   "type": "debug",
   "z": "39591030e2e9860e",
-  "name": "debug 6",
-  "active": true,
+  "g": "53b8689cf243c43d",
+  "name": "global.opendataDone",
+  "active": false,
   "tosidebar": true,
   "console": false,
   "tostatus": false,
-  "complete": "sql",
+  "complete": "payload",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 100,
-  "y": 620,
+  "x": 1100,
+  "y": 140,
   "wires": [],
-  "_order": 584
+  "_order": 596
 }
 
 module.exports = Node;
