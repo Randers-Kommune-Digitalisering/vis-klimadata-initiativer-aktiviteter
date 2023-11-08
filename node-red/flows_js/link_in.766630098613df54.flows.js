@@ -4,14 +4,14 @@ const Node = {
   "z": "7f3219f0beb025c3",
   "name": "BIL54 Opsætning IN",
   "links": [],
-  "x": 85,
+  "x": 75,
   "y": 80,
   "wires": [
     [
       "adb8794475187ce3"
     ]
   ],
-  "_order": 271
+  "_order": 286
 }
 
 module.exports = Node;

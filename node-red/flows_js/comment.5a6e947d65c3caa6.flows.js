@@ -4,10 +4,10 @@ const Node = {
   "z": "c0f39fa937e7d6f9",
   "name": "Har flyttet condition \\n check hertil",
   "info": "",
-  "x": 350,
-  "y": 1280,
+  "x": 310,
+  "y": 1340,
   "wires": [],
-  "_order": 508
+  "_order": 520
 }
 
 module.exports = Node;

@@ -2,16 +2,18 @@ const Node = {
   "id": "12a9c525d902171c",
   "type": "link in",
   "z": "c0f39fa937e7d6f9",
-  "name": "Datasæt ",
+  "g": "73a4ee20d5672c8c",
+  "name": "Datasets",
   "links": [],
-  "x": 75,
-  "y": 100,
+  "x": 1305,
+  "y": 80,
   "wires": [
     [
-      "6ef0af8b81652212"
+      "dc46455e44341f37",
+      "9918ae66402c26ef"
     ]
   ],
-  "_order": 470
+  "_order": 528
 }
 
 module.exports = Node;

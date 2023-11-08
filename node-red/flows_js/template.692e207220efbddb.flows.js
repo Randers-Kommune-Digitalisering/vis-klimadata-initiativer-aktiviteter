@@ -1,0 +1,29 @@
+const Node = {
+  "id": "692e207220efbddb",
+  "type": "template",
+  "z": "39591030e2e9860e",
+  "g": "cdba575c8249e3b4",
+  "name": "Insert data",
+  "field": "sql",
+  "fieldType": "msg",
+  "format": "sql",
+  "syntax": "mustache",
+  "template": "",
+  "output": "str",
+  "x": 450,
+  "y": 900,
+  "wires": [
+    [
+      "ef3971c39c0bc268"
+    ]
+  ],
+  "_order": 572
+}
+
+Node.template = `
+INSERT INTO {{newtable}} 
+    ({{{columnnames}}})
+VALUES {{{datastring}}}
+`
+
+module.exports = Node;

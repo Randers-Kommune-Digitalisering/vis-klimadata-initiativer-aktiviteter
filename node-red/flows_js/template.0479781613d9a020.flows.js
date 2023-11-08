@@ -16,11 +16,11 @@ const Node = {
       "f013c79b839dfddf"
     ]
   ],
-  "_order": 459
+  "_order": 475
 }
 
 Node.template = `
-SELECT HourDK from {{flow.tablename}} limit 100
+SELECT * from {{flow.tablename}} limit 100
 
 
 `

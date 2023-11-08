@@ -10,10 +10,14 @@ const Node = {
   "key": "topic",
   "joiner": "\\n",
   "joinerType": "str",
-  "accumulate": "false",
+  "accumulate": true,
   "timeout": "",
   "count": "",
   "reduceRight": false,
+  "reduceExp": "",
+  "reduceInit": "",
+  "reduceInitType": "",
+  "reduceFixup": "",
   "x": 830,
   "y": 1000,
   "wires": [
@@ -21,7 +25,7 @@ const Node = {
       "8078c1890c410bb1"
     ]
   ],
-  "_order": 511
+  "_order": 523
 }
 
 module.exports = Node;
