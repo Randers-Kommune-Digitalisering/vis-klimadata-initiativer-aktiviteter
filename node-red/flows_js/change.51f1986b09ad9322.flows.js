@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "dataset",
       "pt": "msg",
-      "to": "el-og-fjernvarmeproduktion-og-forbrug-i-randers-kommun",
+      "to": "el-og-fjernvarmeproduktion-og-forbrug-i-randers-kommune",
       "tot": "str"
     }
   ],
