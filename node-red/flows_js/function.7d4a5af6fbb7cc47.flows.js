@@ -10,11 +10,10 @@ const Node = {
   "finalize": "",
   "libs": [],
   "x": 350,
-  "y": 80,
+  "y": 200,
   "wires": [
     [
-      "9bc33e596547bfd0",
-      "abed0c9ac8660b8d"
+      "9bc33e596547bfd0"
     ]
   ],
   "_order": 603

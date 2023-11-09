@@ -8,7 +8,7 @@ const Node = {
   "rules": [
     {
       "t": "lt",
-      "v": "length",
+      "v": "length-1",
       "vt": "jsonata"
     },
     {
@@ -18,8 +18,8 @@ const Node = {
   "checkall": "true",
   "repair": false,
   "outputs": 2,
-  "x": 340,
-  "y": 300,
+  "x": 320,
+  "y": 260,
   "wires": [
     [
       "d470eeba4ce1ab01"

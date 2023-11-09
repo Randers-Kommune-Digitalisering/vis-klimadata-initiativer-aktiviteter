@@ -9,11 +9,11 @@ const Node = {
   "syntax": "mustache",
   "template": "",
   "output": "str",
-  "x": 700,
-  "y": 220,
+  "x": 900,
+  "y": 200,
   "wires": [
     [
-      "ce219d87689dc703"
+      "2696ccc9cdf0b0ce"
     ]
   ],
   "_order": 600
