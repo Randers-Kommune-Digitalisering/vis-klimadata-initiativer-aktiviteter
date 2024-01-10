@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "sql",
       "pt": "msg",
-      "to": "/* This function composes a SQL statement string that creates the database table. It depends on a valid datatypes input  */ \t\"CREATE TABLE \" & tablename & \" ( \" & $join(\t   datatypes.('`' & key & '` ' & mariadb_datatype),\t   \", \"\t) & \");\"\t",
+      "to": "/* This function composes a SQL statement string that creates the database table. It depends on a valid datatypes input  */ \t\"CREATE TABLE \" & tablename & \t    \"(`last_updated` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, \"\t    & $join(\t        datatypes.('`' & key & '` ' & mariadb_datatype),\t        \", \"\t        ) \t    & \");\"\t",
       "tot": "jsonata"
     }
   ],
@@ -19,14 +19,14 @@ const Node = {
   "to": "",
   "reg": false,
   "x": 720,
-  "y": 800,
+  "y": 900,
   "wires": [
     [
       "7ed2f33e1ca30355"
     ]
   ],
   "info": "",
-  "_order": 691
+  "_order": 402
 }
 
 Node.info = `

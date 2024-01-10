@@ -3,7 +3,7 @@ const Node = {
   "type": "debug",
   "z": "d5880abe3145a384",
   "g": "1671992d0668e19b",
-  "name": "debug 8",
+  "name": "Data inserted",
   "active": true,
   "tosidebar": true,
   "console": true,
@@ -12,10 +12,10 @@ const Node = {
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1210,
-  "y": 860,
+  "x": 1220,
+  "y": 960,
   "wires": [],
-  "_order": 701
+  "_order": 412
 }
 
 module.exports = Node;
