@@ -2,8 +2,8 @@ const Node = {
   "id": "47eb447cf4ac0439",
   "type": "change",
   "z": "d5880abe3145a384",
-  "g": "1671992d0668e19b",
-  "name": "Compose SQL CREATE TABLE statement",
+  "g": "9567f48068967909",
+  "name": "Compose SQL CREATE TABLE \\n statement",
   "rules": [
     {
       "t": "set",
@@ -18,15 +18,15 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 720,
-  "y": 900,
+  "x": 310,
+  "y": 1000,
   "wires": [
     [
       "7ed2f33e1ca30355"
     ]
   ],
   "info": "",
-  "_order": 402
+  "_order": 414
 }
 
 Node.info = `

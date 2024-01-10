@@ -2,8 +2,8 @@ const Node = {
   "id": "6e054ca0f1ed231a",
   "type": "change",
   "z": "d5880abe3145a384",
-  "g": "1671992d0668e19b",
-  "name": "Generate datatypes from first datarow",
+  "g": "2abe0180ccd5533c",
+  "name": "Generate datatypes \\n from first datarow",
   "rules": [
     {
       "t": "set",
@@ -18,15 +18,15 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 370,
-  "y": 900,
+  "x": 1050,
+  "y": 780,
   "wires": [
     [
-      "47eb447cf4ac0439"
+      "235f375af7167f6c"
     ]
   ],
   "info": "",
-  "_order": 406
+  "_order": 421
 }
 
 Node.info = `

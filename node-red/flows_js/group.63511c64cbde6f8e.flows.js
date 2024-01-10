@@ -1,9 +1,8 @@
 const Node = {
-  "id": "25372ea7d623e06e",
+  "id": "63511c64cbde6f8e",
   "type": "group",
   "z": "d5880abe3145a384",
-  "g": "3574cfdaa6541032",
-  "name": "Individual datasets and queries",
+  "name": "DST data series",
   "style": {
     "stroke": "none",
     "fill": "#c8e7a7",
@@ -12,13 +11,15 @@ const Node = {
   },
   "nodes": [
     "ea82c20939689167",
-    "548e675769f3b8f5"
+    "548e675769f3b8f5",
+    "1f6426784ccee94c",
+    "0daea7d9549ba6f3"
   ],
-  "x": 514,
-  "y": 159,
-  "w": 201,
+  "x": 1484,
+  "y": 19,
+  "w": 332,
   "h": 122,
-  "_order": 72
+  "_order": 76
 }
 
 module.exports = Node;

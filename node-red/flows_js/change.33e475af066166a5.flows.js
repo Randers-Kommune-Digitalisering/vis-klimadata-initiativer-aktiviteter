@@ -2,7 +2,7 @@ const Node = {
   "id": "33e475af066166a5",
   "type": "change",
   "z": "d5880abe3145a384",
-  "g": "1671992d0668e19b",
+  "g": "9567f48068967909",
   "name": "Generate INSERT statement",
   "rules": [
     {
@@ -18,14 +18,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 680,
-  "y": 960,
+  "x": 340,
+  "y": 1080,
   "wires": [
     [
       "e720c6064755fc22"
     ]
   ],
-  "_order": 405
+  "_order": 415
 }
 
 module.exports = Node;

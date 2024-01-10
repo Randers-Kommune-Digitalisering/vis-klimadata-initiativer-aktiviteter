@@ -3,7 +3,7 @@ const Node = {
   "type": "change",
   "z": "d5880abe3145a384",
   "d": true,
-  "g": "25372ea7d623e06e",
+  "g": "63511c64cbde6f8e",
   "name": "bol102",
   "rules": [
     {
@@ -26,14 +26,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 590,
-  "y": 240,
+  "x": 1630,
+  "y": 100,
   "wires": [
     [
-      "1d375752baa0da60"
+      "0daea7d9549ba6f3"
     ]
   ],
-  "_order": 422
+  "_order": 431
 }
 
 module.exports = Node;

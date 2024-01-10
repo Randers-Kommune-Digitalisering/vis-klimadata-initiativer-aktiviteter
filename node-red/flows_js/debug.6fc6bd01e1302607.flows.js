@@ -2,7 +2,7 @@ const Node = {
   "id": "6fc6bd01e1302607",
   "type": "debug",
   "z": "d5880abe3145a384",
-  "g": "1671992d0668e19b",
+  "g": "9567f48068967909",
   "name": "Table dropped",
   "active": true,
   "tosidebar": true,
@@ -12,10 +12,10 @@ const Node = {
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1220,
-  "y": 840,
+  "x": 680,
+  "y": 920,
   "wires": [],
-  "_order": 410
+  "_order": 418
 }
 
 module.exports = Node;

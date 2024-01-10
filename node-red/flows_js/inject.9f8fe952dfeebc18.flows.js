@@ -20,14 +20,14 @@ const Node = {
   "topic": "",
   "payload": "",
   "payloadType": "date",
-  "x": 360,
-  "y": 80,
+  "x": 380,
+  "y": 60,
   "wires": [
     [
       "73d9f3d806602b9f"
     ]
   ],
-  "_order": 420
+  "_order": 396
 }
 
 module.exports = Node;
