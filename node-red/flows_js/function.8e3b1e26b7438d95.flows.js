@@ -2,21 +2,22 @@ const Node = {
   "id": "8e3b1e26b7438d95",
   "type": "function",
   "z": "d5880abe3145a384",
-  "name": "Loop function",
+  "g": "16cba9e5783d458b",
+  "name": "Loop over datasets",
   "func": "",
   "outputs": 1,
   "noerr": 0,
   "initialize": "",
   "finalize": "",
   "libs": [],
-  "x": 690,
-  "y": 360,
+  "x": 660,
+  "y": 440,
   "wires": [
     [
       "872d8972b306d79c"
     ]
   ],
-  "_order": 685
+  "_order": 405
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {

@@ -8,7 +8,7 @@ const Node = {
       "t": "set",
       "p": "tablename",
       "pt": "flow",
-      "to": "opendata_vomgasser_fra_dyrehold_prep",
+      "to": "dst_bil54",
       "tot": "str"
     }
   ],
@@ -24,7 +24,7 @@ const Node = {
       "264e58d31d564268"
     ]
   ],
-  "_order": 509
+  "_order": 562
 }
 
 module.exports = Node;

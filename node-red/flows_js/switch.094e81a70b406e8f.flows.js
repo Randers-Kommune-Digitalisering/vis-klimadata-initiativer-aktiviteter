@@ -16,14 +16,14 @@ const Node = {
   "checkall": "true",
   "repair": false,
   "outputs": 1,
-  "x": 310,
-  "y": 80,
+  "x": 370,
+  "y": 100,
   "wires": [
     [
       "73d9f3d806602b9f"
     ]
   ],
-  "_order": 708
+  "_order": 395
 }
 
 module.exports = Node;

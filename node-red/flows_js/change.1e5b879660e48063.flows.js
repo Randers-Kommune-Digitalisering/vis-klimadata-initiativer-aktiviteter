@@ -2,6 +2,7 @@ const Node = {
   "id": "1e5b879660e48063",
   "type": "change",
   "z": "d5880abe3145a384",
+  "g": "2abe0180ccd5533c",
   "name": "Prepare for \\n database insert",
   "rules": [
     {
@@ -23,6 +24,14 @@ const Node = {
       "pt": "msg",
       "to": "\"dst_\"&tablename",
       "tot": "jsonata"
+    },
+    {
+      "t": "set",
+      "p": "data",
+      "pt": "flow",
+      "to": "data",
+      "tot": "msg",
+      "dc": true
     }
   ],
   "action": "",
@@ -30,14 +39,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 1020,
-  "y": 560,
+  "x": 400,
+  "y": 780,
   "wires": [
     [
-      "ebb44b8807d5e860"
+      "e45a491888de725a"
     ]
   ],
-  "_order": 679
+  "_order": 425
 }
 
 module.exports = Node;

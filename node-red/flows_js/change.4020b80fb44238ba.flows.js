@@ -2,8 +2,8 @@ const Node = {
   "id": "4020b80fb44238ba",
   "type": "change",
   "z": "d5880abe3145a384",
-  "g": "1671992d0668e19b",
-  "name": "Compose SQL DROP TABLE statement",
+  "g": "9567f48068967909",
+  "name": "Compose SQL DROP TABLE \\n statement",
   "rules": [
     {
       "t": "set",
@@ -18,14 +18,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 720,
-  "y": 740,
+  "x": 260,
+  "y": 920,
   "wires": [
     [
       "6593a3734a5b6ee7"
     ]
   ],
-  "_order": 692
+  "_order": 413
 }
 
 module.exports = Node;

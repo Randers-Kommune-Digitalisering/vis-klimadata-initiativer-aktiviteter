@@ -2,14 +2,14 @@ const Node = {
   "id": "6e054ca0f1ed231a",
   "type": "change",
   "z": "d5880abe3145a384",
-  "g": "1671992d0668e19b",
-  "name": "Generate datatypes from first datarow",
+  "g": "2abe0180ccd5533c",
+  "name": "Generate datatypes \\n from first datarow",
   "rules": [
     {
       "t": "set",
       "p": "datatypes",
       "pt": "msg",
-      "to": "$map(\t   data[0],\t   function($v, $k) {\t       $each(\t           $v,\t           function($value, $key) {{\t    \"key\": $key,\t    \"mariadb_datatype\": \t    /* Check the type of the value */\t    $value ~> $type() = \"string\" ? \"VARCHAR(255)\" :\t    /* Check if the value is a number */\t    $value ~> $type() = \"number\" ? (\t        /* Check if the number is an integer */\t        $value ~> $floor() = $ ? \"INT\" :\t        /* Check if the number is a decimal */\t        $value ~> $floor() != $ ? \"DECIMAL(10,2)\" : undefined\t    ) :\t    $value ~> $type() = \"boolean\" ? \"BOOLEAN\" :\t    $value ~> $type() = \"null\" ? \"NULL\" :\t    /* Check for ISO dates */\t    /^([0-9]{4})(-|\\/|.)(1[0-2]|0[1-9])(-|\\/|.)(3[01]|[12][0-9]|0[1-9])$|^(3[01]|[12][0-9]|0[1-9])(-|\\/|.)(1[0-2]|0[1-9])(-|\\/|.)([0-9]{4})$/ ? \"DATE\" : undefined\t}            \t    }\t       )\t}\t)\t",
+      "to": "$map(\t   data[0],\t   function($v, $k) {\t       $each(\t           $v,\t           function($value, $key) {{\t                \"key\": $key,\t                \"mariadb_datatype\": \t                /* Check the type of the value */\t                $value ~> $type() = \"string\" ? \"VARCHAR(255)\" :\t                /* Check if the value is a number */\t                $value ~> $type() = \"number\" ? (\t                    /* Check if the number is an integer */\t                    $value ~> $floor() = $ ? \"INT\" :\t                    /* Check if the number is a decimal */\t                    $value ~> $floor() != $ ? \"DECIMAL(10,2)\" : undefined\t                ) :\t                $value ~> $type() = \"boolean\" ? \"BOOLEAN\" :\t                $value ~> $type() = \"null\" ? \"NULL\" :\t                /* Check for ISO dates */\t                /^([0-9]{4})(-|\\/|.)(1[0-2]|0[1-9])(-|\\/|.)(3[01]|[12][0-9]|0[1-9])$|^(3[01]|[12][0-9]|0[1-9])(-|\\/|.)(1[0-2]|0[1-9])(-|\\/|.)([0-9]{4})$/ ? \"DATE\" : undefined\t            }}\t       )\t    }\t)\t",
       "tot": "jsonata"
     }
   ],
@@ -18,15 +18,15 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 370,
-  "y": 800,
+  "x": 1050,
+  "y": 780,
   "wires": [
     [
-      "47eb447cf4ac0439"
+      "235f375af7167f6c"
     ]
   ],
   "info": "",
-  "_order": 695
+  "_order": 421
 }
 
 Node.info = `

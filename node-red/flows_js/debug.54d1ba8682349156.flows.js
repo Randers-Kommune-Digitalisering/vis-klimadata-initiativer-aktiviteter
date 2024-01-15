@@ -2,19 +2,20 @@ const Node = {
   "id": "54d1ba8682349156",
   "type": "debug",
   "z": "d5880abe3145a384",
-  "name": "Loop complete",
+  "g": "16cba9e5783d458b",
+  "name": "DST loop complete",
   "active": true,
   "tosidebar": true,
   "console": false,
   "tostatus": false,
-  "complete": "\"Loop complete\"",
+  "complete": "\"DST loop complete\"",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 450,
-  "y": 400,
+  "x": 610,
+  "y": 480,
   "wires": [],
-  "_order": 683
+  "_order": 403
 }
 
 module.exports = Node;

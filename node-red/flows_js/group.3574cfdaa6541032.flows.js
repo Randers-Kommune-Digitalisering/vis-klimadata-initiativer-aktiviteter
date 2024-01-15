@@ -6,7 +6,8 @@ const Node = {
   "style": {
     "stroke": "none",
     "label": true,
-    "fill": "#e3f3d3"
+    "fill": "#e3f3d3",
+    "fill-opacity": "0.5"
   },
   "nodes": [
     "4f5e8904445b7399",
@@ -16,20 +17,19 @@ const Node = {
     "ee87e2e27ec60aa1",
     "c8dbdab1ba06c2cc",
     "8cb54bf0c83e56b5",
-    "1d375752baa0da60",
     "094e81a70b406e8f",
     "9f8fe952dfeebc18",
     "73d9f3d806602b9f",
-    "25372ea7d623e06e",
-    "25372ea7d623e06e",
-    "091adb9e9f55a46a",
-    "46501366d3727083"
+    "46501366d3727083",
+    "c618a91983d6c9cb",
+    "ebb44b8807d5e860",
+    "4c4ccaab41585c3f"
   ],
-  "x": 14,
-  "y": 39,
-  "w": 1332,
-  "h": 228,
-  "_order": 71
+  "x": 34,
+  "y": 19,
+  "w": 1432,
+  "h": 294,
+  "_order": 65
 }
 
 module.exports = Node;

@@ -2,7 +2,7 @@ const Node = {
   "id": "548e675769f3b8f5",
   "type": "change",
   "z": "d5880abe3145a384",
-  "g": "25372ea7d623e06e",
+  "g": "63511c64cbde6f8e",
   "name": "bol102",
   "rules": [
     {
@@ -18,6 +18,13 @@ const Node = {
       "pt": "msg",
       "to": "{\"table\":\"BOL102\",\"format\":\"CSV\",\"variables\":[{\"code\":\"AMT\",\"values\":[\"730\"]},{\"code\":\"OPVARMNING\",\"values\":[\"*\"]},{\"code\":\"Tid\",\"values\":[\"*\"]},{\"code\":\"ANVENDELSE\",\"values\":[\"*\"]},{\"code\":\"OPFØRELSESÅR\",\"values\":[\"*\"]},{\"code\":\"BEBO\",\"values\":[\"*\"]}]}",
       "tot": "json"
+    },
+    {
+      "t": "set",
+      "p": "redundant",
+      "pt": "msg",
+      "to": "[\"AMT\"]",
+      "tot": "json"
     }
   ],
   "action": "",
@@ -25,14 +32,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 550,
-  "y": 200,
+  "x": 1690,
+  "y": 180,
   "wires": [
     [
-      "1d375752baa0da60"
+      "0daea7d9549ba6f3"
     ]
   ],
-  "_order": 711
+  "_order": 431
 }
 
 module.exports = Node;
