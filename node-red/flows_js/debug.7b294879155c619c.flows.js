@@ -8,7 +8,7 @@ const Node = {
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "{\t    \"MariaDB query\":sql,\t    \"AffectedRows\":payload.affectedRows\t}",
+  "complete": "{\t    \"Table created\":tablename,\t    \"Affected rows\":payload.affectedRows\t}",
   "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
