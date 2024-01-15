@@ -12,6 +12,7 @@ const Node = {
 
 Node.info = `
 # DST connector
+https://api.statbank.dk/console#data
 
 
 
