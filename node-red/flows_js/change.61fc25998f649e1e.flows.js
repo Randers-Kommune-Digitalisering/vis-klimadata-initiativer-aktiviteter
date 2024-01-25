@@ -8,7 +8,7 @@ const Node = {
       "t": "set",
       "p": "tablename",
       "pt": "flow",
-      "to": "dst_bil54",
+      "to": "dst_arealdk",
       "tot": "str"
     }
   ],
@@ -24,7 +24,7 @@ const Node = {
       "264e58d31d564268"
     ]
   ],
-  "_order": 566
+  "_order": 568
 }
 
 module.exports = Node;
