@@ -8,7 +8,7 @@ const Node = {
   "tosidebar": true,
   "console": false,
   "tostatus": false,
-  "complete": "columns",
+  "complete": "filename",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",

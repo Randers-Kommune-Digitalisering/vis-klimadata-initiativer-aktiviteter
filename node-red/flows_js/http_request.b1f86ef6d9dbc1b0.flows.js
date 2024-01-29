@@ -22,7 +22,7 @@ const Node = {
       "valueValue": ""
     }
   ],
-  "x": 830,
+  "x": 890,
   "y": 1260,
   "wires": [
     [

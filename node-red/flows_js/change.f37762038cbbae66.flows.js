@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "{\t    \"file\":{\t        \"value\": msg.payload,\t        \"options\": {\t            \"filename\": \"ØK\"& $replace(msg.tablename,\"_\",\"-\") & \".csv\"\t        }\t    }\t}",
+      "to": "{\t    \"file\":{\t        \"value\": msg.payload,\t        \"options\": {\t            \"filename\": msg.filename\t        }\t    }\t}",
       "tot": "jsonata",
       "dc": true
     },
