@@ -1,21 +1,21 @@
 const Node = {
-  "id": "00bd45101258659b",
+  "id": "8dc1c97aaca00218",
   "type": "debug",
   "z": "d5880abe3145a384",
-  "g": "9567f48068967909",
-  "name": "debug 11",
+  "g": "9ae08881d69520e5",
+  "name": "Payload custom\\n data connector ",
   "active": true,
   "tosidebar": true,
-  "console": false,
+  "console": true,
   "tostatus": false,
-  "complete": "sql",
+  "complete": "payload",
   "targetType": "msg",
   "statusVal": "",
   "statusType": "auto",
-  "x": 740,
-  "y": 960,
+  "x": 1410,
+  "y": 540,
   "wires": [],
-  "_order": 445
+  "_order": 450
 }
 
 module.exports = Node;

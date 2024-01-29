@@ -8,7 +8,7 @@ const Node = {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "{\t    \"group\":msg.tablename,\t    \"data\":msg.data\t}",
+      "to": "{\t    \"name\":msg.tablename,\t    \"group\":msg.tablename,\t    \"data\":msg.data\t}",
       "tot": "jsonata",
       "dc": true
     },
@@ -36,11 +36,11 @@ const Node = {
   "y": 600,
   "wires": [
     [
-      "88ce5fc96848d12c",
-      "b1f86ef6d9dbc1b0"
+      "b1f86ef6d9dbc1b0",
+      "8dc1c97aaca00218"
     ]
   ],
-  "_order": 450
+  "_order": 448
 }
 
 module.exports = Node;
