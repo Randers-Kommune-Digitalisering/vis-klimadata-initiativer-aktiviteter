@@ -2,19 +2,20 @@ const Node = {
   "id": "29db3a220c02db3f",
   "type": "debug",
   "z": "d5880abe3145a384",
+  "g": "4854ea2eaa259ca4",
   "name": "Custom data connector \\n statusCode",
   "active": true,
   "tosidebar": true,
   "console": true,
   "tostatus": false,
-  "complete": "statusCode",
-  "targetType": "msg",
+  "complete": "{\t    \"Custom data connector statusCode\":statusCode\t}",
+  "targetType": "jsonata",
   "statusVal": "",
   "statusType": "auto",
-  "x": 1430,
-  "y": 680,
+  "x": 790,
+  "y": 1260,
   "wires": [],
-  "_order": 446
+  "_order": 447
 }
 
 module.exports = Node;

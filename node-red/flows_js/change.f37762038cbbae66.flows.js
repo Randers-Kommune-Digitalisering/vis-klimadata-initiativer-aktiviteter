@@ -2,7 +2,8 @@ const Node = {
   "id": "f37762038cbbae66",
   "type": "change",
   "z": "d5880abe3145a384",
-  "name": "",
+  "g": "4854ea2eaa259ca4",
+  "name": "Request parameters",
   "rules": [
     {
       "t": "set",
@@ -32,15 +33,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 1220,
-  "y": 600,
+  "x": 360,
+  "y": 1260,
   "wires": [
     [
-      "b1f86ef6d9dbc1b0",
-      "8dc1c97aaca00218"
+      "b1f86ef6d9dbc1b0"
     ]
   ],
-  "_order": 448
+  "_order": 449
 }
 
 module.exports = Node;
