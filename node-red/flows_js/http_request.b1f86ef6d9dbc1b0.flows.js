@@ -14,7 +14,14 @@ const Node = {
   "insecureHTTPParser": false,
   "authType": "",
   "senderr": false,
-  "headers": [],
+  "headers": [
+    {
+      "keyType": "Content-Type",
+      "keyValue": "",
+      "valueType": "multipart/form-data",
+      "valueValue": ""
+    }
+  ],
   "x": 810,
   "y": 1260,
   "wires": [

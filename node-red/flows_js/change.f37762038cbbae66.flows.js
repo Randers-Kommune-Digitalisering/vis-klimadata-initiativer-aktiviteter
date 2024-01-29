@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "{\t    \"name\":msg.tablename,\t    \"group\":msg.tablename,\t    \"data\":msg.payload\t}",
+      "to": "{\t    \"file\":{\t        \"value\": msg.payload,\t        \"options\": {\t            \"filename\": msg.tablename & \".csv\"\t        }\t    }\t}",
       "tot": "jsonata",
       "dc": true
     },
@@ -37,7 +37,8 @@ const Node = {
   "y": 1260,
   "wires": [
     [
-      "b1f86ef6d9dbc1b0"
+      "b1f86ef6d9dbc1b0",
+      "b745a79428a7e3d0"
     ]
   ],
   "_order": 449
