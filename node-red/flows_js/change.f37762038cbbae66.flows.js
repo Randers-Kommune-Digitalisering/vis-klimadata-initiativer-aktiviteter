@@ -9,7 +9,7 @@ const Node = {
       "t": "set",
       "p": "payload",
       "pt": "msg",
-      "to": "{\t    \"name\":msg.tablename,\t    \"group\":msg.tablename,\t    \"data\":msg.data\t}",
+      "to": "{\t    \"name\":msg.tablename,\t    \"group\":msg.tablename,\t    \"data\":msg.payload\t}",
       "tot": "jsonata",
       "dc": true
     },
@@ -33,7 +33,7 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 360,
+  "x": 600,
   "y": 1260,
   "wires": [
     [

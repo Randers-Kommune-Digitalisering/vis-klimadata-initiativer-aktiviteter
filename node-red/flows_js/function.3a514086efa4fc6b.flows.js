@@ -41,6 +41,8 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util) {
           /**/
       }
   }
+  
+  msg.columns=keys;
   return msg;
 }
 

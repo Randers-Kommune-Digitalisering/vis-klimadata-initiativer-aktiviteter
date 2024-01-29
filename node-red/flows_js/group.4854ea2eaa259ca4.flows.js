@@ -15,13 +15,26 @@ const Node = {
     "b1f86ef6d9dbc1b0",
     "f37762038cbbae66",
     "f16ddb4b75ac438c",
-    "1c322e95f7937cf6"
+    "1c322e95f7937cf6",
+    "5accf40a3ba9fe73",
+    "b745a79428a7e3d0",
+    "cdee643426cd1c41",
+    "33c3c87427c8214e",
+    "ab52478c66e276ce",
+    "20b4d0baa798dd04"
   ],
-  "x": 24,
-  "y": 1207,
-  "w": 922,
-  "h": 106,
-  "_order": 78
+  "x": 34,
+  "y": 1219,
+  "w": 972,
+  "h": 202,
+  "info": "",
+  "_order": 69
 }
+
+Node.info = `
+Sender data til Custom Data connectoren. 
+
+Godtager pt. kun csv
+`
 
 module.exports = Node;
