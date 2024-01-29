@@ -14,7 +14,7 @@ const Node = {
   "waitForConnections": true,
   "connectionLimit": "10",
   "queueTimeout": "10000",
-  "x": 570,
+  "x": 590,
   "y": 1080,
   "wires": [
     [

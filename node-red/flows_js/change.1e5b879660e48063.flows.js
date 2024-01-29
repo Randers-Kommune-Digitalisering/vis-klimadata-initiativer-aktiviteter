@@ -24,14 +24,6 @@ const Node = {
       "pt": "msg",
       "to": "\"dst_\"&tablename",
       "tot": "jsonata"
-    },
-    {
-      "t": "set",
-      "p": "data",
-      "pt": "flow",
-      "to": "data",
-      "tot": "msg",
-      "dc": true
     }
   ],
   "action": "",
@@ -39,7 +31,7 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 400,
+  "x": 420,
   "y": 780,
   "wires": [
     [

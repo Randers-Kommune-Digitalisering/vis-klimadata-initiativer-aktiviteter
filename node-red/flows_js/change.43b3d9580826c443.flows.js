@@ -2,6 +2,7 @@ const Node = {
   "id": "43b3d9580826c443",
   "type": "change",
   "z": "d5880abe3145a384",
+  "d": true,
   "g": "63511c64cbde6f8e",
   "name": "arealdk",
   "rules": [
