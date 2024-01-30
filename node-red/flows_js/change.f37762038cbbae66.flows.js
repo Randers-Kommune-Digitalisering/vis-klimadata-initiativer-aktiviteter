@@ -26,6 +26,13 @@ const Node = {
       "pt": "msg",
       "to": "custom-data-connector-service/in/",
       "tot": "str"
+    },
+    {
+      "t": "set",
+      "p": "headers['overwrite']",
+      "pt": "msg",
+      "to": "true",
+      "tot": "str"
     }
   ],
   "action": "",
