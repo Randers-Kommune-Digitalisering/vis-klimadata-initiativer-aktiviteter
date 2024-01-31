@@ -10,8 +10,8 @@ const Node = {
   "initialize": "",
   "finalize": "",
   "libs": [],
-  "x": 170,
-  "y": 1340,
+  "x": 150,
+  "y": 1360,
   "wires": [
     [
       "ab52478c66e276ce",
@@ -22,9 +22,11 @@ const Node = {
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {
-  msg.columns=msg.columns.toString();
-  msg.filename = encodeURI("ØK".concat(msg.tablename.replace("_", "-"), ".csv"));
-  return msg;
+  
+    msg.columns=msg.columns.toString();
+    msg.filename = encodeURI("ØK".concat(msg.tablename.replace("_", "-"), ".csv"));
+    return msg;
+  
 }
 
 module.exports = Node;

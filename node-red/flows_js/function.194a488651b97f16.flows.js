@@ -25,30 +25,32 @@ const Node = {
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util, dayjs) {
-  // Parse millis to dayjs() months
-  var dstUpdated = dayjs(msg.dst_updated).month();
-  var dbUpdated = dayjs(msg.db_updated).month();
   
-  // Calculate months diff
-  var months = dstUpdated - dbUpdated;
+    // Parse millis to dayjs() months
+    var dstUpdated = dayjs(msg.dst_updated).month();
+    var dbUpdated = dayjs(msg.db_updated).month();
+    
+    // Calculate months diff
+    var months = dstUpdated - dbUpdated;
+    
+    // Initialize array in correct formats
+    var monthArray = [];
+    
+    // Push each missing month to array in correct format
+    for (let i = 1; i <= months; i++)
+    {
+        var today = dayjs();
+        var today_minus_i_months = today.subtract(i, 'month');
+    
+        var month = today_minus_i_months.format("YYYY-MM");
+        month = month.replace("-", "M");
+    
+        monthArray.push(month);
+    }
+    
+    msg.months = monthArray;
+    return msg;
   
-  // Initialize array in correct formats
-  var monthArray = [];
-  
-  // Push each missing month to array in correct format
-  for (let i = 1; i <= months; i++)
-  {
-      var today = dayjs();
-      var today_minus_i_months = today.subtract(i, 'month');
-  
-      var month = today_minus_i_months.format("YYYY-MM");
-      month = month.replace("-", "M");
-  
-      monthArray.push(month);
-  }
-  
-  msg.months = monthArray;
-  return msg;
 }
 
 module.exports = Node;

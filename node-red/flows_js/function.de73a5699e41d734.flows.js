@@ -26,21 +26,23 @@ const Node = {
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util, dayjs) {
-  // Check if data exists
-  if(msg.payload[0] == null)
-  {
-      msg.db_updated = 0;
-      return msg;
-  }
   
-  // Parse last_updated
-  var db_updated = dayjs(msg.payload[0].last_updated);
+    // Check if data exists
+    if(msg.payload[0] == null)
+    {
+        msg.db_updated = 0;
+        return msg;
+    }
+    
+    // Parse last_updated
+    var db_updated = dayjs(msg.payload[0].last_updated);
+    
+    // Format as millis
+    db_updated = db_updated.valueOf();
+    
+    msg.db_updated = db_updated;
+    return msg;
   
-  // Format as millis
-  db_updated = db_updated.valueOf();
-  
-  msg.db_updated = db_updated;
-  return msg;
 }
 
 module.exports = Node;

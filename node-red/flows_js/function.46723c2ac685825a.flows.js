@@ -19,8 +19,10 @@ const Node = {
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {
-  node.status({ fill: msg.status.fill, shape: msg.status.shape, text: msg.status.text });
-  return msg;
+  
+    node.status({ fill: msg.status.fill, shape: msg.status.shape, text: msg.status.text });
+    return msg;
+  
 }
 
 module.exports = Node;

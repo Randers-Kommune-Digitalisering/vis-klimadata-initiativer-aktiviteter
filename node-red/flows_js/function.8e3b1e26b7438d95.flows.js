@@ -21,10 +21,12 @@ const Node = {
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {
-  msg.query=Object.values(msg.datasets)[msg.counter];
-  msg.tablename=Object.keys(msg.datasets)[msg.counter];
-  msg.length=Object.values(msg.datasets).length;
-  return msg;
+  
+    msg.query=Object.values(msg.datasets)[msg.counter];
+    msg.tablename=Object.keys(msg.datasets)[msg.counter];
+    msg.length=Object.values(msg.datasets).length;
+    return msg;
+  
 }
 
 module.exports = Node;

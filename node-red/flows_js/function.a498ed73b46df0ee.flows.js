@@ -20,16 +20,18 @@ const Node = {
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {
-  var count = flow.get("count");
   
-  var status = {};
-  status.fill     = "yellow";
-  status.shape    = "ring";
-  status.text     = "Tæller dataset ... " + msg.timeRemaining + "s";
+    var count = flow.get("count");
+    
+    var status = {};
+    status.fill     = "yellow";
+    status.shape    = "ring";
+    status.text     = "Tæller dataset ... " + msg.timeRemaining + "s";
+    
+    node.status({ fill: status.fill, shape: status.shape, text: status.text });
+    
+    return msg;
   
-  node.status({ fill: status.fill, shape: status.shape, text: status.text });
-  
-  return msg;
 }
 
 module.exports = Node;

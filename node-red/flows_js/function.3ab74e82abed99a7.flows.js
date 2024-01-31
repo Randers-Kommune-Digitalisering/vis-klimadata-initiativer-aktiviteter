@@ -22,10 +22,12 @@ const Node = {
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {
-  msg.sql=Object.values(msg.datasql)[msg.counter]
-  msg.dataset = Object.keys(msg.datasql)[msg.counter].replaceAll("-", "_")
-  msg.length=Object.values(msg.datasql).length
-  return msg;
+  
+    msg.sql=Object.values(msg.datasql)[msg.counter]
+    msg.dataset = Object.keys(msg.datasql)[msg.counter].replaceAll("-", "_")
+    msg.length=Object.values(msg.datasql).length
+    return msg;
+  
 }
 
 module.exports = Node;

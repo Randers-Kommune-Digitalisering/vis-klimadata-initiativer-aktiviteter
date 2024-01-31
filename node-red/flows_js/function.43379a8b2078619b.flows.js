@@ -22,56 +22,58 @@ const Node = {
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {
-  // Number(s) to parse
-  var data = msg.data;
   
-  // For each variable in flow.flatlist
-  for (var i = 0; i <flow.get("flatlist").length; i++)
-  {
-      const obj = flow.get("flatlist")[i];
+    // Number(s) to parse
+    var data = msg.data;
+    
+    // For each variable in flow.flatlist
+    for (var i = 0; i <flow.get("flatlist").length; i++)
+    {
+        const obj = flow.get("flatlist")[i];
+    
+        // Check if variable type is float
+        if(obj.type == "FLOAT")
+        {
+            // For each data object
+            data.forEach(item =>
+            {
+                // Parse
+                const str = String(item[obj.name]);
+                var floatvalue = str.replace(",", ".");
+    
+                floatvalue = parseFloat(floatvalue);
+                item[obj.name] = isNaN(floatvalue) ? 0 : floatvalue;
+            });
+        }
+    }
+    return msg;
+    
+    /*
+    
+    // Number(s) to parse
+    var data = msg.data;
+    
+    // For each variable in flow.flatlist
+    for (const [key, value] of Object.entries(flow.get("dataskabelon")))
+    {
+        // Check if variable type is float
+        if(value == "FLOAT")
+        {
+            // For each data object
+            data.forEach(item =>
+            {
+                // Parse
+                const str = String(item[key]);
+                var floatvalue = str.replace(",", ".");
+    
+                floatvalue = parseFloat(floatvalue);
+                item[key] = isNaN(floatvalue) ? 0 : floatvalue;
+            });
+        }
+    }
+    return msg;
+    */
   
-      // Check if variable type is float
-      if(obj.type == "FLOAT")
-      {
-          // For each data object
-          data.forEach(item =>
-          {
-              // Parse
-              const str = String(item[obj.name]);
-              var floatvalue = str.replace(",", ".");
-  
-              floatvalue = parseFloat(floatvalue);
-              item[obj.name] = isNaN(floatvalue) ? 0 : floatvalue;
-          });
-      }
-  }
-  return msg;
-  
-  /*
-  
-  // Number(s) to parse
-  var data = msg.data;
-  
-  // For each variable in flow.flatlist
-  for (const [key, value] of Object.entries(flow.get("dataskabelon")))
-  {
-      // Check if variable type is float
-      if(value == "FLOAT")
-      {
-          // For each data object
-          data.forEach(item =>
-          {
-              // Parse
-              const str = String(item[key]);
-              var floatvalue = str.replace(",", ".");
-  
-              floatvalue = parseFloat(floatvalue);
-              item[key] = isNaN(floatvalue) ? 0 : floatvalue;
-          });
-      }
-  }
-  return msg;
-  */
 }
 
 module.exports = Node;

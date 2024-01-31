@@ -19,16 +19,18 @@ const Node = {
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {
-  var datasetsRemaining = (flow.get("datasets")).length -1;
   
-  var status = {};
-  status.fill     = datasetsRemaining > 0 ? "yellow" : "green";
-  status.shape    = datasetsRemaining > 0 ? "ring" : "dot";
-  status.text     = datasetsRemaining > 0 ? "Datasæt i kø: " + datasetsRemaining : "Done";
+    var datasetsRemaining = (flow.get("datasets")).length -1;
+    
+    var status = {};
+    status.fill     = datasetsRemaining > 0 ? "yellow" : "green";
+    status.shape    = datasetsRemaining > 0 ? "ring" : "dot";
+    status.text     = datasetsRemaining > 0 ? "Datasæt i kø: " + datasetsRemaining : "Done";
+    
+    node.status({ fill: status.fill, shape: status.shape, text: status.text });
+    
+    return msg;
   
-  node.status({ fill: status.fill, shape: status.shape, text: status.text });
-  
-  return msg;
 }
 
 module.exports = Node;

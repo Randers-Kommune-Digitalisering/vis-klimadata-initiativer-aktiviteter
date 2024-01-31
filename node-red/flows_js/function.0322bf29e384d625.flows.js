@@ -21,28 +21,30 @@ const Node = {
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {
-  // Number(s) to parse
-  var data = msg.data;
   
-  // For each variable in data[0]
-  for (const [key, value] of Object.entries(data[0]))
-  {
-      // Check if variable type is float
-      if(value == "FLOAT")
-      {
-          // For each data object
-          data.forEach(item =>
-          {
-              // Parse
-              const str = String(item[key]);
-              var floatvalue = str.replace(",", ".");
+    // Number(s) to parse
+    var data = msg.data;
+    
+    // For each variable in data[0]
+    for (const [key, value] of Object.entries(data[0]))
+    {
+        // Check if variable type is float
+        if(value == "FLOAT")
+        {
+            // For each data object
+            data.forEach(item =>
+            {
+                // Parse
+                const str = String(item[key]);
+                var floatvalue = str.replace(",", ".");
+    
+                floatvalue = parseFloat(floatvalue);
+                item[key] = floatvalue;
+            });
+        }
+    }
+    return msg;
   
-              floatvalue = parseFloat(floatvalue);
-              item[key] = floatvalue;
-          });
-      }
-  }
-  return msg;
 }
 
 module.exports = Node;

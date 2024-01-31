@@ -21,13 +21,15 @@ const Node = {
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {
-  for (let obs=0;obs<msg.data.length;obs++) {
-      for (let index = 0; index < msg.redundant.length; index++) {
-          var todrop=msg.redundant[index];
-          delete msg.data[obs][todrop];
-      }
-  }
-  return msg;
+  
+    for (let obs=0;obs<msg.data.length;obs++) {
+        for (let index = 0; index < msg.redundant.length; index++) {
+            var todrop=msg.redundant[index];
+            delete msg.data[obs][todrop];
+        }
+    }
+    return msg;
+  
 }
 
 module.exports = Node;

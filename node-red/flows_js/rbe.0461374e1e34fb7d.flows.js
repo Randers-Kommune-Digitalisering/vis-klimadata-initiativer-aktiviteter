@@ -22,7 +22,9 @@ const Node = {
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {
-  rbe
+  
+    rbe
+  
 }
 
 module.exports = Node;

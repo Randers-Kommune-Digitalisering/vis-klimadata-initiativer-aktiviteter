@@ -22,14 +22,16 @@ const Node = {
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {
-  // Shift dataset[0]
-  var datasets = flow.get("datasets");
-  datasets.shift();
   
-  // Set new datasets flow var
-  flow.set("datasets", datasets);
+    // Shift dataset[0]
+    var datasets = flow.get("datasets");
+    datasets.shift();
+    
+    // Set new datasets flow var
+    flow.set("datasets", datasets);
+    
+    return msg;
   
-  return msg;
 }
 
 module.exports = Node;

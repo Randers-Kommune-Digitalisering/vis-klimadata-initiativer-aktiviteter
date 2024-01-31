@@ -22,8 +22,8 @@ const Node = {
       "valueValue": ""
     }
   ],
-  "x": 890,
-  "y": 1260,
+  "x": 870,
+  "y": 1280,
   "wires": [
     [
       "29db3a220c02db3f"

@@ -20,16 +20,18 @@ const Node = {
 }
 
 Node.func = async function (node, msg, RED, context, flow, global, env, util) {
-  var count = flow.get("count");
   
-  var status = {};
-  status.fill     = count > 0 ? "green" : "red";
-  status.shape    = count > 0 ? "dot" : "ring";
-  status.text     = count > 0 ? "Antal datasæt: " + count : "Ingen datasæt!";
+    var count = flow.get("count");
+    
+    var status = {};
+    status.fill     = count > 0 ? "green" : "red";
+    status.shape    = count > 0 ? "dot" : "ring";
+    status.text     = count > 0 ? "Antal datasæt: " + count : "Ingen datasæt!";
+    
+    node.status({ fill: status.fill, shape: status.shape, text: status.text });
+    
+    return msg;
   
-  node.status({ fill: status.fill, shape: status.shape, text: status.text });
-  
-  return msg;
 }
 
 module.exports = Node;
