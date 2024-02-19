@@ -1,15 +1,15 @@
 const Node = {
-  "id": "2bc56b8bd06b1c62",
+  "id": "9c07b7c8644ed2d5",
   "type": "change",
   "z": "db9cae581f57fc84",
   "g": "caba7946f847b074",
-  "name": "Opsætning af dataset \\n el-og-fjernvarmeanlaeg-i-randers-kommune",
+  "name": "Opsætning af dataset \\n kommunale-olie-og-gasfyr-i-randers-kommune",
   "rules": [
     {
       "t": "set",
       "p": "dataset",
       "pt": "msg",
-      "to": "el-og-fjernvarmeanlaeg-i-randers-kommune",
+      "to": "kommunale-olie-og-gasfyr-i-randers-kommune",
       "tot": "str"
     }
   ],
@@ -18,14 +18,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 970,
-  "y": 80,
+  "x": 440,
+  "y": 560,
   "wires": [
     [
-      "ede947f0154bcc7f"
+      "a51baf8ce677edbc"
     ]
   ],
-  "_order": 381
+  "_order": 395
 }
 
 module.exports = Node;
