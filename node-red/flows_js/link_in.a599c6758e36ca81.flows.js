@@ -5,7 +5,7 @@ const Node = {
   "name": "OpenData Opsætning IN",
   "links": [],
   "x": 35,
-  "y": 120,
+  "y": 80,
   "wires": [
     [
       "71c5b61816be2584"
