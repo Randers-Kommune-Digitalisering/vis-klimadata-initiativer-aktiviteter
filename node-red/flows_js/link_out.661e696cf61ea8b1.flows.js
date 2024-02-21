@@ -5,11 +5,11 @@ const Node = {
   "name": "OpenData Opsætning OUT",
   "mode": "return",
   "links": [],
-  "x": 1420,
+  "x": 1800,
   "y": 620,
   "wires": [],
   "l": true,
-  "_order": 373
+  "_order": 375
 }
 
 module.exports = Node;
