@@ -29,7 +29,8 @@ Node.func = async function (node, msg, RED, context, flow, global, env, util) {
         "os2iot_elsys_sensor_24f7",
         "os2iot_metadata",
         "os2iot_refrigerator_sensor_309c_talkpool",
-        "test"
+        "test",
+        "opendata_braendstofforbrug"
     ];
     msg.length=msg.tables.length;
     return msg;
