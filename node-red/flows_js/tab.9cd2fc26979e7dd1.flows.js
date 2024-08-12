@@ -2,7 +2,7 @@ const Node = {
   "id": "9cd2fc26979e7dd1",
   "type": "tab",
   "label": "EDS - CommunityProduction",
-  "disabled": false,
+  "disabled": true,
   "info": "",
   "env": [],
   "_order": 3

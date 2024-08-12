@@ -2,7 +2,7 @@ const Node = {
   "id": "8a53080563b8e8f2",
   "type": "tab",
   "label": "DB query",
-  "disabled": false,
+  "disabled": true,
   "info": "",
   "env": [],
   "_order": 5

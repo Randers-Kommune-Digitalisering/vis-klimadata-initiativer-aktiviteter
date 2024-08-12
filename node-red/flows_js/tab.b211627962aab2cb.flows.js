@@ -2,7 +2,7 @@ const Node = {
   "id": "b211627962aab2cb",
   "type": "tab",
   "label": "EDS - ConsumptionIndustry",
-  "disabled": false,
+  "disabled": true,
   "info": "",
   "env": [],
   "_order": 2
