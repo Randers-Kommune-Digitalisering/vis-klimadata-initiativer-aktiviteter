@@ -9,7 +9,7 @@ const Node = {
   "keyname": "",
   "caname": "",
   "servername": "",
-  "verifyservercert": true,
+  "verifyservercert": false,
   "alpnprotocol": "",
   "_order": 193
 }

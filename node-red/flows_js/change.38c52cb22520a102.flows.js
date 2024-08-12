@@ -1,5 +1,5 @@
 const Node = {
-  "id": "d1b6d4d0583e38be",
+  "id": "38c52cb22520a102",
   "type": "change",
   "z": "93db0a70bc3b8d10",
   "name": "Opsætning af forespørgsel ↓ \\n Totalt antal indregistrerede biler i Randers Kommune \\n pr. måned, biltype, anvendelse og drivmiddel. ",
@@ -8,7 +8,7 @@ const Node = {
       "t": "set",
       "p": "url",
       "pt": "msg",
-      "to": "https://91.208.143.3/v1/data",
+      "to": "https://api.statbank.dk/v1/data",
       "tot": "str"
     },
     {
@@ -31,14 +31,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 520,
-  "y": 260,
+  "x": 540,
+  "y": 560,
   "wires": [
     [
-      "0fd80a271f9602cb"
+      "9a6738d03ada05db"
     ]
   ],
-  "_order": 759
+  "_order": 764
 }
 
 module.exports = Node;

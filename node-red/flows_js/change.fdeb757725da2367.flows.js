@@ -1,5 +1,5 @@
 const Node = {
-  "id": "0472adc3fd25e4fe",
+  "id": "fdeb757725da2367",
   "type": "change",
   "z": "93db0a70bc3b8d10",
   "name": "Opsætning af forespørgsel ↓ \\n Metadata for tabel",
@@ -8,7 +8,7 @@ const Node = {
       "t": "set",
       "p": "url",
       "pt": "msg",
-      "to": "https://91.208.143.3/v1/tableinfo",
+      "to": "https://api.statbank.dk/v1/tableinfo",
       "tot": "str"
     },
     {
@@ -31,14 +31,14 @@ const Node = {
   "from": "",
   "to": "",
   "reg": false,
-  "x": 440,
-  "y": 140,
+  "x": 460,
+  "y": 440,
   "wires": [
     [
-      "eacf1c9a007f26ca"
+      "82edd7fbd5262490"
     ]
   ],
-  "_order": 757
+  "_order": 762
 }
 
 module.exports = Node;
